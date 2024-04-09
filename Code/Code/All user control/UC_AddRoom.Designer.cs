@@ -1,4 +1,5 @@
-﻿namespace Code.All_user_control
+﻿
+namespace Code.All_user_control
 {
     partial class UC_AddRoom
     {
@@ -294,6 +295,16 @@
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void guna2HtmlLabel5_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
