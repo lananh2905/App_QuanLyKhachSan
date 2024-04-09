@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -52,8 +53,11 @@
             btnRoomResearch = new Guna.UI2.WinForms.Guna2Button();
             btnAddRoom = new Guna.UI2.WinForms.Guna2Button();
             panel2 = new Panel();
-            panel3 = new Panel();
+            uC_AddRoom1 = new All_user_control.UC_AddRoom();
+            panelMoving = new Panel();
+            guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // btnExit
@@ -156,7 +160,7 @@
             btnMonthlyRreport.FillColor = Color.SlateBlue;
             btnMonthlyRreport.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMonthlyRreport.ForeColor = Color.White;
-            btnMonthlyRreport.Location = new Point(1474, 7);
+            btnMonthlyRreport.Location = new Point(1477, 3);
             btnMonthlyRreport.Name = "btnMonthlyRreport";
             btnMonthlyRreport.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnMonthlyRreport.Size = new Size(284, 116);
@@ -175,7 +179,7 @@
             btnRoomResearch.FillColor = Color.SlateBlue;
             btnRoomResearch.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnRoomResearch.ForeColor = Color.White;
-            btnRoomResearch.Location = new Point(746, 7);
+            btnRoomResearch.Location = new Point(749, 3);
             btnRoomResearch.Name = "btnRoomResearch";
             btnRoomResearch.ShadowDecoration.CustomizableEdges = customizableEdges12;
             btnRoomResearch.Size = new Size(284, 116);
@@ -200,23 +204,39 @@
             btnAddRoom.Size = new Size(284, 116);
             btnAddRoom.TabIndex = 0;
             btnAddRoom.Text = "ADD ROOM";
+            btnAddRoom.Click += btnAddRoom_Click;
             // 
             // panel2
             // 
             panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(uC_AddRoom1);
             panel2.Location = new Point(35, 182);
             panel2.Name = "panel2";
             panel2.Size = new Size(1882, 852);
             panel2.TabIndex = 3;
             // 
-            // panel3
+            // uC_AddRoom1
             // 
-            panel3.BackColor = Color.FromArgb(0, 192, 192);
-            panel3.BorderStyle = BorderStyle.FixedSingle;
-            panel3.Location = new Point(93, 155);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(300, 10);
-            panel3.TabIndex = 4;
+            uC_AddRoom1.BackColor = Color.White;
+            uC_AddRoom1.Location = new Point(-2, -2);
+            uC_AddRoom1.Name = "uC_AddRoom1";
+            uC_AddRoom1.Size = new Size(2352, 1065);
+            uC_AddRoom1.TabIndex = 0;
+            uC_AddRoom1.Load += uC_AddRoom1_Load;
+            // 
+            // panelMoving
+            // 
+            panelMoving.BackColor = Color.FromArgb(0, 192, 192);
+            panelMoving.BorderStyle = BorderStyle.FixedSingle;
+            panelMoving.Location = new Point(106, 151);
+            panelMoving.Name = "panelMoving";
+            panelMoving.Size = new Size(281, 10);
+            panelMoving.TabIndex = 4;
+            panelMoving.Paint += panelMoving_Paint;
+            // 
+            // guna2Elipse1
+            // 
+            guna2Elipse1.TargetControl = this;
             // 
             // DashBoard
             // 
@@ -224,7 +244,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(132, 112, 255);
             ClientSize = new Size(1942, 1102);
-            Controls.Add(panel3);
+            Controls.Add(panelMoving);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(btnMinisize);
@@ -234,7 +254,9 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "DashBoard";
             WindowState = FormWindowState.Maximized;
+            Load += DashBoard_Load;
             panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -249,6 +271,9 @@
         private Guna.UI2.WinForms.Guna2Button btnCheckOut;
         private Guna.UI2.WinForms.Guna2Button btnMonthlyRreport;
         private Guna.UI2.WinForms.Guna2Button btnRoomResearch;
-        private Panel panel3;
+        private Panel panelMoving;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private All_user_control.UC_AddRoom addRoom1;
+        private All_user_control.UC_AddRoom uC_AddRoom1;
     }
 }
