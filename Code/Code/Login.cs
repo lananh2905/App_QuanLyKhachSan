@@ -26,5 +26,21 @@ namespace Code
         {
             Application.Exit();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (txtUsername.Text == "abc" &&  txtPassword.Text == "123")
+            {
+                labelError.Visible = false;
+                DashBoard ds = new DashBoard();
+                this.Hide();
+                ds.Show();
+            }
+            else
+            {
+                labelError.Visible = true;
+                txtPassword.Clear();
+            }
+        }
     }
 }

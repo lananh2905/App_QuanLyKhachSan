@@ -114,6 +114,7 @@
             btnLogin.Size = new Size(415, 67);
             btnLogin.TabIndex = 5;
             btnLogin.Text = "LOGIN";
+            btnLogin.Click += btnLogin_Click;
             // 
             // txtPassword
             // 
