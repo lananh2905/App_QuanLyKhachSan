@@ -1,1 +1,1 @@
-# App_QuanLyKhachSan
+﻿## App quản lí khách sạn
