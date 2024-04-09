@@ -44,3 +44,4 @@ D:\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\refint\Code.dll
 D:\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.pdb
 D:\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.genruntimeconfig.cache
 D:\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\ref\Code.dll
+D:\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.DashBoard.resources
