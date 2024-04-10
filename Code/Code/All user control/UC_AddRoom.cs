@@ -21,5 +21,10 @@ namespace Code.All_user_control
         {
 
         }
+
+        private void btnAddRoom_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

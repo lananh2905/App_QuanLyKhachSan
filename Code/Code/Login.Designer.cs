@@ -79,21 +79,21 @@
             guna2HtmlLabel3.ForeColor = Color.DarkGray;
             guna2HtmlLabel3.Location = new Point(146, 492);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(272, 20);
+            guna2HtmlLabel3.Size = new Size(318, 20);
             guna2HtmlLabel3.TabIndex = 7;
-            guna2HtmlLabel3.Text = "* You must accept our terms and conditions.";
+            guna2HtmlLabel3.Text = "* Bạn phải chấp nhận các điều khoản của chúng tôi.";
             guna2HtmlLabel3.Click += guna2HtmlLabel3_Click;
             // 
             // labelError
             // 
             labelError.BackColor = Color.Transparent;
-            labelError.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelError.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelError.ForeColor = Color.Red;
             labelError.Location = new Point(635, 472);
             labelError.Name = "labelError";
-            labelError.Size = new Size(255, 23);
+            labelError.Size = new Size(237, 22);
             labelError.TabIndex = 6;
-            labelError.Text = "Username or Password is incorrect";
+            labelError.Text = "Tên đăng nhập hoặc mật khẩu sai";
             labelError.Visible = false;
             labelError.Click += guna2HtmlLabel2_Click;
             // 
@@ -109,12 +109,12 @@
             btnLogin.FillColor = Color.SeaGreen;
             btnLogin.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(549, 379);
+            btnLogin.Location = new Point(549, 361);
             btnLogin.Name = "btnLogin";
             btnLogin.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnLogin.Size = new Size(415, 67);
             btnLogin.TabIndex = 5;
-            btnLogin.Text = "LOGIN";
+            btnLogin.Text = "Đăng nhập";
             btnLogin.Click += btnLogin_Click;
             // 
             // txtPassword
@@ -128,7 +128,7 @@
             txtPassword.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtPassword.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtPassword.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPassword.ForeColor = Color.Silver;
+            txtPassword.ForeColor = Color.Black;
             txtPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtPassword.IconLeft = (Image)resources.GetObject("txtPassword.IconLeft");
             txtPassword.IconLeftSize = new Size(30, 30);
@@ -136,7 +136,7 @@
             txtPassword.Margin = new Padding(4, 5, 4, 5);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '●';
-            txtPassword.PlaceholderText = "Enter Password";
+            txtPassword.PlaceholderText = "Mật khẩu";
             txtPassword.ScrollBars = ScrollBars.Vertical;
             txtPassword.SelectedText = "";
             txtPassword.ShadowDecoration.CustomizableEdges = customizableEdges4;
@@ -155,7 +155,7 @@
             txtUsername.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtUsername.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtUsername.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUsername.ForeColor = Color.Silver;
+            txtUsername.ForeColor = Color.Black;
             txtUsername.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtUsername.IconLeft = (Image)resources.GetObject("txtUsername.IconLeft");
             txtUsername.IconLeftSize = new Size(30, 30);
@@ -163,7 +163,7 @@
             txtUsername.Margin = new Padding(4, 5, 4, 5);
             txtUsername.Name = "txtUsername";
             txtUsername.PasswordChar = '\0';
-            txtUsername.PlaceholderText = "Enter Username";
+            txtUsername.PlaceholderText = "Tên đăng nhập";
             txtUsername.SelectedText = "";
             txtUsername.ShadowDecoration.CustomizableEdges = customizableEdges6;
             txtUsername.Size = new Size(415, 70);
@@ -172,12 +172,12 @@
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Font = new Font("Comic Sans MS", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2HtmlLabel1.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2HtmlLabel1.Location = new Point(688, 87);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(170, 47);
+            guna2HtmlLabel1.Size = new Size(172, 47);
             guna2HtmlLabel1.TabIndex = 2;
-            guna2HtmlLabel1.Text = "User Login";
+            guna2HtmlLabel1.Text = "Đăng nhập";
             guna2HtmlLabel1.Click += guna2HtmlLabel1_Click;
             // 
             // guna2PictureBox1

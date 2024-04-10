@@ -25,7 +25,6 @@ namespace Code
 
         private void btnAddRoom_Click(object sender, EventArgs e)
         {
-            panelMoving.Left = btnAddRoom.Left + 50;
             uC_AddRoom1.Visible = true;
             uC_AddRoom1.BringToFront();
         }

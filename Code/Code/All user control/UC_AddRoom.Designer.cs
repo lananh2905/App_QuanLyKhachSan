@@ -65,10 +65,10 @@ namespace Code.All_user_control
             guna2HtmlLabel1.ForeColor = Color.Black;
             guna2HtmlLabel1.Location = new Point(79, 59);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(145, 37);
+            guna2HtmlLabel1.Size = new Size(185, 37);
             guna2HtmlLabel1.TabIndex = 0;
-            guna2HtmlLabel1.Text = "Add room";
-            guna2HtmlLabel1.Click += this.guna2HtmlLabel1_Click;
+            guna2HtmlLabel1.Text = "Thêm phòng";
+            guna2HtmlLabel1.Click += guna2HtmlLabel1_Click;
             // 
             // guna2DataGridView1
             // 
@@ -125,13 +125,13 @@ namespace Code.All_user_control
             // guna2HtmlLabel2
             // 
             guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel2.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2HtmlLabel2.ForeColor = Color.Black;
             guna2HtmlLabel2.Location = new Point(1110, 122);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(128, 23);
+            guna2HtmlLabel2.Size = new Size(82, 27);
             guna2HtmlLabel2.TabIndex = 2;
-            guna2HtmlLabel2.Text = "Room number";
+            guna2HtmlLabel2.Text = "Số phòng";
             // 
             // txtRoomNo
             // 
@@ -158,13 +158,13 @@ namespace Code.All_user_control
             // guna2HtmlLabel3
             // 
             guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel3.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2HtmlLabel3.ForeColor = Color.Black;
             guna2HtmlLabel3.Location = new Point(1110, 258);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(102, 23);
+            guna2HtmlLabel3.Size = new Size(93, 27);
             guna2HtmlLabel3.TabIndex = 4;
-            guna2HtmlLabel3.Text = "Room type";
+            guna2HtmlLabel3.Text = "Loại phòng";
             guna2HtmlLabel3.Click += guna2HtmlLabel3_Click;
             // 
             // txtRoomType
@@ -188,13 +188,13 @@ namespace Code.All_user_control
             // txtPrice
             // 
             txtPrice.BackColor = Color.Transparent;
-            txtPrice.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPrice.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtPrice.ForeColor = Color.Black;
             txtPrice.Location = new Point(1110, 525);
             txtPrice.Name = "txtPrice";
-            txtPrice.Size = new Size(46, 23);
+            txtPrice.Size = new Size(86, 27);
             txtPrice.TabIndex = 6;
-            txtPrice.Text = "Price";
+            txtPrice.Text = "Giá phòng";
             // 
             // guna2TextBox2
             // 
@@ -239,14 +239,14 @@ namespace Code.All_user_control
             // guna2HtmlLabel5
             // 
             guna2HtmlLabel5.BackColor = Color.Transparent;
-            guna2HtmlLabel5.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel5.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2HtmlLabel5.ForeColor = Color.Black;
             guna2HtmlLabel5.Location = new Point(1110, 384);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            guna2HtmlLabel5.Size = new Size(135, 23);
+            guna2HtmlLabel5.Size = new Size(139, 27);
             guna2HtmlLabel5.TabIndex = 8;
-            guna2HtmlLabel5.Text = "Number of Bed";
-            guna2HtmlLabel5.Click += this.guna2HtmlLabel5_Click;
+            guna2HtmlLabel5.Text = "Số lượng giường";
+            guna2HtmlLabel5.Click += guna2HtmlLabel5_Click;
             // 
             // btnAddRoom
             // 
@@ -261,14 +261,15 @@ namespace Code.All_user_control
             btnAddRoom.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnAddRoom.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnAddRoom.FillColor = Color.White;
-            btnAddRoom.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAddRoom.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAddRoom.ForeColor = Color.Black;
             btnAddRoom.Location = new Point(1591, 674);
             btnAddRoom.Name = "btnAddRoom";
             btnAddRoom.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnAddRoom.Size = new Size(180, 69);
             btnAddRoom.TabIndex = 10;
-            btnAddRoom.Text = "ADD ROOM";
+            btnAddRoom.Text = "Thêm phòng";
+            btnAddRoom.Click += btnAddRoom_Click;
             // 
             // guna2Elipse1
             // 

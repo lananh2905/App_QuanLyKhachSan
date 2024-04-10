@@ -127,7 +127,7 @@
             btnRoomRental.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnRoomRental.Size = new Size(284, 116);
             btnRoomRental.TabIndex = 4;
-            btnRoomRental.Text = "ROOM RENTAL";
+            btnRoomRental.Text = "THUÊ PHÒNG";
             // 
             // btnCheckOut
             // 
@@ -146,7 +146,7 @@
             btnCheckOut.ShadowDecoration.CustomizableEdges = customizableEdges8;
             btnCheckOut.Size = new Size(284, 116);
             btnCheckOut.TabIndex = 3;
-            btnCheckOut.Text = "CHECK OUT";
+            btnCheckOut.Text = "THANH TOÁN";
             // 
             // btnMonthlyRreport
             // 
@@ -160,12 +160,12 @@
             btnMonthlyRreport.FillColor = Color.SlateBlue;
             btnMonthlyRreport.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMonthlyRreport.ForeColor = Color.White;
-            btnMonthlyRreport.Location = new Point(1477, 3);
+            btnMonthlyRreport.Location = new Point(1455, 7);
             btnMonthlyRreport.Name = "btnMonthlyRreport";
             btnMonthlyRreport.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnMonthlyRreport.Size = new Size(284, 116);
             btnMonthlyRreport.TabIndex = 2;
-            btnMonthlyRreport.Text = "MONTHLY REPORT";
+            btnMonthlyRreport.Text = "BÁO CÁO THÁNG";
             // 
             // btnRoomResearch
             // 
@@ -184,7 +184,7 @@
             btnRoomResearch.ShadowDecoration.CustomizableEdges = customizableEdges12;
             btnRoomResearch.Size = new Size(284, 116);
             btnRoomResearch.TabIndex = 1;
-            btnRoomResearch.Text = "ROOM RESEARCH";
+            btnRoomResearch.Text = "TÌM KIẾM PHÒNG";
             // 
             // btnAddRoom
             // 
@@ -203,7 +203,7 @@
             btnAddRoom.ShadowDecoration.CustomizableEdges = customizableEdges14;
             btnAddRoom.Size = new Size(284, 116);
             btnAddRoom.TabIndex = 0;
-            btnAddRoom.Text = "ADD ROOM";
+            btnAddRoom.Text = "THÊM PHÒNG";
             btnAddRoom.Click += btnAddRoom_Click;
             // 
             // panel2
