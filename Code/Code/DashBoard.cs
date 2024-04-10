@@ -25,6 +25,7 @@ namespace Code
 
         private void btnAddRoom_Click(object sender, EventArgs e)
         {
+            panelMoving.Left = btnAddRoom.Left + 50;
             uC_AddRoom1.Visible = true;
             uC_AddRoom1.BringToFront();
         }
@@ -32,6 +33,7 @@ namespace Code
         private void DashBoard_Load(object sender, EventArgs e)
         {
             uC_AddRoom1.Visible = false;
+            uC_CheckOut1.Visible = false;
             btnAddRoom.PerformClick();
         }
 
@@ -43,6 +45,18 @@ namespace Code
         private void uC_AddRoom1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void uC_CheckOut1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            panelMoving.Left = btnCheckOut.Left + 60;
+            uC_CheckOut1.Visible = true;
+            uC_CheckOut1.BringToFront();
         }
     }
 }

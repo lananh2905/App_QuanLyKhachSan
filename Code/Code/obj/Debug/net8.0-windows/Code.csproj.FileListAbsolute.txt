@@ -70,3 +70,29 @@ D:\UIT_HK4\SE104\Code\Code\obj\Debug\net8.0-windows\Code.pdb
 D:\UIT_HK4\SE104\Code\Code\obj\Debug\net8.0-windows\Code.genruntimeconfig.cache
 D:\UIT_HK4\SE104\Code\Code\obj\Debug\net8.0-windows\ref\Code.dll
 D:\UIT_HK4\SE104\Code\Code\obj\Debug\net8.0-windows\Code.All_user_control.UC_AddRoom.resources
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\bin\Debug\net8.0-windows\Code.exe
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\bin\Debug\net8.0-windows\Code.deps.json
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\bin\Debug\net8.0-windows\Code.runtimeconfig.json
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\bin\Debug\net8.0-windows\Code.dll
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\bin\Debug\net8.0-windows\Code.pdb
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\bin\Debug\net8.0-windows\Guna.UI2.dll
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\bin\Debug\net8.0-windows\System.Management.dll
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.csproj.AssemblyReference.cache
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.All_user_control.UC_AddRoom.resources
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.All_user_control.UC_CheckOut.resources
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.DashBoard.resources
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.Login.resources
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.Properties.Resources.resources
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.csproj.GenerateResource.cache
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.AssemblyInfoInputs.cache
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.AssemblyInfo.cs
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.sourcelink.json
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.csproj.Up2Date
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.dll
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\refint\Code.dll
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.pdb
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\Code.genruntimeconfig.cache
+C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\App_QuanLyKhachSan\Code\Code\obj\Debug\net8.0-windows\ref\Code.dll
