@@ -23,3 +23,4 @@ D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\refint\Code.dll
 D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.pdb
 D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.genruntimeconfig.cache
 D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\ref\Code.dll
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_RentRoom.resources

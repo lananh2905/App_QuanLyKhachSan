@@ -53,10 +53,11 @@
             btnRoomResearch = new Guna.UI2.WinForms.Guna2Button();
             btnAddRoom = new Guna.UI2.WinForms.Guna2Button();
             panel2 = new Panel();
+            uC_RentRoom1 = new All_user_control.UC_RentRoom();
+            uC_CheckOut1 = new All_user_control.UC_CheckOut();
             uC_AddRoom1 = new All_user_control.UC_AddRoom();
             panelMoving = new Panel();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
-            uC_CheckOut1 = new All_user_control.UC_CheckOut();
             guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(components);
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -70,15 +71,14 @@
             btnExit.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnExit.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnExit.FillColor = Color.FromArgb(132, 112, 255);
-            btnExit.Font = new Font("Segoe UI", 9F);
+            btnExit.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnExit.ForeColor = Color.White;
             btnExit.Image = (Image)resources.GetObject("btnExit.Image");
             btnExit.ImageSize = new Size(40, 40);
             btnExit.Location = new Point(-1, -1);
-            btnExit.Margin = new Padding(4);
             btnExit.Name = "btnExit";
             btnExit.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnExit.Size = new Size(72, 65);
+            btnExit.Size = new Size(58, 52);
             btnExit.TabIndex = 0;
             btnExit.Click += btnExit_Click;
             // 
@@ -90,15 +90,14 @@
             btnMinisize.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnMinisize.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnMinisize.FillColor = Color.FromArgb(132, 112, 255);
-            btnMinisize.Font = new Font("Segoe UI", 9F);
+            btnMinisize.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnMinisize.ForeColor = Color.White;
             btnMinisize.Image = (Image)resources.GetObject("btnMinisize.Image");
             btnMinisize.ImageSize = new Size(40, 40);
-            btnMinisize.Location = new Point(-1, 84);
-            btnMinisize.Margin = new Padding(4);
+            btnMinisize.Location = new Point(-1, 67);
             btnMinisize.Name = "btnMinisize";
             btnMinisize.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnMinisize.Size = new Size(72, 65);
+            btnMinisize.Size = new Size(58, 52);
             btnMinisize.TabIndex = 1;
             // 
             // panel1
@@ -109,10 +108,9 @@
             panel1.Controls.Add(btnMonthlyRreport);
             panel1.Controls.Add(btnRoomResearch);
             panel1.Controls.Add(btnAddRoom);
-            panel1.Location = new Point(101, 19);
-            panel1.Margin = new Padding(4);
+            panel1.Location = new Point(81, 15);
             panel1.Name = "panel1";
-            panel1.Size = new Size(2268, 162);
+            panel1.Size = new Size(1815, 130);
             panel1.TabIndex = 2;
             // 
             // btnRoomRental
@@ -125,15 +123,15 @@
             btnRoomRental.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnRoomRental.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnRoomRental.FillColor = Color.SlateBlue;
-            btnRoomRental.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRoomRental.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btnRoomRental.ForeColor = Color.White;
-            btnRoomRental.Location = new Point(479, 4);
-            btnRoomRental.Margin = new Padding(4);
+            btnRoomRental.Location = new Point(383, 3);
             btnRoomRental.Name = "btnRoomRental";
             btnRoomRental.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btnRoomRental.Size = new Size(355, 145);
+            btnRoomRental.Size = new Size(284, 116);
             btnRoomRental.TabIndex = 4;
             btnRoomRental.Text = "THUÊ PHÒNG";
+            btnRoomRental.Click += btnRoomRental_Click;
             // 
             // btnCheckOut
             // 
@@ -145,13 +143,12 @@
             btnCheckOut.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnCheckOut.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnCheckOut.FillColor = Color.SlateBlue;
-            btnCheckOut.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCheckOut.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btnCheckOut.ForeColor = Color.White;
-            btnCheckOut.Location = new Point(1391, 6);
-            btnCheckOut.Margin = new Padding(4);
+            btnCheckOut.Location = new Point(1113, 5);
             btnCheckOut.Name = "btnCheckOut";
             btnCheckOut.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btnCheckOut.Size = new Size(355, 145);
+            btnCheckOut.Size = new Size(284, 116);
             btnCheckOut.TabIndex = 3;
             btnCheckOut.Text = "THANH TOÁN";
             btnCheckOut.Click += btnCheckOut_Click;
@@ -166,13 +163,12 @@
             btnMonthlyRreport.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnMonthlyRreport.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnMonthlyRreport.FillColor = Color.SlateBlue;
-            btnMonthlyRreport.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMonthlyRreport.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btnMonthlyRreport.ForeColor = Color.White;
-            btnMonthlyRreport.Location = new Point(1819, 9);
-            btnMonthlyRreport.Margin = new Padding(4);
+            btnMonthlyRreport.Location = new Point(1455, 7);
             btnMonthlyRreport.Name = "btnMonthlyRreport";
             btnMonthlyRreport.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            btnMonthlyRreport.Size = new Size(355, 145);
+            btnMonthlyRreport.Size = new Size(284, 116);
             btnMonthlyRreport.TabIndex = 2;
             btnMonthlyRreport.Text = "BÁO CÁO THÁNG";
             // 
@@ -186,13 +182,12 @@
             btnRoomResearch.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnRoomResearch.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnRoomResearch.FillColor = Color.SlateBlue;
-            btnRoomResearch.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRoomResearch.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btnRoomResearch.ForeColor = Color.White;
-            btnRoomResearch.Location = new Point(936, 4);
-            btnRoomResearch.Margin = new Padding(4);
+            btnRoomResearch.Location = new Point(749, 3);
             btnRoomResearch.Name = "btnRoomResearch";
             btnRoomResearch.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            btnRoomResearch.Size = new Size(355, 145);
+            btnRoomResearch.Size = new Size(284, 116);
             btnRoomResearch.TabIndex = 1;
             btnRoomResearch.Text = "TÌM KIẾM PHÒNG";
             // 
@@ -206,13 +201,12 @@
             btnAddRoom.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnAddRoom.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnAddRoom.FillColor = Color.SlateBlue;
-            btnAddRoom.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAddRoom.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btnAddRoom.ForeColor = Color.White;
-            btnAddRoom.Location = new Point(29, 4);
-            btnAddRoom.Margin = new Padding(4);
+            btnAddRoom.Location = new Point(23, 3);
             btnAddRoom.Name = "btnAddRoom";
             btnAddRoom.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            btnAddRoom.Size = new Size(355, 145);
+            btnAddRoom.Size = new Size(284, 116);
             btnAddRoom.TabIndex = 0;
             btnAddRoom.Text = "THÊM PHÒNG";
             btnAddRoom.Click += btnAddRoom_Click;
@@ -220,21 +214,38 @@
             // panel2
             // 
             panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(uC_RentRoom1);
             panel2.Controls.Add(uC_CheckOut1);
             panel2.Controls.Add(uC_AddRoom1);
-            panel2.Location = new Point(44, 228);
-            panel2.Margin = new Padding(4);
+            panel2.Location = new Point(35, 182);
             panel2.Name = "panel2";
-            panel2.Size = new Size(2352, 1064);
+            panel2.Size = new Size(1882, 852);
             panel2.TabIndex = 3;
+            // 
+            // uC_RentRoom1
+            // 
+            uC_RentRoom1.BackColor = Color.White;
+            uC_RentRoom1.Location = new Point(-2, -2);
+            uC_RentRoom1.Name = "uC_RentRoom1";
+            uC_RentRoom1.Size = new Size(2352, 1065);
+            uC_RentRoom1.TabIndex = 2;
+            // 
+            // uC_CheckOut1
+            // 
+            uC_CheckOut1.BackColor = Color.White;
+            uC_CheckOut1.Location = new Point(2, -2);
+            uC_CheckOut1.Margin = new Padding(2, 2, 2, 2);
+            uC_CheckOut1.Name = "uC_CheckOut1";
+            uC_CheckOut1.Size = new Size(2258, 1022);
+            uC_CheckOut1.TabIndex = 1;
             // 
             // uC_AddRoom1
             // 
             uC_AddRoom1.BackColor = Color.White;
-            uC_AddRoom1.Location = new Point(14, 5);
-            uC_AddRoom1.Margin = new Padding(5);
+            uC_AddRoom1.Location = new Point(11, 4);
+            uC_AddRoom1.Margin = new Padding(4);
             uC_AddRoom1.Name = "uC_AddRoom1";
-            uC_AddRoom1.Size = new Size(2940, 1331);
+            uC_AddRoom1.Size = new Size(2352, 1065);
             uC_AddRoom1.TabIndex = 0;
             uC_AddRoom1.Load += uC_AddRoom1_Load;
             // 
@@ -242,10 +253,9 @@
             // 
             panelMoving.BackColor = Color.FromArgb(0, 192, 192);
             panelMoving.BorderStyle = BorderStyle.FixedSingle;
-            panelMoving.Location = new Point(132, 189);
-            panelMoving.Margin = new Padding(4);
+            panelMoving.Location = new Point(466, 151);
             panelMoving.Name = "panelMoving";
-            panelMoving.Size = new Size(351, 12);
+            panelMoving.Size = new Size(281, 10);
             panelMoving.TabIndex = 4;
             panelMoving.Paint += panelMoving_Paint;
             // 
@@ -253,31 +263,22 @@
             // 
             guna2Elipse1.TargetControl = this;
             // 
-            // uC_CheckOut1
-            // 
-            uC_CheckOut1.BackColor = Color.White;
-            uC_CheckOut1.Location = new Point(3, -2);
-            uC_CheckOut1.Name = "uC_CheckOut1";
-            uC_CheckOut1.Size = new Size(2823, 1278);
-            uC_CheckOut1.TabIndex = 1;
-            // 
             // guna2Elipse2
             // 
             guna2Elipse2.TargetControl = this;
             // 
             // DashBoard
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(132, 112, 255);
-            ClientSize = new Size(1946, 1106);
+            ClientSize = new Size(1554, 882);
             Controls.Add(panelMoving);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(btnMinisize);
             Controls.Add(btnExit);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4);
             Name = "DashBoard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "DashBoard";
@@ -305,5 +306,6 @@
         private All_user_control.UC_AddRoom uC_AddRoom1;
         private All_user_control.UC_CheckOut uC_CheckOut1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private All_user_control.UC_RentRoom uC_RentRoom1;
     }
 }
