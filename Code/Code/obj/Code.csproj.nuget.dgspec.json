@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\OneDrive\\Máy tính\\MemNhomBon\\App_QuanLyKhachSan\\App_QuanLyKhachSan\\Code\\Code\\Code.csproj": {}
+    "D:\\DEV\\NMCNPM\\Code\\Code\\Code.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\OneDrive\\Máy tính\\MemNhomBon\\App_QuanLyKhachSan\\App_QuanLyKhachSan\\Code\\Code\\Code.csproj": {
+    "D:\\DEV\\NMCNPM\\Code\\Code\\Code.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\OneDrive\\Máy tính\\MemNhomBon\\App_QuanLyKhachSan\\App_QuanLyKhachSan\\Code\\Code\\Code.csproj",
+        "projectUniqueName": "D:\\DEV\\NMCNPM\\Code\\Code\\Code.csproj",
         "projectName": "Code",
-        "projectPath": "C:\\Users\\Lenovo\\OneDrive\\Máy tính\\MemNhomBon\\App_QuanLyKhachSan\\App_QuanLyKhachSan\\Code\\Code\\Code.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\OneDrive\\Máy tính\\MemNhomBon\\App_QuanLyKhachSan\\App_QuanLyKhachSan\\Code\\Code\\obj\\",
+        "projectPath": "D:\\DEV\\NMCNPM\\Code\\Code\\Code.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\DEV\\NMCNPM\\Code\\Code\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0-windows"
+          "net7.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0-windows7.0": {
-            "targetAlias": "net8.0-windows",
+          "net7.0-windows7.0": {
+            "targetAlias": "net7.0-windows",
             "projectReferences": {}
           }
         },
@@ -34,16 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net8.0-windows7.0": {
-          "targetAlias": "net8.0-windows",
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
           "dependencies": {
             "Guna.UI2.WinForms": {
               "target": "Package",
@@ -69,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
