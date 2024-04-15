@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "nhllGDU/f1xYb3Sr3wjjyx2kG0eydPoAeczn8XfV2YZCdpnnqrjlbj2Luo2B3lKfj9C0X1ihDJPUmWM/36jHJQ==",
+  "dgSpecHash": "kiIxPCajbCw4Uy+upNE4xoP0i+35GYlncV4nFF1DdDBiN/hpOiy/XoRla+/RHDDDQzPBgWWDfDHI/T1Q5VeUsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\OneDrive\\Máy tính\\MemNhomBon\\App_QuanLyKhachSan\\App_QuanLyKhachSan\\Code\\Code\\Code.csproj",
+  "projectFilePath": "D:\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Tài liệu\\GitHub\\SE104\\Code\\Code\\Code.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Lenovo\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
