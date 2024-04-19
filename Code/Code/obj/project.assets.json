@@ -151,11 +151,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\UIT_HK4\\SE104\\Code\\Code\\Code.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\lananh2905\\SE104\\Code\\Code\\Code.csproj",
       "projectName": "Code",
-      "projectPath": "d:\\UIT_HK4\\SE104\\Code\\Code\\Code.csproj",
+      "projectPath": "C:\\Users\\Admin\\Source\\Repos\\lananh2905\\SE104\\Code\\Code\\Code.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "d:\\UIT_HK4\\SE104\\Code\\Code\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Source\\Repos\\lananh2905\\SE104\\Code\\Code\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -239,13 +239,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file d:\\UIT_HK4\\SE104\\Code\\Code\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

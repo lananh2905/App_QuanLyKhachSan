@@ -80,7 +80,7 @@
             btnCheckOut.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnCheckOut.ForeColor = Color.Black;
             btnCheckOut.Location = new Point(1248, 572);
-            btnCheckOut.Margin = new Padding(2, 2, 2, 2);
+            btnCheckOut.Margin = new Padding(2);
             btnCheckOut.Name = "btnCheckOut";
             btnCheckOut.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnCheckOut.Size = new Size(167, 44);
@@ -94,7 +94,7 @@
             txtCheckOutDate.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtCheckOutDate.Format = DateTimePickerFormat.Short;
             txtCheckOutDate.Location = new Point(890, 572);
-            txtCheckOutDate.Margin = new Padding(2, 2, 2, 2);
+            txtCheckOutDate.Margin = new Padding(2);
             txtCheckOutDate.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             txtCheckOutDate.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             txtCheckOutDate.Name = "txtCheckOutDate";
@@ -213,7 +213,7 @@
             guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
             guna2DataGridView1.Location = new Point(72, 195);
-            guna2DataGridView1.Margin = new Padding(2, 2, 2, 2);
+            guna2DataGridView1.Margin = new Padding(2);
             guna2DataGridView1.Name = "guna2DataGridView1";
             guna2DataGridView1.RowHeadersVisible = false;
             guna2DataGridView1.RowHeadersWidth = 62;
@@ -308,9 +308,9 @@
             Controls.Add(txtName);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "UC_CheckOut";
-            Size = new Size(1506, 682);
+            Size = new Size(1800, 850);
             Load += UC_CheckOut__Load;
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             ResumeLayout(false);

@@ -30,21 +30,21 @@ namespace Code
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             btnExit = new Guna.UI2.WinForms.Guna2Button();
             btnMinisize = new Guna.UI2.WinForms.Guna2Button();
             panel1 = new Panel();
@@ -54,21 +54,24 @@ namespace Code
             btnRoomResearch = new Guna.UI2.WinForms.Guna2Button();
             btnAddRoom = new Guna.UI2.WinForms.Guna2Button();
             panel2 = new Panel();
+            uC_MonthlyReport1 = new All_user_control.UC_MonthlyReport();
+            uC_SearchRoom1 = new UC_SearchRoom();
             uC_RentRoom1 = new All_user_control.UC_RentRoom();
             uC_CheckOut1 = new All_user_control.UC_CheckOut();
             uC_AddRoom1 = new All_user_control.UC_AddRoom();
-            uC_MonthlyReport1 = new All_user_control.UC_MonthlyReport();
             panelMoving = new Panel();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(components);
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
             // btnExit
             // 
-            btnExit.CustomizableEdges = customizableEdges1;
+            btnExit.CustomizableEdges = customizableEdges15;
             btnExit.DisabledState.BorderColor = Color.DarkGray;
             btnExit.DisabledState.CustomBorderColor = Color.DarkGray;
             btnExit.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -80,14 +83,14 @@ namespace Code
             btnExit.ImageSize = new Size(40, 40);
             btnExit.Location = new Point(-1, -1);
             btnExit.Name = "btnExit";
-            btnExit.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnExit.ShadowDecoration.CustomizableEdges = customizableEdges16;
             btnExit.Size = new Size(58, 52);
             btnExit.TabIndex = 0;
             btnExit.Click += btnExit_Click;
             // 
             // btnMinisize
             // 
-            btnMinisize.CustomizableEdges = customizableEdges3;
+            btnMinisize.CustomizableEdges = customizableEdges17;
             btnMinisize.DisabledState.BorderColor = Color.DarkGray;
             btnMinisize.DisabledState.CustomBorderColor = Color.DarkGray;
             btnMinisize.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -99,7 +102,7 @@ namespace Code
             btnMinisize.ImageSize = new Size(40, 40);
             btnMinisize.Location = new Point(-1, 67);
             btnMinisize.Name = "btnMinisize";
-            btnMinisize.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnMinisize.ShadowDecoration.CustomizableEdges = customizableEdges18;
             btnMinisize.Size = new Size(58, 52);
             btnMinisize.TabIndex = 1;
             // 
@@ -113,14 +116,14 @@ namespace Code
             panel1.Controls.Add(btnAddRoom);
             panel1.Location = new Point(81, 15);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1815, 130);
+            panel1.Size = new Size(1810, 130);
             panel1.TabIndex = 2;
             // 
             // btnRoomRental
             // 
             btnRoomRental.BorderRadius = 18;
             btnRoomRental.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            btnRoomRental.CustomizableEdges = customizableEdges5;
+            btnRoomRental.CustomizableEdges = customizableEdges19;
             btnRoomRental.DisabledState.BorderColor = Color.DarkGray;
             btnRoomRental.DisabledState.CustomBorderColor = Color.DarkGray;
             btnRoomRental.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -130,7 +133,7 @@ namespace Code
             btnRoomRental.ForeColor = Color.White;
             btnRoomRental.Location = new Point(383, 3);
             btnRoomRental.Name = "btnRoomRental";
-            btnRoomRental.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnRoomRental.ShadowDecoration.CustomizableEdges = customizableEdges20;
             btnRoomRental.Size = new Size(284, 116);
             btnRoomRental.TabIndex = 4;
             btnRoomRental.Text = "THUÊ PHÒNG";
@@ -140,7 +143,7 @@ namespace Code
             // 
             btnCheckOut.BorderRadius = 18;
             btnCheckOut.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            btnCheckOut.CustomizableEdges = customizableEdges7;
+            btnCheckOut.CustomizableEdges = customizableEdges21;
             btnCheckOut.DisabledState.BorderColor = Color.DarkGray;
             btnCheckOut.DisabledState.CustomBorderColor = Color.DarkGray;
             btnCheckOut.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -150,7 +153,7 @@ namespace Code
             btnCheckOut.ForeColor = Color.White;
             btnCheckOut.Location = new Point(1113, 5);
             btnCheckOut.Name = "btnCheckOut";
-            btnCheckOut.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnCheckOut.ShadowDecoration.CustomizableEdges = customizableEdges22;
             btnCheckOut.Size = new Size(284, 116);
             btnCheckOut.TabIndex = 3;
             btnCheckOut.Text = "THANH TOÁN";
@@ -160,7 +163,7 @@ namespace Code
             // 
             btnMonthlyRreport.BorderRadius = 18;
             btnMonthlyRreport.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            btnMonthlyRreport.CustomizableEdges = customizableEdges9;
+            btnMonthlyRreport.CustomizableEdges = customizableEdges23;
             btnMonthlyRreport.DisabledState.BorderColor = Color.DarkGray;
             btnMonthlyRreport.DisabledState.CustomBorderColor = Color.DarkGray;
             btnMonthlyRreport.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -170,7 +173,7 @@ namespace Code
             btnMonthlyRreport.ForeColor = Color.White;
             btnMonthlyRreport.Location = new Point(1455, 7);
             btnMonthlyRreport.Name = "btnMonthlyRreport";
-            btnMonthlyRreport.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnMonthlyRreport.ShadowDecoration.CustomizableEdges = customizableEdges24;
             btnMonthlyRreport.Size = new Size(284, 116);
             btnMonthlyRreport.TabIndex = 2;
             btnMonthlyRreport.Text = "BÁO CÁO THÁNG";
@@ -180,7 +183,7 @@ namespace Code
             // 
             btnRoomResearch.BorderRadius = 18;
             btnRoomResearch.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            btnRoomResearch.CustomizableEdges = customizableEdges11;
+            btnRoomResearch.CustomizableEdges = customizableEdges25;
             btnRoomResearch.DisabledState.BorderColor = Color.DarkGray;
             btnRoomResearch.DisabledState.CustomBorderColor = Color.DarkGray;
             btnRoomResearch.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -190,16 +193,17 @@ namespace Code
             btnRoomResearch.ForeColor = Color.White;
             btnRoomResearch.Location = new Point(749, 3);
             btnRoomResearch.Name = "btnRoomResearch";
-            btnRoomResearch.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btnRoomResearch.ShadowDecoration.CustomizableEdges = customizableEdges26;
             btnRoomResearch.Size = new Size(284, 116);
             btnRoomResearch.TabIndex = 1;
             btnRoomResearch.Text = "TÌM KIẾM PHÒNG";
+            btnRoomResearch.Click += btnRoomResearch_Click;
             // 
             // btnAddRoom
             // 
             btnAddRoom.BorderRadius = 18;
             btnAddRoom.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            btnAddRoom.CustomizableEdges = customizableEdges13;
+            btnAddRoom.CustomizableEdges = customizableEdges27;
             btnAddRoom.DisabledState.BorderColor = Color.DarkGray;
             btnAddRoom.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAddRoom.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -209,7 +213,7 @@ namespace Code
             btnAddRoom.ForeColor = Color.White;
             btnAddRoom.Location = new Point(23, 3);
             btnAddRoom.Name = "btnAddRoom";
-            btnAddRoom.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btnAddRoom.ShadowDecoration.CustomizableEdges = customizableEdges28;
             btnAddRoom.Size = new Size(284, 116);
             btnAddRoom.TabIndex = 0;
             btnAddRoom.Text = "THÊM PHÒNG";
@@ -217,29 +221,50 @@ namespace Code
             // 
             // panel2
             // 
+            panel2.BackColor = Color.White;
             panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(uC_MonthlyReport1);
+            panel2.Controls.Add(uC_SearchRoom1);
             panel2.Controls.Add(uC_RentRoom1);
             panel2.Controls.Add(uC_CheckOut1);
             panel2.Controls.Add(uC_AddRoom1);
-            panel2.Controls.Add(uC_MonthlyReport1);
             panel2.Location = new Point(35, 182);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1882, 852);
+            panel2.Size = new Size(1850, 850);
             panel2.TabIndex = 3;
+            panel2.Paint += panel2_Paint;
+            // 
+            // uC_MonthlyReport1
+            // 
+            uC_MonthlyReport1.BackColor = Color.White;
+            uC_MonthlyReport1.Location = new Point(4, 4);
+            uC_MonthlyReport1.Name = "uC_MonthlyReport1";
+            uC_MonthlyReport1.Size = new Size(1800, 800);
+            uC_MonthlyReport1.TabIndex = 5;
+            // 
+            // uC_SearchRoom1
+            // 
+            uC_SearchRoom1.BackColor = Color.White;
+            uC_SearchRoom1.Location = new Point(4, 4);
+            uC_SearchRoom1.Margin = new Padding(2);
+            uC_SearchRoom1.Name = "uC_SearchRoom1";
+            uC_SearchRoom1.Size = new Size(1800, 850);
+            uC_SearchRoom1.TabIndex = 6;
+            uC_SearchRoom1.Load += uC_SearchRoom1_Load;
             // 
             // uC_RentRoom1
             // 
             uC_RentRoom1.BackColor = Color.White;
-            uC_RentRoom1.Location = new Point(-2, -2);
+            uC_RentRoom1.Location = new Point(4, 4);
             uC_RentRoom1.Name = "uC_RentRoom1";
-            uC_RentRoom1.Size = new Size(2352, 1065);
+            uC_RentRoom1.Size = new Size(1800, 800);
             uC_RentRoom1.TabIndex = 2;
             // 
             // uC_CheckOut1
             // 
             uC_CheckOut1.BackColor = Color.White;
-            uC_CheckOut1.Location = new Point(2, -2);
-            uC_CheckOut1.Margin = new Padding(2, 2, 2, 2);
+            uC_CheckOut1.Location = new Point(4, 4);
+            uC_CheckOut1.Margin = new Padding(2);
             uC_CheckOut1.Name = "uC_CheckOut1";
             uC_CheckOut1.Size = new Size(2258, 1022);
             uC_CheckOut1.TabIndex = 1;
@@ -247,25 +272,17 @@ namespace Code
             // uC_AddRoom1
             // 
             uC_AddRoom1.BackColor = Color.White;
-            uC_AddRoom1.Location = new Point(11, 4);
+            uC_AddRoom1.Location = new Point(4, 4);
             uC_AddRoom1.Margin = new Padding(4);
             uC_AddRoom1.Name = "uC_AddRoom1";
-            uC_AddRoom1.Size = new Size(2352, 1065);
+            uC_AddRoom1.Size = new Size(1800, 800);
             uC_AddRoom1.TabIndex = 0;
             uC_AddRoom1.Load += uC_AddRoom1_Load;
-            // uC_MonthlyReport1
-            // 
-            uC_MonthlyReport1.BackColor = Color.White;
-            uC_MonthlyReport1.Location = new Point(-2, -2);
-            uC_MonthlyReport1.Name = "uC_MonthlyReport1";
-            uC_MonthlyReport1.Size = new Size(1882, 852);
-            uC_MonthlyReport1.TabIndex = 0;
             // 
             // panelMoving
             // 
             panelMoving.BackColor = Color.FromArgb(0, 192, 192);
             panelMoving.BorderStyle = BorderStyle.FixedSingle;
-            panelMoving.Location = new Point(466, 151);
             panelMoving.Location = new Point(106, 151);
             panelMoving.Name = "panelMoving";
             panelMoving.Size = new Size(281, 10);
@@ -274,15 +291,28 @@ namespace Code
             // 
             // guna2Elipse1
             // 
+            guna2Elipse1.BorderRadius = 30;
             guna2Elipse1.TargetControl = this;
             // 
             // guna2Elipse2
             // 
+            guna2Elipse2.BorderRadius = 30;
             guna2Elipse2.TargetControl = this;
             // 
             // guna2Elipse3
             // 
+            guna2Elipse3.BorderRadius = 30;
             guna2Elipse3.TargetControl = this;
+            // 
+            // guna2Elipse4
+            // 
+            guna2Elipse4.BorderRadius = 30;
+            guna2Elipse4.TargetControl = this;
+            // 
+            // guna2Elipse5
+            // 
+            guna2Elipse5.BorderRadius = 30;
+            guna2Elipse5.TargetControl = this;
             // 
             // DashBoard
             // 
@@ -325,7 +355,9 @@ namespace Code
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private All_user_control.UC_RentRoom uC_RentRoom1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private UC_SearchRoom uC_SearchRoom1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
         private All_user_control.UC_MonthlyReport uC_MonthlyReport1;
-        private EventHandler btnMonthlyRreport_Click;
     }
 }

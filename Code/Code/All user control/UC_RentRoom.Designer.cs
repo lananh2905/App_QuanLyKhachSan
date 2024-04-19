@@ -392,7 +392,7 @@
             Controls.Add(txtCustomerName);
             Controls.Add(guna2HtmlLabel2);
             Name = "UC_RentRoom";
-            Size = new Size(1882, 852);
+            Size = new Size(1800, 850);
             ResumeLayout(false);
             PerformLayout();
         }

@@ -61,7 +61,7 @@ namespace Code.All_user_control
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Font = new Font("Century", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2HtmlLabel1.Font = new Font("Century", 18F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel1.ForeColor = Color.Black;
             guna2HtmlLabel1.Location = new Point(79, 59);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
@@ -77,7 +77,7 @@ namespace Code.All_user_control
             guna2DataGridView1.BorderStyle = BorderStyle.Fixed3D;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             dataGridViewCellStyle2.ForeColor = Color.White;
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
@@ -87,7 +87,7 @@ namespace Code.All_user_control
             guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
@@ -98,6 +98,7 @@ namespace Code.All_user_control
             guna2DataGridView1.Name = "guna2DataGridView1";
             guna2DataGridView1.RowHeadersVisible = false;
             guna2DataGridView1.RowHeadersWidth = 51;
+            guna2DataGridView1.RowTemplate.Height = 29;
             guna2DataGridView1.Size = new Size(830, 565);
             guna2DataGridView1.TabIndex = 1;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
@@ -109,14 +110,14 @@ namespace Code.All_user_control
             guna2DataGridView1.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
             guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
             guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
+            guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
             guna2DataGridView1.ThemeStyle.ReadOnly = false;
             guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            guna2DataGridView1.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
+            guna2DataGridView1.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
             guna2DataGridView1.ThemeStyle.RowsStyle.Height = 29;
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
@@ -125,7 +126,7 @@ namespace Code.All_user_control
             // guna2HtmlLabel2
             // 
             guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel2.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             guna2HtmlLabel2.ForeColor = Color.Black;
             guna2HtmlLabel2.Location = new Point(1110, 122);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
@@ -142,7 +143,7 @@ namespace Code.All_user_control
             txtRoomNo.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             txtRoomNo.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtRoomNo.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtRoomNo.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtRoomNo.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtRoomNo.ForeColor = Color.Black;
             txtRoomNo.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtRoomNo.Location = new Point(1110, 153);
@@ -158,7 +159,7 @@ namespace Code.All_user_control
             // guna2HtmlLabel3
             // 
             guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel3.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             guna2HtmlLabel3.ForeColor = Color.Black;
             guna2HtmlLabel3.Location = new Point(1110, 258);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
@@ -175,20 +176,21 @@ namespace Code.All_user_control
             txtRoomType.DropDownStyle = ComboBoxStyle.DropDownList;
             txtRoomType.FocusedColor = Color.FromArgb(94, 148, 255);
             txtRoomType.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtRoomType.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtRoomType.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtRoomType.ForeColor = Color.Black;
             txtRoomType.ItemHeight = 30;
-            txtRoomType.Items.AddRange(new object[] { "A", "B", "C" });
+            txtRoomType.Items.AddRange(new object[] { "Phòng đơn", "Phòng đôi", "Phòng gia đình" });
             txtRoomType.Location = new Point(1110, 297);
             txtRoomType.Name = "txtRoomType";
             txtRoomType.ShadowDecoration.CustomizableEdges = customizableEdges4;
             txtRoomType.Size = new Size(664, 36);
             txtRoomType.TabIndex = 5;
+            txtRoomType.SelectedIndexChanged += txtRoomType_SelectedIndexChanged;
             // 
             // txtPrice
             // 
             txtPrice.BackColor = Color.Transparent;
-            txtPrice.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPrice.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtPrice.ForeColor = Color.Black;
             txtPrice.Location = new Point(1110, 525);
             txtPrice.Name = "txtPrice";
@@ -205,7 +207,7 @@ namespace Code.All_user_control
             guna2TextBox2.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             guna2TextBox2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2TextBox2.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             guna2TextBox2.ForeColor = Color.Black;
             guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox2.Location = new Point(1110, 556);
@@ -226,10 +228,10 @@ namespace Code.All_user_control
             txtBed.DropDownStyle = ComboBoxStyle.DropDownList;
             txtBed.FocusedColor = Color.FromArgb(94, 148, 255);
             txtBed.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtBed.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtBed.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtBed.ForeColor = Color.Black;
             txtBed.ItemHeight = 30;
-            txtBed.Items.AddRange(new object[] { "Single room", "Twin room", "Family room" });
+            txtBed.Items.AddRange(new object[] { "1 giường đơn", "1 giường đôi", "2 giường đôi" });
             txtBed.Location = new Point(1110, 424);
             txtBed.Name = "txtBed";
             txtBed.ShadowDecoration.CustomizableEdges = customizableEdges8;
@@ -239,7 +241,7 @@ namespace Code.All_user_control
             // guna2HtmlLabel5
             // 
             guna2HtmlLabel5.BackColor = Color.Transparent;
-            guna2HtmlLabel5.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel5.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             guna2HtmlLabel5.ForeColor = Color.Black;
             guna2HtmlLabel5.Location = new Point(1110, 384);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
@@ -261,7 +263,7 @@ namespace Code.All_user_control
             btnAddRoom.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnAddRoom.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnAddRoom.FillColor = Color.White;
-            btnAddRoom.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAddRoom.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnAddRoom.ForeColor = Color.Black;
             btnAddRoom.Location = new Point(1591, 674);
             btnAddRoom.Name = "btnAddRoom";
@@ -273,7 +275,7 @@ namespace Code.All_user_control
             // 
             // guna2Elipse1
             // 
-            guna2Elipse1.BorderRadius = 5;
+            guna2Elipse1.BorderRadius = 30;
             guna2Elipse1.TargetControl = this;
             // 
             // UC_AddRoom
@@ -292,7 +294,8 @@ namespace Code.All_user_control
             Controls.Add(guna2DataGridView1);
             Controls.Add(guna2HtmlLabel1);
             Name = "UC_AddRoom";
-            Size = new Size(1882, 852);
+            Size = new Size(1800, 850);
+            Load += UC_AddRoom_Load;
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

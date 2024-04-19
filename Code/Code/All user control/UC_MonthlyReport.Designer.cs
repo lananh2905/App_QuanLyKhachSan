@@ -239,7 +239,7 @@
             Controls.Add(label5);
             Controls.Add(label1);
             Name = "UC_MonthlyReport";
-            Size = new Size(1506, 682);
+            Size = new Size(1800, 850);
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

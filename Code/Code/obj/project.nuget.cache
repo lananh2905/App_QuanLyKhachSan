@@ -1,23 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "1cDPLgAIuDesOdfxNHLW77IAwPwLA2d+R6UnXTxsDesY9WAV3fBDxLsdq4eQMNpjLvlLC0da5DAlJE+mSrMxlA==",
+  "dgSpecHash": "nPOl9Dq0ThJRyLlKRWFiyjmrqXyC9CAr4iBmOz1Qm+3ZWEDHNeKG5A3nahsXzWc7daqs9+/h4FPsIBAYUMWEjw==",
   "success": true,
-  "projectFilePath": "d:\\UIT_HK4\\SE104\\Code\\Code\\Code.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Source\\Repos\\lananh2905\\SE104\\Code\\Code\\Code.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file d:\\UIT_HK4\\SE104\\Code\\Code\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
