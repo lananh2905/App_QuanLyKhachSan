@@ -77,12 +77,13 @@
             btnCheckOut.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnCheckOut.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnCheckOut.FillColor = Color.White;
-            btnCheckOut.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCheckOut.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnCheckOut.ForeColor = Color.Black;
-            btnCheckOut.Location = new Point(1560, 715);
+            btnCheckOut.Location = new Point(1248, 572);
+            btnCheckOut.Margin = new Padding(2, 2, 2, 2);
             btnCheckOut.Name = "btnCheckOut";
             btnCheckOut.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnCheckOut.Size = new Size(209, 55);
+            btnCheckOut.Size = new Size(167, 44);
             btnCheckOut.TabIndex = 22;
             btnCheckOut.Text = "Thanh Toán";
             // 
@@ -90,36 +91,39 @@
             // 
             txtCheckOutDate.Checked = true;
             txtCheckOutDate.CustomizableEdges = customizableEdges3;
-            txtCheckOutDate.Font = new Font("Segoe UI", 9F);
+            txtCheckOutDate.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtCheckOutDate.Format = DateTimePickerFormat.Short;
-            txtCheckOutDate.Location = new Point(1113, 715);
+            txtCheckOutDate.Location = new Point(890, 572);
+            txtCheckOutDate.Margin = new Padding(2, 2, 2, 2);
             txtCheckOutDate.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             txtCheckOutDate.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             txtCheckOutDate.Name = "txtCheckOutDate";
             txtCheckOutDate.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtCheckOutDate.Size = new Size(300, 55);
+            txtCheckOutDate.Size = new Size(240, 44);
             txtCheckOutDate.TabIndex = 21;
             txtCheckOutDate.Value = new DateTime(2024, 4, 10, 16, 39, 0, 193);
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Italic);
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point);
             label5.ForeColor = Color.Black;
-            label5.Location = new Point(1113, 655);
+            label5.Location = new Point(890, 524);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(201, 32);
+            label5.Size = new Size(170, 28);
             label5.TabIndex = 20;
             label5.Text = "Ngày Thanh Toán";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Italic);
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(110, 655);
+            label4.Location = new Point(88, 524);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(52, 32);
+            label4.Size = new Size(44, 28);
             label4.TabIndex = 19;
             label4.Text = "Tên";
             // 
@@ -132,18 +136,18 @@
             txtRoom.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             txtRoom.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtRoom.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtRoom.Font = new Font("Segoe UI", 9F);
+            txtRoom.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtRoom.ForeColor = Color.Black;
             txtRoom.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtRoom.Location = new Point(630, 715);
-            txtRoom.Margin = new Padding(4, 5, 4, 5);
+            txtRoom.Location = new Point(504, 572);
+            txtRoom.Margin = new Padding(3, 4, 3, 4);
             txtRoom.Name = "txtRoom";
             txtRoom.PasswordChar = '\0';
             txtRoom.PlaceholderForeColor = Color.DimGray;
             txtRoom.PlaceholderText = "Nhập Số Phòng";
             txtRoom.SelectedText = "";
             txtRoom.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtRoom.Size = new Size(402, 55);
+            txtRoom.Size = new Size(322, 44);
             txtRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             txtRoom.TabIndex = 18;
             // 
@@ -156,11 +160,11 @@
             guna2TextBox3.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             guna2TextBox3.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             guna2TextBox3.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Font = new Font("Segoe UI", 9F);
+            guna2TextBox3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2TextBox3.ForeColor = Color.Black;
             guna2TextBox3.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Location = new Point(110, 715);
-            guna2TextBox3.Margin = new Padding(4, 5, 4, 5);
+            guna2TextBox3.Location = new Point(88, 572);
+            guna2TextBox3.Margin = new Padding(3, 4, 3, 4);
             guna2TextBox3.Name = "guna2TextBox3";
             guna2TextBox3.PasswordChar = '\0';
             guna2TextBox3.PlaceholderForeColor = Color.DimGray;
@@ -168,18 +172,19 @@
             guna2TextBox3.ReadOnly = true;
             guna2TextBox3.SelectedText = "";
             guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2TextBox3.Size = new Size(439, 55);
+            guna2TextBox3.Size = new Size(351, 44);
             guna2TextBox3.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             guna2TextBox3.TabIndex = 17;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Italic);
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(630, 655);
+            label3.Location = new Point(504, 524);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(112, 32);
+            label3.Size = new Size(95, 28);
             label3.TabIndex = 16;
             label3.Text = "Số Phòng";
             // 
@@ -190,7 +195,7 @@
             guna2DataGridView1.BorderStyle = BorderStyle.Fixed3D;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             dataGridViewCellStyle2.ForeColor = Color.White;
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
@@ -200,18 +205,20 @@
             guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.Location = new Point(90, 244);
+            guna2DataGridView1.Location = new Point(72, 195);
+            guna2DataGridView1.Margin = new Padding(2, 2, 2, 2);
             guna2DataGridView1.Name = "guna2DataGridView1";
             guna2DataGridView1.RowHeadersVisible = false;
             guna2DataGridView1.RowHeadersWidth = 62;
-            guna2DataGridView1.Size = new Size(1732, 336);
+            guna2DataGridView1.RowTemplate.Height = 33;
+            guna2DataGridView1.Size = new Size(1386, 269);
             guna2DataGridView1.TabIndex = 15;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -222,14 +229,14 @@
             guna2DataGridView1.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
             guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
             guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
+            guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
             guna2DataGridView1.ThemeStyle.ReadOnly = false;
             guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            guna2DataGridView1.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
+            guna2DataGridView1.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
             guna2DataGridView1.ThemeStyle.RowsStyle.Height = 33;
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
@@ -244,39 +251,41 @@
             txtName.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             txtName.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtName.Font = new Font("Segoe UI", 9F);
+            txtName.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtName.ForeColor = Color.Black;
             txtName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtName.Location = new Point(670, 149);
-            txtName.Margin = new Padding(4, 5, 4, 5);
+            txtName.Location = new Point(536, 119);
+            txtName.Margin = new Padding(3, 4, 3, 4);
             txtName.Name = "txtName";
             txtName.PasswordChar = '\0';
             txtName.PlaceholderForeColor = Color.DimGray;
             txtName.PlaceholderText = "Nhập Tên Khách Hàng";
             txtName.SelectedText = "";
             txtName.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtName.Size = new Size(439, 55);
+            txtName.Size = new Size(351, 44);
             txtName.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             txtName.TabIndex = 14;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Italic);
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(670, 112);
+            label2.Location = new Point(536, 90);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(114, 32);
+            label2.Size = new Size(95, 28);
             label2.TabIndex = 13;
             label2.Text = "Tìm Kiếm";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(61, 83);
+            label1.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(49, 66);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(218, 43);
+            label1.Size = new Size(182, 37);
             label1.TabIndex = 12;
             label1.Text = "Thanh Toán";
             // 
@@ -286,7 +295,7 @@
             // 
             // UC_CheckOut
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(btnCheckOut);
             Controls.Add(txtCheckOutDate);
@@ -299,8 +308,9 @@
             Controls.Add(txtName);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "UC_CheckOut";
-            Size = new Size(1882, 852);
+            Size = new Size(1506, 682);
             Load += UC_CheckOut__Load;
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             ResumeLayout(false);

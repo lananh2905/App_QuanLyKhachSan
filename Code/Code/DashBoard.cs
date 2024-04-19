@@ -35,6 +35,7 @@ namespace Code
             uC_AddRoom1.Visible = false;
             uC_CheckOut1.Visible = false;
             uC_RentRoom1.Visible = false;
+            uC_MonthlyReport1.Visible = false;
             btnAddRoom.PerformClick();
         }
 
@@ -65,6 +66,7 @@ namespace Code
             panelMoving.Left = btnRoomRental.Left + 60;
             uC_RentRoom1.Visible = true;
             uC_RentRoom1.BringToFront();
-        }
+        
     }
+}
 }

@@ -1,4 +1,5 @@
-﻿namespace Code
+﻿
+namespace Code
 {
     partial class DashBoard
     {
@@ -56,9 +57,11 @@
             uC_RentRoom1 = new All_user_control.UC_RentRoom();
             uC_CheckOut1 = new All_user_control.UC_CheckOut();
             uC_AddRoom1 = new All_user_control.UC_AddRoom();
+            uC_MonthlyReport1 = new All_user_control.UC_MonthlyReport();
             panelMoving = new Panel();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(components);
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -171,6 +174,7 @@
             btnMonthlyRreport.Size = new Size(284, 116);
             btnMonthlyRreport.TabIndex = 2;
             btnMonthlyRreport.Text = "BÁO CÁO THÁNG";
+            btnMonthlyRreport.Click += btnMonthlyRreport_Click;
             // 
             // btnRoomResearch
             // 
@@ -217,6 +221,7 @@
             panel2.Controls.Add(uC_RentRoom1);
             panel2.Controls.Add(uC_CheckOut1);
             panel2.Controls.Add(uC_AddRoom1);
+            panel2.Controls.Add(uC_MonthlyReport1);
             panel2.Location = new Point(35, 182);
             panel2.Name = "panel2";
             panel2.Size = new Size(1882, 852);
@@ -248,12 +253,20 @@
             uC_AddRoom1.Size = new Size(2352, 1065);
             uC_AddRoom1.TabIndex = 0;
             uC_AddRoom1.Load += uC_AddRoom1_Load;
+            // uC_MonthlyReport1
+            // 
+            uC_MonthlyReport1.BackColor = Color.White;
+            uC_MonthlyReport1.Location = new Point(-2, -2);
+            uC_MonthlyReport1.Name = "uC_MonthlyReport1";
+            uC_MonthlyReport1.Size = new Size(1882, 852);
+            uC_MonthlyReport1.TabIndex = 0;
             // 
             // panelMoving
             // 
             panelMoving.BackColor = Color.FromArgb(0, 192, 192);
             panelMoving.BorderStyle = BorderStyle.FixedSingle;
             panelMoving.Location = new Point(466, 151);
+            panelMoving.Location = new Point(106, 151);
             panelMoving.Name = "panelMoving";
             panelMoving.Size = new Size(281, 10);
             panelMoving.TabIndex = 4;
@@ -266,6 +279,10 @@
             // guna2Elipse2
             // 
             guna2Elipse2.TargetControl = this;
+            // 
+            // guna2Elipse3
+            // 
+            guna2Elipse3.TargetControl = this;
             // 
             // DashBoard
             // 
@@ -307,5 +324,8 @@
         private All_user_control.UC_CheckOut uC_CheckOut1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private All_user_control.UC_RentRoom uC_RentRoom1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private All_user_control.UC_MonthlyReport uC_MonthlyReport1;
+        private EventHandler btnMonthlyRreport_Click;
     }
 }
