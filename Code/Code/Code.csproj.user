@@ -7,6 +7,9 @@
     <Compile Update="All user control\UC_CheckOut.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="All user control\UC_RentRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>

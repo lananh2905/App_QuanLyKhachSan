@@ -34,6 +34,7 @@ namespace Code
         {
             uC_AddRoom1.Visible = false;
             uC_CheckOut1.Visible = false;
+            uC_RentRoom1.Visible = false;
             btnAddRoom.PerformClick();
         }
 
@@ -57,6 +58,13 @@ namespace Code
             panelMoving.Left = btnCheckOut.Left + 60;
             uC_CheckOut1.Visible = true;
             uC_CheckOut1.BringToFront();
+        }
+
+        private void btnRoomRental_Click(object sender, EventArgs e)
+        {
+            panelMoving.Left = btnRoomRental.Left + 60;
+            uC_RentRoom1.Visible = true;
+            uC_RentRoom1.BringToFront();
         }
     }
 }
