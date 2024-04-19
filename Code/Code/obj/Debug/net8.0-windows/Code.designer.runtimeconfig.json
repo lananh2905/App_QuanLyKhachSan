@@ -2,13 +2,8 @@
   "runtimeOptions": {
     "tfm": "net8.0",
     "additionalProbingPaths": [
-<<<<<<< HEAD
       "C:\\Users\\ASUS\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\ASUS\\.nuget\\packages"
-=======
-      "C:\\Users\\Admin\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Admin\\.nuget\\packages"
->>>>>>> origin/Hân
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
