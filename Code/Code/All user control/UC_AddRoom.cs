@@ -41,12 +41,13 @@ namespace Code.All_user_control
             }
         }
 
+
         public void clearAll()
         {
             txtRoomNo.Clear();
             txtRoomStatus.SelectedIndex = -1;
             txtLau.SelectedIndex = -1;
-            txtRoomType.Clear();
+            txtRoomType.SelectedIndex = -1;
         }
 
         private void txtRoomType_SelectedIndexChanged(object sender, EventArgs e)
@@ -56,9 +57,18 @@ namespace Code.All_user_control
 
         private void UC_AddRoom_Load(object sender, EventArgs e)
         {
-            query = "select * from PHONG";
+            query = "select MAPH as [Mã phòng], TRANGTHAI as [Trạng thái phòng], LAU as [Lầu], MALPH as [Mã Loại Phòng] from dbo.PHONG";
             DataSet ds = fn.getData(query);
-            guna2DataGridView1.DataSource = ds.Tables[0];
+            dataGridView1.DataSource = ds.Tables[0];
+
+            // Tính tỷ lệ phần trăm chiều rộng cho mỗi cột
+            float[] columnWidths = { 20, 30, 20, 30 }; // Ví dụ, bạn có thể điều chỉnh tỷ lệ này
+            float totalWidth = dataGridView1.Width - dataGridView1.RowHeadersWidth;
+
+            for (int i = 0; i < dataGridView1.Columns.Count; i++)
+            {
+                dataGridView1.Columns[i].Width = (int)(totalWidth * (columnWidths[i] / 100));
+            }
         }
 
         private void txtRoomNo_TextChanged(object sender, EventArgs e)

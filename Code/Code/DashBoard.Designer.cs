@@ -30,21 +30,21 @@ namespace Code
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             btnExit = new Guna.UI2.WinForms.Guna2Button();
             btnMinisize = new Guna.UI2.WinForms.Guna2Button();
             panel1 = new Panel();
@@ -71,7 +71,7 @@ namespace Code
             // 
             // btnExit
             // 
-            btnExit.CustomizableEdges = customizableEdges15;
+            btnExit.CustomizableEdges = customizableEdges1;
             btnExit.DisabledState.BorderColor = Color.DarkGray;
             btnExit.DisabledState.CustomBorderColor = Color.DarkGray;
             btnExit.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -83,14 +83,14 @@ namespace Code
             btnExit.ImageSize = new Size(40, 40);
             btnExit.Location = new Point(-1, -1);
             btnExit.Name = "btnExit";
-            btnExit.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            btnExit.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnExit.Size = new Size(58, 52);
             btnExit.TabIndex = 0;
             btnExit.Click += btnExit_Click;
             // 
             // btnMinisize
             // 
-            btnMinisize.CustomizableEdges = customizableEdges17;
+            btnMinisize.CustomizableEdges = customizableEdges3;
             btnMinisize.DisabledState.BorderColor = Color.DarkGray;
             btnMinisize.DisabledState.CustomBorderColor = Color.DarkGray;
             btnMinisize.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -102,7 +102,7 @@ namespace Code
             btnMinisize.ImageSize = new Size(40, 40);
             btnMinisize.Location = new Point(-1, 67);
             btnMinisize.Name = "btnMinisize";
-            btnMinisize.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            btnMinisize.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnMinisize.Size = new Size(58, 52);
             btnMinisize.TabIndex = 1;
             // 
@@ -123,7 +123,7 @@ namespace Code
             // 
             btnRoomRental.BorderRadius = 18;
             btnRoomRental.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            btnRoomRental.CustomizableEdges = customizableEdges19;
+            btnRoomRental.CustomizableEdges = customizableEdges5;
             btnRoomRental.DisabledState.BorderColor = Color.DarkGray;
             btnRoomRental.DisabledState.CustomBorderColor = Color.DarkGray;
             btnRoomRental.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -133,7 +133,7 @@ namespace Code
             btnRoomRental.ForeColor = Color.White;
             btnRoomRental.Location = new Point(383, 3);
             btnRoomRental.Name = "btnRoomRental";
-            btnRoomRental.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            btnRoomRental.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnRoomRental.Size = new Size(284, 116);
             btnRoomRental.TabIndex = 4;
             btnRoomRental.Text = "THUÊ PHÒNG";
@@ -143,7 +143,7 @@ namespace Code
             // 
             btnCheckOut.BorderRadius = 18;
             btnCheckOut.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            btnCheckOut.CustomizableEdges = customizableEdges21;
+            btnCheckOut.CustomizableEdges = customizableEdges7;
             btnCheckOut.DisabledState.BorderColor = Color.DarkGray;
             btnCheckOut.DisabledState.CustomBorderColor = Color.DarkGray;
             btnCheckOut.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -153,7 +153,7 @@ namespace Code
             btnCheckOut.ForeColor = Color.White;
             btnCheckOut.Location = new Point(1113, 5);
             btnCheckOut.Name = "btnCheckOut";
-            btnCheckOut.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            btnCheckOut.ShadowDecoration.CustomizableEdges = customizableEdges8;
             btnCheckOut.Size = new Size(284, 116);
             btnCheckOut.TabIndex = 3;
             btnCheckOut.Text = "THANH TOÁN";
@@ -163,7 +163,7 @@ namespace Code
             // 
             btnMonthlyRreport.BorderRadius = 18;
             btnMonthlyRreport.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            btnMonthlyRreport.CustomizableEdges = customizableEdges23;
+            btnMonthlyRreport.CustomizableEdges = customizableEdges9;
             btnMonthlyRreport.DisabledState.BorderColor = Color.DarkGray;
             btnMonthlyRreport.DisabledState.CustomBorderColor = Color.DarkGray;
             btnMonthlyRreport.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -173,7 +173,7 @@ namespace Code
             btnMonthlyRreport.ForeColor = Color.White;
             btnMonthlyRreport.Location = new Point(1455, 7);
             btnMonthlyRreport.Name = "btnMonthlyRreport";
-            btnMonthlyRreport.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            btnMonthlyRreport.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnMonthlyRreport.Size = new Size(284, 116);
             btnMonthlyRreport.TabIndex = 2;
             btnMonthlyRreport.Text = "BÁO CÁO THÁNG";
@@ -183,7 +183,7 @@ namespace Code
             // 
             btnRoomResearch.BorderRadius = 18;
             btnRoomResearch.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            btnRoomResearch.CustomizableEdges = customizableEdges25;
+            btnRoomResearch.CustomizableEdges = customizableEdges11;
             btnRoomResearch.DisabledState.BorderColor = Color.DarkGray;
             btnRoomResearch.DisabledState.CustomBorderColor = Color.DarkGray;
             btnRoomResearch.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -193,7 +193,7 @@ namespace Code
             btnRoomResearch.ForeColor = Color.White;
             btnRoomResearch.Location = new Point(749, 3);
             btnRoomResearch.Name = "btnRoomResearch";
-            btnRoomResearch.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            btnRoomResearch.ShadowDecoration.CustomizableEdges = customizableEdges12;
             btnRoomResearch.Size = new Size(284, 116);
             btnRoomResearch.TabIndex = 1;
             btnRoomResearch.Text = "TÌM KIẾM PHÒNG";
@@ -203,7 +203,7 @@ namespace Code
             // 
             btnAddRoom.BorderRadius = 18;
             btnAddRoom.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            btnAddRoom.CustomizableEdges = customizableEdges27;
+            btnAddRoom.CustomizableEdges = customizableEdges13;
             btnAddRoom.DisabledState.BorderColor = Color.DarkGray;
             btnAddRoom.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAddRoom.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -213,7 +213,7 @@ namespace Code
             btnAddRoom.ForeColor = Color.White;
             btnAddRoom.Location = new Point(23, 3);
             btnAddRoom.Name = "btnAddRoom";
-            btnAddRoom.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            btnAddRoom.ShadowDecoration.CustomizableEdges = customizableEdges14;
             btnAddRoom.Size = new Size(284, 116);
             btnAddRoom.TabIndex = 0;
             btnAddRoom.Text = "THÊM PHÒNG";

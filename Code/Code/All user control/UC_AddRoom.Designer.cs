@@ -30,32 +30,33 @@ namespace Code.All_user_control
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtRoomNo = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtRoomStatus = new Guna.UI2.WinForms.Guna2ComboBox();
             txtPrice = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            txtRoomType = new Guna.UI2.WinForms.Guna2TextBox();
             txtLau = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             btnAddRoom = new Guna.UI2.WinForms.Guna2Button();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
+            txtRoomType = new Guna.UI2.WinForms.Guna2ComboBox();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -70,59 +71,6 @@ namespace Code.All_user_control
             guna2HtmlLabel1.Text = "Thêm phòng";
             guna2HtmlLabel1.Click += guna2HtmlLabel1_Click;
             // 
-            // guna2DataGridView1
-            // 
-            dataGridViewCellStyle4.BackColor = Color.White;
-            guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            guna2DataGridView1.BorderStyle = BorderStyle.Fixed3D;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            guna2DataGridView1.ColumnHeadersHeight = 4;
-            guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.White;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
-            guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
-            guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.Location = new Point(80, 153);
-            guna2DataGridView1.Name = "guna2DataGridView1";
-            guna2DataGridView1.RowHeadersVisible = false;
-            guna2DataGridView1.RowHeadersWidth = 51;
-            guna2DataGridView1.RowTemplate.Height = 29;
-            guna2DataGridView1.Size = new Size(830, 565);
-            guna2DataGridView1.TabIndex = 1;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            guna2DataGridView1.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
-            guna2DataGridView1.ThemeStyle.RowsStyle.Height = 29;
-            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            // 
             // guna2HtmlLabel2
             // 
             guna2HtmlLabel2.BackColor = Color.Transparent;
@@ -136,7 +84,7 @@ namespace Code.All_user_control
             // 
             // txtRoomNo
             // 
-            txtRoomNo.CustomizableEdges = customizableEdges11;
+            txtRoomNo.CustomizableEdges = customizableEdges1;
             txtRoomNo.DefaultText = "";
             txtRoomNo.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtRoomNo.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -152,7 +100,7 @@ namespace Code.All_user_control
             txtRoomNo.PasswordChar = '\0';
             txtRoomNo.PlaceholderText = "";
             txtRoomNo.SelectedText = "";
-            txtRoomNo.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtRoomNo.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtRoomNo.Size = new Size(664, 51);
             txtRoomNo.TabIndex = 3;
             txtRoomNo.TextChanged += txtRoomNo_TextChanged;
@@ -171,9 +119,9 @@ namespace Code.All_user_control
             // 
             // txtRoomStatus
             // 
-            txtRoomStatus.AutoCompleteCustomSource.AddRange(new string[] { "Trống", "Không trống" });
+            txtRoomStatus.AutoCompleteCustomSource.AddRange(new string[] { "Trong", "Khong trong" });
             txtRoomStatus.BackColor = Color.Transparent;
-            txtRoomStatus.CustomizableEdges = customizableEdges13;
+            txtRoomStatus.CustomizableEdges = customizableEdges3;
             txtRoomStatus.DrawMode = DrawMode.OwnerDrawFixed;
             txtRoomStatus.DropDownStyle = ComboBoxStyle.DropDownList;
             txtRoomStatus.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -181,10 +129,10 @@ namespace Code.All_user_control
             txtRoomStatus.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtRoomStatus.ForeColor = Color.Black;
             txtRoomStatus.ItemHeight = 30;
-            txtRoomStatus.Items.AddRange(new object[] { "Phòng đơn", "Phòng đôi", "Phòng gia đình" });
+            txtRoomStatus.Items.AddRange(new object[] { "Trống", "Không Trống" });
             txtRoomStatus.Location = new Point(1110, 297);
             txtRoomStatus.Name = "txtRoomStatus";
-            txtRoomStatus.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            txtRoomStatus.ShadowDecoration.CustomizableEdges = customizableEdges4;
             txtRoomStatus.Size = new Size(664, 36);
             txtRoomStatus.TabIndex = 5;
             txtRoomStatus.SelectedIndexChanged += txtRoomType_SelectedIndexChanged;
@@ -200,32 +148,10 @@ namespace Code.All_user_control
             txtPrice.TabIndex = 6;
             txtPrice.Text = "Mã loại phòng";
             // 
-            // txtRoomType
-            // 
-            txtRoomType.CustomizableEdges = customizableEdges15;
-            txtRoomType.DefaultText = "";
-            txtRoomType.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtRoomType.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtRoomType.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtRoomType.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtRoomType.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtRoomType.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtRoomType.ForeColor = Color.Black;
-            txtRoomType.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtRoomType.Location = new Point(1110, 556);
-            txtRoomType.Margin = new Padding(4, 5, 4, 5);
-            txtRoomType.Name = "txtRoomType";
-            txtRoomType.PasswordChar = '\0';
-            txtRoomType.PlaceholderText = "";
-            txtRoomType.SelectedText = "";
-            txtRoomType.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            txtRoomType.Size = new Size(660, 48);
-            txtRoomType.TabIndex = 7;
-            // 
             // txtLau
             // 
             txtLau.BackColor = Color.Transparent;
-            txtLau.CustomizableEdges = customizableEdges17;
+            txtLau.CustomizableEdges = customizableEdges5;
             txtLau.DrawMode = DrawMode.OwnerDrawFixed;
             txtLau.DropDownStyle = ComboBoxStyle.DropDownList;
             txtLau.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -236,7 +162,7 @@ namespace Code.All_user_control
             txtLau.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
             txtLau.Location = new Point(1110, 424);
             txtLau.Name = "txtLau";
-            txtLau.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            txtLau.ShadowDecoration.CustomizableEdges = customizableEdges6;
             txtLau.Size = new Size(661, 36);
             txtLau.TabIndex = 9;
             // 
@@ -259,7 +185,7 @@ namespace Code.All_user_control
             btnAddRoom.BorderThickness = 1;
             btnAddRoom.CheckedState.FillColor = Color.FromArgb(0, 118, 221);
             btnAddRoom.CheckedState.ForeColor = Color.White;
-            btnAddRoom.CustomizableEdges = customizableEdges19;
+            btnAddRoom.CustomizableEdges = customizableEdges7;
             btnAddRoom.DisabledState.BorderColor = Color.DarkGray;
             btnAddRoom.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAddRoom.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -269,7 +195,7 @@ namespace Code.All_user_control
             btnAddRoom.ForeColor = Color.Black;
             btnAddRoom.Location = new Point(1591, 674);
             btnAddRoom.Name = "btnAddRoom";
-            btnAddRoom.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            btnAddRoom.ShadowDecoration.CustomizableEdges = customizableEdges8;
             btnAddRoom.Size = new Size(180, 69);
             btnAddRoom.TabIndex = 10;
             btnAddRoom.Text = "Thêm phòng";
@@ -280,25 +206,87 @@ namespace Code.All_user_control
             guna2Elipse1.BorderRadius = 30;
             guna2Elipse1.TargetControl = this;
             // 
+            // txtRoomType
+            // 
+            txtRoomType.BackColor = Color.Transparent;
+            txtRoomType.CustomizableEdges = customizableEdges9;
+            txtRoomType.DrawMode = DrawMode.OwnerDrawFixed;
+            txtRoomType.DropDownStyle = ComboBoxStyle.DropDownList;
+            txtRoomType.FocusedColor = Color.FromArgb(94, 148, 255);
+            txtRoomType.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtRoomType.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txtRoomType.ForeColor = Color.FromArgb(68, 88, 112);
+            txtRoomType.ItemHeight = 30;
+            txtRoomType.Items.AddRange(new object[] { "LP01", "LP02", "LP03" });
+            txtRoomType.Location = new Point(1110, 558);
+            txtRoomType.Name = "txtRoomType";
+            txtRoomType.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtRoomType.Size = new Size(664, 36);
+            txtRoomType.TabIndex = 12;
+            // 
+            // dataGridView1
+            // 
+            dataGridViewCellStyle1.BackColor = SystemColors.ActiveCaption;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.ControlLight;
+            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
+            dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridView1.BackgroundColor = Color.WhiteSmoke;
+            dataGridView1.BorderStyle = BorderStyle.Fixed3D;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = SystemColors.ActiveCaption;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.ControlLight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = SystemColors.ControlLightLight;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.ControlLight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.GridColor = SystemColors.InfoText;
+            dataGridView1.Location = new Point(79, 122);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Control;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.CellSelect;
+            dataGridView1.Size = new Size(830, 565);
+            dataGridView1.TabIndex = 13;
+            // 
             // UC_AddRoom
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(dataGridView1);
+            Controls.Add(txtRoomType);
             Controls.Add(btnAddRoom);
             Controls.Add(txtLau);
             Controls.Add(guna2HtmlLabel5);
-            Controls.Add(txtRoomType);
             Controls.Add(txtPrice);
             Controls.Add(txtRoomStatus);
             Controls.Add(guna2HtmlLabel3);
             Controls.Add(txtRoomNo);
             Controls.Add(guna2HtmlLabel2);
-            Controls.Add(guna2DataGridView1);
             Controls.Add(guna2HtmlLabel1);
             Name = "UC_AddRoom";
             Size = new Size(1800, 850);
             Load += UC_AddRoom_Load;
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -316,16 +304,16 @@ namespace Code.All_user_control
         #endregion
 
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2TextBox txtRoomNo;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2ComboBox txtRoomStatus;
         private Guna.UI2.WinForms.Guna2HtmlLabel txtPrice;
-        private Guna.UI2.WinForms.Guna2TextBox txtRoomType;
         private Guna.UI2.WinForms.Guna2ComboBox txtLau;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2Button btnAddRoom;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2ComboBox txtRoomType;
+        private DataGridView dataGridView1;
     }
 }

@@ -14,7 +14,7 @@ namespace Code
         protected SqlConnection GetConnection()
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Admin\\Documents\\Database.mdf;Integrated Security=True;Connect Timeout=30";
+            con.ConnectionString = "Data Source=.\\sqlexpress;Initial Catalog=QLKS;Integrated Security=True";
             return con;
         }
 
