@@ -192,7 +192,7 @@
             txtFloor.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtFloor.ForeColor = Color.Black;
             txtFloor.ItemHeight = 30;
-            txtFloor.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
+            txtFloor.Items.AddRange(new object[] { "Thu đổi ngoại tệ", "Cho thuê xe máy", "Đón khách", "Buffet sáng", "Giặt ủi quần áo" });
             txtFloor.Location = new Point(989, 451);
             txtFloor.Name = "txtFloor";
             txtFloor.ShadowDecoration.CustomizableEdges = customizableEdges8;
@@ -207,9 +207,9 @@
             guna2HtmlLabel1.ForeColor = Color.Black;
             guna2HtmlLabel1.Location = new Point(993, 411);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(42, 27);
+            guna2HtmlLabel1.Size = new Size(62, 27);
             guna2HtmlLabel1.TabIndex = 24;
-            guna2HtmlLabel1.Text = "Tầng";
+            guna2HtmlLabel1.Text = "Dịch vụ";
             guna2HtmlLabel1.Click += guna2HtmlLabel1_Click;
             // 
             // guna2HtmlLabel4
