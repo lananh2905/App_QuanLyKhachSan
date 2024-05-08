@@ -1,7 +1,7 @@
 ﻿
 namespace Code.All_user_control
 {
-    partial class UC_AddRoom
+    partial class UC_Service
     {
         /// <summary> 
         /// Required designer variable.
@@ -36,26 +36,30 @@ namespace Code.All_user_control
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtRoomNo = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            txtRoomStatus = new Guna.UI2.WinForms.Guna2ComboBox();
+            txtService = new Guna.UI2.WinForms.Guna2ComboBox();
             txtPrice = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            txtLau = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            btnAddRoom = new Guna.UI2.WinForms.Guna2Button();
+            btnService = new Guna.UI2.WinForms.Guna2Button();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
-            txtRoomType = new Guna.UI2.WinForms.Guna2ComboBox();
             dataGridView1 = new DataGridView();
+            txtNumber = new Guna.UI2.WinForms.Guna2TextBox();
+            guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            txtFinish = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            txtStart = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -66,9 +70,9 @@ namespace Code.All_user_control
             guna2HtmlLabel1.ForeColor = Color.Black;
             guna2HtmlLabel1.Location = new Point(79, 59);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(182, 43);
+            guna2HtmlLabel1.Size = new Size(183, 43);
             guna2HtmlLabel1.TabIndex = 0;
-            guna2HtmlLabel1.Text = "Thêm phòng";
+            guna2HtmlLabel1.Text = "Thuê dịch vụ";
             guna2HtmlLabel1.Click += guna2HtmlLabel1_Click;
             // 
             // guna2HtmlLabel2
@@ -78,9 +82,9 @@ namespace Code.All_user_control
             guna2HtmlLabel2.ForeColor = Color.Black;
             guna2HtmlLabel2.Location = new Point(1110, 122);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(82, 27);
+            guna2HtmlLabel2.Size = new Size(122, 27);
             guna2HtmlLabel2.TabIndex = 2;
-            guna2HtmlLabel2.Text = "Số phòng";
+            guna2HtmlLabel2.Text = "Số phòng thuê";
             // 
             // txtRoomNo
             // 
@@ -103,7 +107,6 @@ namespace Code.All_user_control
             txtRoomNo.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtRoomNo.Size = new Size(664, 51);
             txtRoomNo.TabIndex = 3;
-            txtRoomNo.TextChanged += txtRoomNo_TextChanged;
             // 
             // guna2HtmlLabel3
             // 
@@ -112,30 +115,29 @@ namespace Code.All_user_control
             guna2HtmlLabel3.ForeColor = Color.Black;
             guna2HtmlLabel3.Location = new Point(1110, 258);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(82, 27);
+            guna2HtmlLabel3.Size = new Size(97, 27);
             guna2HtmlLabel3.TabIndex = 4;
-            guna2HtmlLabel3.Text = "Trạng thái";
+            guna2HtmlLabel3.Text = "Loại dịch vụ";
             guna2HtmlLabel3.Click += guna2HtmlLabel3_Click;
             // 
-            // txtRoomStatus
+            // txtService
             // 
-            txtRoomStatus.AutoCompleteCustomSource.AddRange(new string[] { "Trong", "Khong trong" });
-            txtRoomStatus.BackColor = Color.Transparent;
-            txtRoomStatus.CustomizableEdges = customizableEdges3;
-            txtRoomStatus.DrawMode = DrawMode.OwnerDrawFixed;
-            txtRoomStatus.DropDownStyle = ComboBoxStyle.DropDownList;
-            txtRoomStatus.FocusedColor = Color.FromArgb(94, 148, 255);
-            txtRoomStatus.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtRoomStatus.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtRoomStatus.ForeColor = Color.Black;
-            txtRoomStatus.ItemHeight = 30;
-            txtRoomStatus.Items.AddRange(new object[] { "Trống", "Không Trống" });
-            txtRoomStatus.Location = new Point(1110, 297);
-            txtRoomStatus.Name = "txtRoomStatus";
-            txtRoomStatus.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtRoomStatus.Size = new Size(664, 36);
-            txtRoomStatus.TabIndex = 5;
-            txtRoomStatus.SelectedIndexChanged += txtRoomType_SelectedIndexChanged;
+            txtService.AutoCompleteCustomSource.AddRange(new string[] { "Giặt ủi quàn áo", "Cho thuê xe máy", "Thu đổi ngoại tệ", "Buffet sáng", "Đón khách" });
+            txtService.BackColor = Color.Transparent;
+            txtService.CustomizableEdges = customizableEdges3;
+            txtService.DrawMode = DrawMode.OwnerDrawFixed;
+            txtService.DropDownStyle = ComboBoxStyle.DropDownList;
+            txtService.FocusedColor = Color.FromArgb(94, 148, 255);
+            txtService.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtService.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtService.ForeColor = Color.Black;
+            txtService.ItemHeight = 30;
+            txtService.Items.AddRange(new object[] { "Giặt ủi quần áo", "Cho thuê xe máy", "Thu đổi ngoại tệ", "Đón khách", "Buffet sáng" });
+            txtService.Location = new Point(1110, 297);
+            txtService.Name = "txtService";
+            txtService.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtService.Size = new Size(664, 36);
+            txtService.TabIndex = 5;
             // 
             // txtPrice
             // 
@@ -144,27 +146,9 @@ namespace Code.All_user_control
             txtPrice.ForeColor = Color.Black;
             txtPrice.Location = new Point(1110, 525);
             txtPrice.Name = "txtPrice";
-            txtPrice.Size = new Size(119, 27);
+            txtPrice.Size = new Size(111, 27);
             txtPrice.TabIndex = 6;
-            txtPrice.Text = "Mã loại phòng";
-            // 
-            // txtLau
-            // 
-            txtLau.BackColor = Color.Transparent;
-            txtLau.CustomizableEdges = customizableEdges5;
-            txtLau.DrawMode = DrawMode.OwnerDrawFixed;
-            txtLau.DropDownStyle = ComboBoxStyle.DropDownList;
-            txtLau.FocusedColor = Color.FromArgb(94, 148, 255);
-            txtLau.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtLau.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtLau.ForeColor = Color.Black;
-            txtLau.ItemHeight = 30;
-            txtLau.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            txtLau.Location = new Point(1110, 424);
-            txtLau.Name = "txtLau";
-            txtLau.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtLau.Size = new Size(661, 36);
-            txtLau.TabIndex = 9;
+            txtPrice.Text = "Ngày bắt đầu";
             // 
             // guna2HtmlLabel5
             // 
@@ -173,56 +157,38 @@ namespace Code.All_user_control
             guna2HtmlLabel5.ForeColor = Color.Black;
             guna2HtmlLabel5.Location = new Point(1110, 384);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            guna2HtmlLabel5.Size = new Size(30, 27);
+            guna2HtmlLabel5.Size = new Size(76, 27);
             guna2HtmlLabel5.TabIndex = 8;
-            guna2HtmlLabel5.Text = "Lầu";
+            guna2HtmlLabel5.Text = "Số lượng";
             guna2HtmlLabel5.Click += guna2HtmlLabel5_Click;
             // 
-            // btnAddRoom
+            // btnService
             // 
-            btnAddRoom.BorderRadius = 18;
-            btnAddRoom.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            btnAddRoom.BorderThickness = 1;
-            btnAddRoom.CheckedState.FillColor = Color.FromArgb(0, 118, 221);
-            btnAddRoom.CheckedState.ForeColor = Color.White;
-            btnAddRoom.CustomizableEdges = customizableEdges7;
-            btnAddRoom.DisabledState.BorderColor = Color.DarkGray;
-            btnAddRoom.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnAddRoom.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnAddRoom.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnAddRoom.FillColor = Color.White;
-            btnAddRoom.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAddRoom.ForeColor = Color.Black;
-            btnAddRoom.Location = new Point(1591, 674);
-            btnAddRoom.Name = "btnAddRoom";
-            btnAddRoom.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btnAddRoom.Size = new Size(180, 69);
-            btnAddRoom.TabIndex = 10;
-            btnAddRoom.Text = "Thêm phòng";
-            btnAddRoom.Click += btnAddRoom_Click;
+            btnService.BorderRadius = 18;
+            btnService.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            btnService.BorderThickness = 1;
+            btnService.CheckedState.FillColor = Color.FromArgb(0, 118, 221);
+            btnService.CheckedState.ForeColor = Color.White;
+            btnService.CustomizableEdges = customizableEdges5;
+            btnService.DisabledState.BorderColor = Color.DarkGray;
+            btnService.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnService.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnService.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnService.FillColor = Color.White;
+            btnService.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnService.ForeColor = Color.Black;
+            btnService.Location = new Point(1591, 674);
+            btnService.Name = "btnService";
+            btnService.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnService.Size = new Size(180, 69);
+            btnService.TabIndex = 10;
+            btnService.Text = "Thuê dịch vụ";
+            btnService.Click += btnAddRoom_Click;
             // 
             // guna2Elipse1
             // 
             guna2Elipse1.BorderRadius = 30;
             guna2Elipse1.TargetControl = this;
-            // 
-            // txtRoomType
-            // 
-            txtRoomType.BackColor = Color.Transparent;
-            txtRoomType.CustomizableEdges = customizableEdges9;
-            txtRoomType.DrawMode = DrawMode.OwnerDrawFixed;
-            txtRoomType.DropDownStyle = ComboBoxStyle.DropDownList;
-            txtRoomType.FocusedColor = Color.FromArgb(94, 148, 255);
-            txtRoomType.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtRoomType.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            txtRoomType.ForeColor = Color.FromArgb(68, 88, 112);
-            txtRoomType.ItemHeight = 30;
-            txtRoomType.Items.AddRange(new object[] { "LP01", "LP02", "LP03" });
-            txtRoomType.Location = new Point(1110, 558);
-            txtRoomType.Name = "txtRoomType";
-            txtRoomType.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtRoomType.Size = new Size(664, 36);
-            txtRoomType.TabIndex = 12;
             // 
             // dataGridView1
             // 
@@ -230,6 +196,8 @@ namespace Code.All_user_control
             dataGridViewCellStyle1.SelectionBackColor = SystemColors.ControlLight;
             dataGridViewCellStyle1.SelectionForeColor = Color.Black;
             dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dataGridView1.BackgroundColor = Color.WhiteSmoke;
             dataGridView1.BorderStyle = BorderStyle.Fixed3D;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -249,6 +217,7 @@ namespace Code.All_user_control
             dataGridViewCellStyle3.SelectionForeColor = SystemColors.ControlText;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
             dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridView1.EditMode = DataGridViewEditMode.EditOnEnter;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.GridColor = SystemColors.InfoText;
             dataGridView1.Location = new Point(79, 122);
@@ -268,24 +237,95 @@ namespace Code.All_user_control
             dataGridView1.Size = new Size(830, 565);
             dataGridView1.TabIndex = 13;
             // 
-            // UC_AddRoom
+            // txtNumber
+            // 
+            txtNumber.CustomizableEdges = customizableEdges11;
+            txtNumber.DefaultText = "";
+            txtNumber.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtNumber.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtNumber.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtNumber.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtNumber.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtNumber.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNumber.ForeColor = Color.Black;
+            txtNumber.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtNumber.Location = new Point(1110, 419);
+            txtNumber.Margin = new Padding(4, 5, 4, 5);
+            txtNumber.Name = "txtNumber";
+            txtNumber.PasswordChar = '\0';
+            txtNumber.PlaceholderText = "";
+            txtNumber.SelectedText = "";
+            txtNumber.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtNumber.Size = new Size(664, 38);
+            txtNumber.TabIndex = 14;
+            // 
+            // guna2HtmlLabel4
+            // 
+            guna2HtmlLabel4.BackColor = Color.Transparent;
+            guna2HtmlLabel4.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel4.ForeColor = Color.Black;
+            guna2HtmlLabel4.Location = new Point(1531, 525);
+            guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            guna2HtmlLabel4.Size = new Size(113, 27);
+            guna2HtmlLabel4.TabIndex = 30;
+            guna2HtmlLabel4.Text = "Ngày kết thúc";
+            // 
+            // txtFinish
+            // 
+            txtFinish.Checked = true;
+            txtFinish.CustomFormat = "dd/MM/yyyy HH:mm:ss";
+            txtFinish.CustomizableEdges = customizableEdges9;
+            txtFinish.FillColor = Color.White;
+            txtFinish.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtFinish.Format = DateTimePickerFormat.Custom;
+            txtFinish.Location = new Point(1531, 557);
+            txtFinish.Margin = new Padding(2);
+            txtFinish.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            txtFinish.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            txtFinish.Name = "txtFinish";
+            txtFinish.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtFinish.Size = new Size(240, 44);
+            txtFinish.TabIndex = 31;
+            txtFinish.Value = new DateTime(2024, 4, 10, 0, 0, 0, 0);
+            // 
+            // txtStart
+            // 
+            txtStart.Checked = true;
+            txtStart.CustomFormat = "dd/MM/yyyy HH:mm:ss";
+            txtStart.CustomizableEdges = customizableEdges7;
+            txtStart.FillColor = Color.White;
+            txtStart.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtStart.Format = DateTimePickerFormat.Custom;
+            txtStart.Location = new Point(1110, 557);
+            txtStart.Margin = new Padding(2);
+            txtStart.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            txtStart.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            txtStart.Name = "txtStart";
+            txtStart.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtStart.Size = new Size(240, 44);
+            txtStart.TabIndex = 32;
+            txtStart.Value = new DateTime(2024, 4, 10, 0, 0, 0, 0);
+            // 
+            // UC_Service
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(txtStart);
+            Controls.Add(txtFinish);
+            Controls.Add(guna2HtmlLabel4);
+            Controls.Add(txtNumber);
             Controls.Add(dataGridView1);
-            Controls.Add(txtRoomType);
-            Controls.Add(btnAddRoom);
-            Controls.Add(txtLau);
+            Controls.Add(btnService);
             Controls.Add(guna2HtmlLabel5);
             Controls.Add(txtPrice);
-            Controls.Add(txtRoomStatus);
+            Controls.Add(txtService);
             Controls.Add(guna2HtmlLabel3);
             Controls.Add(txtRoomNo);
             Controls.Add(guna2HtmlLabel2);
             Controls.Add(guna2HtmlLabel1);
-            Name = "UC_AddRoom";
+            Name = "UC_Service";
             Size = new Size(1800, 850);
-            Load += UC_AddRoom_Load;
+            Load += UC_Service_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -307,13 +347,15 @@ namespace Code.All_user_control
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2TextBox txtRoomNo;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2ComboBox txtRoomStatus;
+        private Guna.UI2.WinForms.Guna2ComboBox txtService;
         private Guna.UI2.WinForms.Guna2HtmlLabel txtPrice;
-        private Guna.UI2.WinForms.Guna2ComboBox txtLau;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2Button btnAddRoom;
+        private Guna.UI2.WinForms.Guna2Button btnService;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2ComboBox txtRoomType;
         private DataGridView dataGridView1;
+        private Guna.UI2.WinForms.Guna2TextBox txtNumber;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2DateTimePicker txtFinish;
+        private Guna.UI2.WinForms.Guna2DateTimePicker txtStart;
     }
 }

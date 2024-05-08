@@ -58,7 +58,7 @@ namespace Code
             uC_SearchRoom1 = new UC_SearchRoom();
             uC_RentRoom1 = new All_user_control.UC_RentRoom();
             uC_CheckOut1 = new All_user_control.UC_CheckOut();
-            uC_AddRoom1 = new All_user_control.UC_AddRoom();
+            uC_AddRoom1 = new All_user_control.UC_Service();
             panelMoving = new Panel();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(components);
@@ -216,7 +216,7 @@ namespace Code
             btnAddRoom.ShadowDecoration.CustomizableEdges = customizableEdges14;
             btnAddRoom.Size = new Size(284, 116);
             btnAddRoom.TabIndex = 0;
-            btnAddRoom.Text = "THÊM PHÒNG";
+            btnAddRoom.Text = "THUÊ DỊCH VỤ";
             btnAddRoom.Click += btnAddRoom_Click;
             // 
             // panel2
@@ -349,8 +349,8 @@ namespace Code
         private Guna.UI2.WinForms.Guna2Button btnRoomResearch;
         private Panel panelMoving;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private All_user_control.UC_AddRoom addRoom1;
-        private All_user_control.UC_AddRoom uC_AddRoom1;
+        private All_user_control.UC_Service addRoom1;
+        private All_user_control.UC_Service uC_AddRoom1;
         private All_user_control.UC_CheckOut uC_CheckOut1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private All_user_control.UC_RentRoom uC_RentRoom1;
