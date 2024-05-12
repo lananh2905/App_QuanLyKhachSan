@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Code.All_user_control
 {
-    public partial class UC_AddRoom : UserControl
+    public partial class UC_MonthlyReport : UserControl
     {
-        public UC_AddRoom()
+        public UC_MonthlyReport()
         {
             InitializeComponent();
         }
 
-        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAddRoom_Click(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

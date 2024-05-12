@@ -14,6 +14,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Code
-build_property.ProjectDir = C:\Users\Lenovo\OneDrive\Máy tính\MemNhomBon\App_QuanLyKhachSan\Code\Code\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\

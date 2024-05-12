@@ -29,7 +29,7 @@ namespace Code
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "abc" &&  txtPassword.Text == "123")
+            if (txtUsername.Text == "abc" && txtPassword.Text == "123")
             {
                 labelError.Visible = false;
                 DashBoard ds = new DashBoard();
@@ -41,6 +41,16 @@ namespace Code
                 labelError.Visible = true;
                 txtPassword.Clear();
             }
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
