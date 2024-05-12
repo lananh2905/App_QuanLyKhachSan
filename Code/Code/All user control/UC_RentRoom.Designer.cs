@@ -29,29 +29,28 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges49 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges50 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges51 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges52 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges53 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges54 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges55 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges56 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges57 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges58 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges59 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges60 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges61 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges62 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges63 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges64 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtCustomerAddr = new Guna.UI2.WinForms.Guna2TextBox();
             txtPrice = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtCustomerName = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            txtFloor = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtRoomType = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -64,6 +63,7 @@
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             label1 = new Label();
             guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
+            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             SuspendLayout();
             // 
             // guna2HtmlLabel5
@@ -80,7 +80,7 @@
             // 
             // txtCustomerAddr
             // 
-            txtCustomerAddr.CustomizableEdges = customizableEdges49;
+            txtCustomerAddr.CustomizableEdges = customizableEdges1;
             txtCustomerAddr.DefaultText = "";
             txtCustomerAddr.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtCustomerAddr.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -90,13 +90,13 @@
             txtCustomerAddr.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtCustomerAddr.ForeColor = Color.Black;
             txtCustomerAddr.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtCustomerAddr.Location = new Point(202, 583);
+            txtCustomerAddr.Location = new Point(202, 584);
             txtCustomerAddr.Margin = new Padding(4, 5, 4, 5);
             txtCustomerAddr.Name = "txtCustomerAddr";
             txtCustomerAddr.PasswordChar = '\0';
             txtCustomerAddr.PlaceholderText = "Nhập vào địa chỉ";
             txtCustomerAddr.SelectedText = "";
-            txtCustomerAddr.ShadowDecoration.CustomizableEdges = customizableEdges50;
+            txtCustomerAddr.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtCustomerAddr.Size = new Size(660, 48);
             txtCustomerAddr.TabIndex = 15;
             txtCustomerAddr.TextChanged += txtCustomerAddr_TextChanged;
@@ -106,7 +106,7 @@
             txtPrice.BackColor = Color.Transparent;
             txtPrice.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtPrice.ForeColor = Color.Black;
-            txtPrice.Location = new Point(202, 552);
+            txtPrice.Location = new Point(202, 539);
             txtPrice.Name = "txtPrice";
             txtPrice.Size = new Size(56, 27);
             txtPrice.TabIndex = 14;
@@ -127,7 +127,7 @@
             // 
             // txtCustomerName
             // 
-            txtCustomerName.CustomizableEdges = customizableEdges51;
+            txtCustomerName.CustomizableEdges = customizableEdges3;
             txtCustomerName.DefaultText = "";
             txtCustomerName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtCustomerName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -143,7 +143,7 @@
             txtCustomerName.PasswordChar = '\0';
             txtCustomerName.PlaceholderText = "Nhập vào tên khách hàng";
             txtCustomerName.SelectedText = "";
-            txtCustomerName.ShadowDecoration.CustomizableEdges = customizableEdges52;
+            txtCustomerName.ShadowDecoration.CustomizableEdges = customizableEdges4;
             txtCustomerName.Size = new Size(664, 51);
             txtCustomerName.TabIndex = 11;
             txtCustomerName.TextChanged += txtCustomerName_TextChanged;
@@ -160,25 +160,6 @@
             guna2HtmlLabel2.Text = "Tên khách hàng";
             guna2HtmlLabel2.Click += guna2HtmlLabel2_Click;
             // 
-            // txtFloor
-            // 
-            txtFloor.BackColor = Color.Transparent;
-            txtFloor.CustomizableEdges = customizableEdges53;
-            txtFloor.DrawMode = DrawMode.OwnerDrawFixed;
-            txtFloor.DropDownStyle = ComboBoxStyle.DropDownList;
-            txtFloor.FocusedColor = Color.FromArgb(94, 148, 255);
-            txtFloor.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtFloor.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtFloor.ForeColor = Color.Black;
-            txtFloor.ItemHeight = 30;
-            txtFloor.Items.AddRange(new object[] { "Thu đổi ngoại tệ", "Cho thuê xe máy", "Đón khách", "Buffet sáng", "Giặt ủi quần áo" });
-            txtFloor.Location = new Point(989, 451);
-            txtFloor.Name = "txtFloor";
-            txtFloor.ShadowDecoration.CustomizableEdges = customizableEdges54;
-            txtFloor.Size = new Size(661, 36);
-            txtFloor.TabIndex = 25;
-            txtFloor.SelectedIndexChanged += txtFloor_SelectedIndexChanged;
-            // 
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
@@ -186,9 +167,9 @@
             guna2HtmlLabel1.ForeColor = Color.Black;
             guna2HtmlLabel1.Location = new Point(993, 411);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(62, 27);
+            guna2HtmlLabel1.Size = new Size(167, 27);
             guna2HtmlLabel1.TabIndex = 24;
-            guna2HtmlLabel1.Text = "Dịch vụ";
+            guna2HtmlLabel1.Text = "Số lượng khách thuê";
             guna2HtmlLabel1.Click += guna2HtmlLabel1_Click;
             // 
             // guna2HtmlLabel4
@@ -206,7 +187,7 @@
             // txtRoomType
             // 
             txtRoomType.BackColor = Color.Transparent;
-            txtRoomType.CustomizableEdges = customizableEdges55;
+            txtRoomType.CustomizableEdges = customizableEdges5;
             txtRoomType.DrawMode = DrawMode.OwnerDrawFixed;
             txtRoomType.DropDownStyle = ComboBoxStyle.DropDownList;
             txtRoomType.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -217,7 +198,7 @@
             txtRoomType.Items.AddRange(new object[] { "Phòng đơn", "Phòng đôi", "Phòng gia đình" });
             txtRoomType.Location = new Point(989, 180);
             txtRoomType.Name = "txtRoomType";
-            txtRoomType.ShadowDecoration.CustomizableEdges = customizableEdges56;
+            txtRoomType.ShadowDecoration.CustomizableEdges = customizableEdges6;
             txtRoomType.Size = new Size(664, 36);
             txtRoomType.TabIndex = 21;
             txtRoomType.SelectedIndexChanged += txtRoomType_SelectedIndexChanged;
@@ -236,7 +217,7 @@
             // 
             // txtRoomNo
             // 
-            txtRoomNo.CustomizableEdges = customizableEdges57;
+            txtRoomNo.CustomizableEdges = customizableEdges7;
             txtRoomNo.DefaultText = "";
             txtRoomNo.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtRoomNo.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -252,7 +233,7 @@
             txtRoomNo.PasswordChar = '\0';
             txtRoomNo.PlaceholderText = "Nhập vào số phòng";
             txtRoomNo.SelectedText = "";
-            txtRoomNo.ShadowDecoration.CustomizableEdges = customizableEdges58;
+            txtRoomNo.ShadowDecoration.CustomizableEdges = customizableEdges8;
             txtRoomNo.Size = new Size(664, 51);
             txtRoomNo.TabIndex = 19;
             txtRoomNo.TextChanged += txtRoomNo_TextChanged;
@@ -276,7 +257,7 @@
             btnAddRoom.BorderThickness = 1;
             btnAddRoom.CheckedState.FillColor = Color.FromArgb(0, 118, 221);
             btnAddRoom.CheckedState.ForeColor = Color.White;
-            btnAddRoom.CustomizableEdges = customizableEdges59;
+            btnAddRoom.CustomizableEdges = customizableEdges9;
             btnAddRoom.DisabledState.BorderColor = Color.DarkGray;
             btnAddRoom.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAddRoom.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -286,14 +267,14 @@
             btnAddRoom.ForeColor = Color.Black;
             btnAddRoom.Location = new Point(1470, 691);
             btnAddRoom.Name = "btnAddRoom";
-            btnAddRoom.ShadowDecoration.CustomizableEdges = customizableEdges60;
+            btnAddRoom.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnAddRoom.Size = new Size(180, 69);
             btnAddRoom.TabIndex = 26;
             btnAddRoom.Text = "Lưu";
             // 
             // txtCustomerCMND
             // 
-            txtCustomerCMND.CustomizableEdges = customizableEdges61;
+            txtCustomerCMND.CustomizableEdges = customizableEdges11;
             txtCustomerCMND.DefaultText = "";
             txtCustomerCMND.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtCustomerCMND.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -309,7 +290,7 @@
             txtCustomerCMND.PasswordChar = '\0';
             txtCustomerCMND.PlaceholderText = "Nhập vào CMND";
             txtCustomerCMND.SelectedText = "";
-            txtCustomerCMND.ShadowDecoration.CustomizableEdges = customizableEdges62;
+            txtCustomerCMND.ShadowDecoration.CustomizableEdges = customizableEdges12;
             txtCustomerCMND.Size = new Size(660, 48);
             txtCustomerCMND.TabIndex = 27;
             txtCustomerCMND.TextChanged += txtCustomerCMND_TextChanged;
@@ -317,7 +298,7 @@
             // txtCheckOutDate
             // 
             txtCheckOutDate.Checked = true;
-            txtCheckOutDate.CustomizableEdges = customizableEdges63;
+            txtCheckOutDate.CustomizableEdges = customizableEdges13;
             txtCheckOutDate.FillColor = Color.White;
             txtCheckOutDate.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtCheckOutDate.Format = DateTimePickerFormat.Short;
@@ -326,7 +307,7 @@
             txtCheckOutDate.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             txtCheckOutDate.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             txtCheckOutDate.Name = "txtCheckOutDate";
-            txtCheckOutDate.ShadowDecoration.CustomizableEdges = customizableEdges64;
+            txtCheckOutDate.ShadowDecoration.CustomizableEdges = customizableEdges14;
             txtCheckOutDate.Size = new Size(240, 44);
             txtCheckOutDate.TabIndex = 28;
             txtCheckOutDate.Value = new DateTime(2024, 4, 10, 16, 39, 0, 193);
@@ -355,9 +336,10 @@
             guna2CheckBox1.CheckedState.BorderRadius = 0;
             guna2CheckBox1.CheckedState.BorderThickness = 0;
             guna2CheckBox1.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
-            guna2CheckBox1.Location = new Point(202, 335);
+            guna2CheckBox1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2CheckBox1.Location = new Point(202, 346);
             guna2CheckBox1.Name = "guna2CheckBox1";
-            guna2CheckBox1.Size = new Size(150, 24);
+            guna2CheckBox1.Size = new Size(176, 29);
             guna2CheckBox1.TabIndex = 30;
             guna2CheckBox1.Text = "Khách nước ngoài";
             guna2CheckBox1.TextAlign = ContentAlignment.MiddleCenter;
@@ -369,16 +351,38 @@
             guna2CheckBox1.UncheckedState.FillColor = Color.FromArgb(125, 137, 149);
             guna2CheckBox1.CheckedChanged += guna2CheckBox1_CheckedChanged_1;
             // 
+            // guna2TextBox1
+            // 
+            guna2TextBox1.CustomizableEdges = customizableEdges15;
+            guna2TextBox1.DefaultText = "";
+            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2TextBox1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2TextBox1.ForeColor = Color.Black;
+            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2TextBox1.Location = new Point(989, 451);
+            guna2TextBox1.Margin = new Padding(4, 5, 4, 5);
+            guna2TextBox1.Name = "guna2TextBox1";
+            guna2TextBox1.PasswordChar = '\0';
+            guna2TextBox1.PlaceholderText = "Nhập vào số lượng khách thuê";
+            guna2TextBox1.SelectedText = "";
+            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2TextBox1.Size = new Size(664, 51);
+            guna2TextBox1.TabIndex = 31;
+            // 
             // UC_RentRoom
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(guna2TextBox1);
             Controls.Add(guna2CheckBox1);
             Controls.Add(label1);
             Controls.Add(txtCheckOutDate);
             Controls.Add(txtCustomerCMND);
             Controls.Add(btnAddRoom);
-            Controls.Add(txtFloor);
             Controls.Add(guna2HtmlLabel1);
             Controls.Add(guna2HtmlLabel4);
             Controls.Add(txtRoomType);
@@ -404,7 +408,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2TextBox txtCustomerName;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2ComboBox txtFloor;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2ComboBox txtRoomType;
@@ -417,5 +420,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Label label1;
         private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
     }
 }
