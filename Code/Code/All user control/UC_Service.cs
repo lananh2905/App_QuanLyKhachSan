@@ -105,7 +105,7 @@ namespace Code.All_user_control
         {
             query = "select MALDV as [Mã loại DV], MATP as [Mã thuê phòng], NGBATDAUDV as [Ngày bắt đầu], NGKETTHUCDV as [Ngày kết thúc], SOLUONGDV as [ Số lượng ], TONGTIENDV as [Tổng tiền] from dbo.DICHVU";
             DataSet ds = fn.getData(query);
-            //dataGridView1.DataSource = ds.Tables[0];
+            dataGridView1.DataSource = ds.Tables[0];
 
             // Tính tỷ lệ phần trăm chiều rộng cho mỗi cột
             float[] columnWidths = { 15, 15, 20, 20, 10, 20};
