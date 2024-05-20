@@ -1,4 +1,5 @@
-﻿namespace Code
+﻿
+namespace Code
 {
     partial class DashBoard
     {
@@ -54,10 +55,16 @@
             btnAddRoom = new Guna.UI2.WinForms.Guna2Button();
             panel2 = new Panel();
             uC_MonthlyReport1 = new All_user_control.UC_MonthlyReport();
+            uC_SearchRoom1 = new UC_SearchRoom();
+            uC_RentRoom1 = new All_user_control.UC_RentRoom();
+            uC_CheckOut1 = new All_user_control.UC_CheckOut();
+            uC_AddRoom1 = new All_user_control.UC_Service();
             panelMoving = new Panel();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(components);
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -109,7 +116,7 @@
             panel1.Controls.Add(btnAddRoom);
             panel1.Location = new Point(81, 15);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1815, 130);
+            panel1.Size = new Size(1810, 130);
             panel1.TabIndex = 2;
             // 
             // btnRoomRental
@@ -130,6 +137,7 @@
             btnRoomRental.Size = new Size(284, 116);
             btnRoomRental.TabIndex = 4;
             btnRoomRental.Text = "THUÊ PHÒNG";
+            btnRoomRental.Click += btnRoomRental_Click;
             // 
             // btnCheckOut
             // 
@@ -189,6 +197,7 @@
             btnRoomResearch.Size = new Size(284, 116);
             btnRoomResearch.TabIndex = 1;
             btnRoomResearch.Text = "TÌM KIẾM PHÒNG";
+            btnRoomResearch.Click += btnRoomResearch_Click;
             // 
             // btnAddRoom
             // 
@@ -207,25 +216,68 @@
             btnAddRoom.ShadowDecoration.CustomizableEdges = customizableEdges14;
             btnAddRoom.Size = new Size(284, 116);
             btnAddRoom.TabIndex = 0;
-            btnAddRoom.Text = "THÊM PHÒNG";
+            btnAddRoom.Text = "THUÊ DỊCH VỤ";
             btnAddRoom.Click += btnAddRoom_Click;
             // 
             // panel2
             // 
+            panel2.BackColor = Color.White;
             panel2.BorderStyle = BorderStyle.Fixed3D;
             panel2.Controls.Add(uC_MonthlyReport1);
+            panel2.Controls.Add(uC_SearchRoom1);
+            panel2.Controls.Add(uC_RentRoom1);
+            panel2.Controls.Add(uC_CheckOut1);
+            panel2.Controls.Add(uC_AddRoom1);
             panel2.Location = new Point(35, 182);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1882, 852);
+            panel2.Size = new Size(1850, 850);
             panel2.TabIndex = 3;
+            panel2.Paint += panel2_Paint;
             // 
             // uC_MonthlyReport1
             // 
             uC_MonthlyReport1.BackColor = Color.White;
-            uC_MonthlyReport1.Location = new Point(-2, -2);
+            uC_MonthlyReport1.Location = new Point(4, 4);
             uC_MonthlyReport1.Name = "uC_MonthlyReport1";
-            uC_MonthlyReport1.Size = new Size(1882, 852);
-            uC_MonthlyReport1.TabIndex = 0;
+            uC_MonthlyReport1.Size = new Size(1800, 800);
+            uC_MonthlyReport1.TabIndex = 5;
+            // 
+            // uC_SearchRoom1
+            // 
+            uC_SearchRoom1.BackColor = Color.White;
+            uC_SearchRoom1.Location = new Point(4, 4);
+            uC_SearchRoom1.Margin = new Padding(2);
+            uC_SearchRoom1.Name = "uC_SearchRoom1";
+            uC_SearchRoom1.Size = new Size(1800, 850);
+            uC_SearchRoom1.TabIndex = 6;
+            uC_SearchRoom1.Load += uC_SearchRoom1_Load;
+            // 
+            // uC_RentRoom1
+            // 
+            uC_RentRoom1.BackColor = Color.White;
+            uC_RentRoom1.Location = new Point(4, 4);
+            uC_RentRoom1.Name = "uC_RentRoom1";
+            uC_RentRoom1.Size = new Size(1800, 800);
+            uC_RentRoom1.TabIndex = 2;
+            // 
+            // uC_CheckOut1
+            // 
+            uC_CheckOut1.BackColor = Color.White;
+            uC_CheckOut1.Location = new Point(4, 4);
+            uC_CheckOut1.Margin = new Padding(2);
+            uC_CheckOut1.Name = "uC_CheckOut1";
+            uC_CheckOut1.Size = new Size(2258, 1022);
+            uC_CheckOut1.TabIndex = 1;
+            // 
+            // uC_AddRoom1
+            // 
+            uC_AddRoom1.BackColor = Color.White;
+            uC_AddRoom1.Location = new Point(4, 4);
+            uC_AddRoom1.Margin = new Padding(4);
+            uC_AddRoom1.Name = "uC_AddRoom1";
+            uC_AddRoom1.Size = new Size(1800, 800);
+            uC_AddRoom1.TabIndex = 0;
+            uC_AddRoom1.Load += uC_AddRoom1_Load;
             // 
             // panelMoving
             // 
@@ -239,22 +291,35 @@
             // 
             // guna2Elipse1
             // 
+            guna2Elipse1.BorderRadius = 30;
             guna2Elipse1.TargetControl = this;
             // 
             // guna2Elipse2
             // 
+            guna2Elipse2.BorderRadius = 30;
             guna2Elipse2.TargetControl = this;
             // 
             // guna2Elipse3
             // 
+            guna2Elipse3.BorderRadius = 30;
             guna2Elipse3.TargetControl = this;
+            // 
+            // guna2Elipse4
+            // 
+            guna2Elipse4.BorderRadius = 30;
+            guna2Elipse4.TargetControl = this;
+            // 
+            // guna2Elipse5
+            // 
+            guna2Elipse5.BorderRadius = 30;
+            guna2Elipse5.TargetControl = this;
             // 
             // DashBoard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(132, 112, 255);
-            ClientSize = new Size(1942, 1102);
+            ClientSize = new Size(1800, 850);
             Controls.Add(panelMoving);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -284,11 +349,15 @@
         private Guna.UI2.WinForms.Guna2Button btnRoomResearch;
         private Panel panelMoving;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private All_user_control.UC_AddRoom addRoom1;
-        private All_user_control.UC_AddRoom uC_AddRoom1;
+        private All_user_control.UC_Service addRoom1;
+        private All_user_control.UC_Service uC_AddRoom1;
         private All_user_control.UC_CheckOut uC_CheckOut1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private All_user_control.UC_RentRoom uC_RentRoom1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private UC_SearchRoom uC_SearchRoom1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
         private All_user_control.UC_MonthlyReport uC_MonthlyReport1;
     }
 }

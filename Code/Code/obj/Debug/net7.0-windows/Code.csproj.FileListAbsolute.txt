@@ -1,26 +1,135 @@
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\bin\Debug\net7.0-windows\Code.exe
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\bin\Debug\net7.0-windows\Code.deps.json
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\bin\Debug\net7.0-windows\Code.runtimeconfig.json
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\bin\Debug\net7.0-windows\Code.dll
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\bin\Debug\net7.0-windows\Code.pdb
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\bin\Debug\net7.0-windows\Guna.UI2.dll
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\bin\Debug\net7.0-windows\System.Management.dll
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Management.dll
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\Code.csproj.AssemblyReference.cache
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_AddRoom.resources
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_CheckOut.resources
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_MonthlyReport.resources
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\Code.DashBoard.resources
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\Code.Login.resources
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\Code.Properties.Resources.resources
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\Code.csproj.GenerateResource.cache
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\Code.GeneratedMSBuildEditorConfig.editorconfig
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\Code.AssemblyInfoInputs.cache
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\Code.AssemblyInfo.cs
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\Code.csproj.CoreCompileInputs.cache
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\Code.csproj.CopyComplete
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\Code.dll
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\refint\Code.dll
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\Code.pdb
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\Code.genruntimeconfig.cache
-D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\GitHub\SE104\Code\Code\obj\Debug\net7.0-windows\ref\Code.dll
+D:\DEV\NMCNPM\Code\Code\bin\Debug\net7.0-windows\Code.exe
+D:\DEV\NMCNPM\Code\Code\bin\Debug\net7.0-windows\Code.deps.json
+D:\DEV\NMCNPM\Code\Code\bin\Debug\net7.0-windows\Code.runtimeconfig.json
+D:\DEV\NMCNPM\Code\Code\bin\Debug\net7.0-windows\Code.dll
+D:\DEV\NMCNPM\Code\Code\bin\Debug\net7.0-windows\Code.pdb
+D:\DEV\NMCNPM\Code\Code\bin\Debug\net7.0-windows\Guna.UI2.dll
+D:\DEV\NMCNPM\Code\Code\bin\Debug\net7.0-windows\System.Management.dll
+D:\DEV\NMCNPM\Code\Code\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.csproj.AssemblyReference.cache
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_AddRoom.resources
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_CheckOut.resources
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.DashBoard.resources
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.Login.resources
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.Properties.Resources.resources
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.csproj.GenerateResource.cache
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.GeneratedMSBuildEditorConfig.editorconfig
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.AssemblyInfoInputs.cache
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.AssemblyInfo.cs
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.csproj.CoreCompileInputs.cache
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.csproj.CopyComplete
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.dll
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\refint\Code.dll
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.pdb
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.genruntimeconfig.cache
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\ref\Code.dll
+D:\DEV\NMCNPM\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_RentRoom.resources
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\bin\Debug\net7.0-windows\Code.exe
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\bin\Debug\net7.0-windows\Code.deps.json
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\bin\Debug\net7.0-windows\Code.runtimeconfig.json
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\bin\Debug\net7.0-windows\Code.dll
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\bin\Debug\net7.0-windows\Code.pdb
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\bin\Debug\net7.0-windows\Guna.UI2.dll
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\bin\Debug\net7.0-windows\System.Management.dll
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.csproj.AssemblyReference.cache
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_CheckOut.resources
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_MonthlyReport.resources
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_RentRoom.resources
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.UC_SearchRoom.resources
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.DashBoard.resources
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.Login.resources
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.Properties.Resources.resources
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.csproj.GenerateResource.cache
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.AssemblyInfoInputs.cache
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.AssemblyInfo.cs
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.sourcelink.json
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.csproj.Up2Date
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.dll
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\refint\Code.dll
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.pdb
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.genruntimeconfig.cache
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\ref\Code.dll
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\bin\Debug\net7.0-windows\System.Windows.Forms.DataVisualization.dll
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\UIT_HK4\SE104\Code\Code\bin\Debug\net7.0-windows\Code.exe
+D:\UIT_HK4\SE104\Code\Code\bin\Debug\net7.0-windows\Code.deps.json
+D:\UIT_HK4\SE104\Code\Code\bin\Debug\net7.0-windows\Code.runtimeconfig.json
+D:\UIT_HK4\SE104\Code\Code\bin\Debug\net7.0-windows\Code.dll
+D:\UIT_HK4\SE104\Code\Code\bin\Debug\net7.0-windows\Code.pdb
+D:\UIT_HK4\SE104\Code\Code\bin\Debug\net7.0-windows\Guna.UI2.dll
+D:\UIT_HK4\SE104\Code\Code\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+D:\UIT_HK4\SE104\Code\Code\bin\Debug\net7.0-windows\System.Management.dll
+D:\UIT_HK4\SE104\Code\Code\bin\Debug\net7.0-windows\System.Windows.Forms.DataVisualization.dll
+D:\UIT_HK4\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+D:\UIT_HK4\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+D:\UIT_HK4\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+D:\UIT_HK4\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\UIT_HK4\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\UIT_HK4\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.csproj.AssemblyReference.cache
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_AddRoom.resources
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_CheckOut.resources
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_MonthlyReport.resources
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_RentRoom.resources
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.UC_SearchRoom.resources
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.DashBoard.resources
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.Login.resources
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.Properties.Resources.resources
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.csproj.GenerateResource.cache
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.GeneratedMSBuildEditorConfig.editorconfig
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.AssemblyInfoInputs.cache
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.AssemblyInfo.cs
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.csproj.CoreCompileInputs.cache
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.sourcelink.json
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.csproj.Up2Date
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.dll
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\refint\Code.dll
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.pdb
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\Code.genruntimeconfig.cache
+D:\UIT_HK4\SE104\Code\Code\obj\Debug\net7.0-windows\ref\Code.dll
+C:\Users\Admin\Source\Repos\lananh2905\SE104\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_Service.resources
+D:\SE104\Code\Code\bin\Debug\net7.0-windows\Code.exe
+D:\SE104\Code\Code\bin\Debug\net7.0-windows\Code.deps.json
+D:\SE104\Code\Code\bin\Debug\net7.0-windows\Code.runtimeconfig.json
+D:\SE104\Code\Code\bin\Debug\net7.0-windows\Code.dll
+D:\SE104\Code\Code\bin\Debug\net7.0-windows\Code.pdb
+D:\SE104\Code\Code\bin\Debug\net7.0-windows\Guna.UI2.dll
+D:\SE104\Code\Code\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+D:\SE104\Code\Code\bin\Debug\net7.0-windows\System.Management.dll
+D:\SE104\Code\Code\bin\Debug\net7.0-windows\System.Windows.Forms.DataVisualization.dll
+D:\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+D:\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+D:\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+D:\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\SE104\Code\Code\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.csproj.AssemblyReference.cache
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_CheckOut.resources
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_MonthlyReport.resources
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_RentRoom.resources
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.UC_SearchRoom.resources
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.All_user_control.UC_Service.resources
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.DashBoard.resources
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.Login.resources
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.Properties.Resources.resources
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.csproj.GenerateResource.cache
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.GeneratedMSBuildEditorConfig.editorconfig
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.AssemblyInfoInputs.cache
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.AssemblyInfo.cs
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.csproj.CoreCompileInputs.cache
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.csproj.CopyComplete
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.dll
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\refint\Code.dll
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.pdb
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.genruntimeconfig.cache
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\ref\Code.dll
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
+D:\SE104\Code\Code\obj\Debug\net7.0-windows\Code.csproj.ResolveComReference.cache

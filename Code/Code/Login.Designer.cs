@@ -128,20 +128,20 @@
             txtPassword.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             txtPassword.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtPassword.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPassword.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtPassword.ForeColor = Color.Black;
             txtPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtPassword.IconLeft = (Image)resources.GetObject("txtPassword.IconLeft");
             txtPassword.IconLeftSize = new Size(30, 30);
-            txtPassword.Location = new Point(549, 266);
-            txtPassword.Margin = new Padding(4, 5, 4, 5);
+            txtPassword.Location = new Point(549, 263);
+            txtPassword.Margin = new Padding(6, 7, 6, 7);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '●';
             txtPassword.PlaceholderText = "Mật khẩu";
             txtPassword.ScrollBars = ScrollBars.Vertical;
             txtPassword.SelectedText = "";
             txtPassword.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtPassword.Size = new Size(415, 72);
+            txtPassword.Size = new Size(415, 70);
             txtPassword.TabIndex = 4;
             txtPassword.UseSystemPasswordChar = true;
             // 
@@ -155,13 +155,13 @@
             txtUsername.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             txtUsername.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtUsername.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtUsername.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtUsername.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtUsername.ForeColor = Color.Black;
             txtUsername.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtUsername.IconLeft = (Image)resources.GetObject("txtUsername.IconLeft");
             txtUsername.IconLeftSize = new Size(30, 30);
-            txtUsername.Location = new Point(549, 156);
-            txtUsername.Margin = new Padding(4, 5, 4, 5);
+            txtUsername.Location = new Point(549, 158);
+            txtUsername.Margin = new Padding(6, 7, 6, 7);
             txtUsername.Name = "txtUsername";
             txtUsername.PasswordChar = '\0';
             txtUsername.PlaceholderText = "Tên đăng nhập";
@@ -169,6 +169,7 @@
             txtUsername.ShadowDecoration.CustomizableEdges = customizableEdges6;
             txtUsername.Size = new Size(415, 70);
             txtUsername.TabIndex = 3;
+            txtUsername.TextChanged += txtUsername_TextChanged;
             // 
             // guna2HtmlLabel1
             // 
