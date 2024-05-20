@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kiIxPCajbCw4Uy+upNE4xoP0i+35GYlncV4nFF1DdDBiN/hpOiy/XoRla+/RHDDDQzPBgWWDfDHI/T1Q5VeUsQ==",
+  "dgSpecHash": "lR5lm5v7WK2XY0UVI9v6b2MfuqKCpmyo0Eye7tJfWmjVdWY408Mw5H2Ts9aGf2Nrmb7zX2jqFfIVmji2zObG0g==",
   "success": true,
-  "projectFilePath": "D:\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Tài liệu\\GitHub\\SE104\\Code\\Code\\Code.csproj",
+  "projectFilePath": "D:\\SE104\\Code\\Code\\Code.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",

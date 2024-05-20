@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Tài liệu\\GitHub\\SE104\\Code\\Code\\Code.csproj": {}
+    "D:\\SE104\\Code\\Code\\Code.csproj": {}
   },
   "projects": {
-    "D:\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Tài liệu\\GitHub\\SE104\\Code\\Code\\Code.csproj": {
+    "D:\\SE104\\Code\\Code\\Code.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Tài liệu\\GitHub\\SE104\\Code\\Code\\Code.csproj",
+        "projectUniqueName": "D:\\SE104\\Code\\Code\\Code.csproj",
         "projectName": "Code",
-        "projectPath": "D:\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Tài liệu\\GitHub\\SE104\\Code\\Code\\Code.csproj",
+        "projectPath": "D:\\SE104\\Code\\Code\\Code.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Tài liệu\\GitHub\\SE104\\Code\\Code\\obj\\",
+        "outputPath": "D:\\SE104\\Code\\Code\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
