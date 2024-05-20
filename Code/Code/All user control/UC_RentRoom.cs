@@ -91,5 +91,10 @@ namespace Code.All_user_control
         {
 
         }
+
+        private void UC_RentRoom_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -14,4 +14,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Code
-build_property.ProjectDir = D:\DEV\NMCNPM\SE104\Code\Code\
+build_property.ProjectDir = D:\SE104\Code\Code\

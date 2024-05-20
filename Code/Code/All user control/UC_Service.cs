@@ -108,13 +108,18 @@ namespace Code.All_user_control
             dataGridView1.DataSource = ds.Tables[0];
 
             // Tính tỷ lệ phần trăm chiều rộng cho mỗi cột
-            float[] columnWidths = { 15, 15, 20, 20, 10, 20};
+            float[] columnWidths = { 15, 15, 20, 20, 10, 20 };
             float totalWidth = dataGridView1.Width - dataGridView1.RowHeadersWidth;
 
             for (int i = 0; i < dataGridView1.Columns.Count; i++)
             {
                 dataGridView1.Columns[i].Width = (int)(totalWidth * (columnWidths[i] / 100));
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

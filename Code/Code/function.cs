@@ -15,6 +15,7 @@ namespace Code
         {
             SqlConnection con = new SqlConnection();
             con.ConnectionString = "Data Source=.\\sqlexpress;Initial Catalog=QLKS;Integrated Security=True";
+            //con.ConnectionString = "Data Source=DESKTOP-TJGAJ0E;Initial Catalog=QLKS;Integrated Security=True";
             return con;
         }
 

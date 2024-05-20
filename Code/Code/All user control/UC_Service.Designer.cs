@@ -236,6 +236,7 @@ namespace Code.All_user_control
             dataGridView1.SelectionMode = DataGridViewSelectionMode.CellSelect;
             dataGridView1.Size = new Size(830, 565);
             dataGridView1.TabIndex = 13;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // txtNumber
             // 

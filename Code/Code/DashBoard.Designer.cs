@@ -319,7 +319,7 @@ namespace Code
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(132, 112, 255);
-            ClientSize = new Size(1554, 882);
+            ClientSize = new Size(1800, 850);
             Controls.Add(panelMoving);
             Controls.Add(panel2);
             Controls.Add(panel1);
