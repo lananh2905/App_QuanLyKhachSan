@@ -14,7 +14,7 @@ namespace Code
         protected SqlConnection GetConnection()
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=.\\sqlexpress;Initial Catalog=QLKS;Integrated Security=True";
+            con.ConnectionString = "Data Source=192.168.56.1\\sqlexpress;Initial Catalog=QLKS;User ID=lananh2905";
             return con;
         }
 
