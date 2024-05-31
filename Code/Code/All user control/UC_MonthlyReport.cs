@@ -81,16 +81,42 @@ namespace Code.All_user_control
             else
             {
                 guna2DataGridView1.DataSource = null;
-                MessageBox.Show("No data available for the selected month.", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Không có dữ liệu cho tháng đã chọn.", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
         }
+
+        private bool CheckDataExists(int year, int month)
+        {
+            string checkQuery = $@"
+                SELECT COUNT(*)
+                FROM dbo.THUEPHONG
+                WHERE YEAR(NGTHUE) = {year} AND MONTH(NGTHUE) = {month}";
+
+            DataSet ds = fn.getData(checkQuery);
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                int count = Convert.ToInt32(ds.Tables[0].Rows[0][0]);
+                return count > 0;
+            }
+            return false;
+        }
+
 
         private void btnMonthlyReport_Click_1(object sender, EventArgs e)
         {
             int year = txtMonthlyReportDate.Value.Year;
             int month = txtMonthlyReportDate.Value.Month;
-            LoadDataForMonth(year, month);
+
+            if (CheckDataExists(year, month))
+            {
+                LoadDataForMonth(year, month);
+            }
+            else
+            {
+                guna2DataGridView1.DataSource = null;
+                MessageBox.Show("Không có dữ liệu cho tháng đã chọn.", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnXuatExcel_Click(object sender, EventArgs e)
