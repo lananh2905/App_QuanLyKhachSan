@@ -48,7 +48,7 @@
             label5 = new Label();
             label4 = new Label();
             txtRoom = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            txtCName = new Guna.UI2.WinForms.Guna2TextBox();
             label3 = new Label();
             guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             txtName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -86,13 +86,15 @@
             btnCheckOut.Size = new Size(167, 44);
             btnCheckOut.TabIndex = 22;
             btnCheckOut.Text = "Thanh Toán";
+            btnCheckOut.Click += btnCheckOut_Click_1;
             // 
             // txtCheckOutDate
             // 
             txtCheckOutDate.Checked = true;
+            txtCheckOutDate.CustomFormat = "dd/MM/yyyy HH:mm:ss";
             txtCheckOutDate.CustomizableEdges = customizableEdges3;
             txtCheckOutDate.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCheckOutDate.Format = DateTimePickerFormat.Short;
+            txtCheckOutDate.Format = DateTimePickerFormat.Custom;
             txtCheckOutDate.Location = new Point(890, 572);
             txtCheckOutDate.Margin = new Padding(2);
             txtCheckOutDate.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -102,6 +104,7 @@
             txtCheckOutDate.Size = new Size(240, 44);
             txtCheckOutDate.TabIndex = 21;
             txtCheckOutDate.Value = new DateTime(2024, 4, 10, 16, 39, 0, 193);
+            txtCheckOutDate.ValueChanged += txtCheckOutDate_ValueChanged;
             // 
             // label5
             // 
@@ -150,31 +153,33 @@
             txtRoom.Size = new Size(322, 44);
             txtRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             txtRoom.TabIndex = 18;
+            txtRoom.TextChanged += txtRoom_TextChanged;
             // 
-            // guna2TextBox3
+            // txtCName
             // 
-            guna2TextBox3.CustomizableEdges = customizableEdges7;
-            guna2TextBox3.DefaultText = "";
-            guna2TextBox3.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox3.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox3.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox3.ForeColor = Color.Black;
-            guna2TextBox3.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Location = new Point(88, 572);
-            guna2TextBox3.Margin = new Padding(3, 4, 3, 4);
-            guna2TextBox3.Name = "guna2TextBox3";
-            guna2TextBox3.PasswordChar = '\0';
-            guna2TextBox3.PlaceholderForeColor = Color.DimGray;
-            guna2TextBox3.PlaceholderText = "Nhập Tên Khách Hàng";
-            guna2TextBox3.ReadOnly = true;
-            guna2TextBox3.SelectedText = "";
-            guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2TextBox3.Size = new Size(351, 44);
-            guna2TextBox3.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            guna2TextBox3.TabIndex = 17;
+            txtCName.CustomizableEdges = customizableEdges7;
+            txtCName.DefaultText = "";
+            txtCName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtCName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtCName.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtCName.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtCName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtCName.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCName.ForeColor = Color.Black;
+            txtCName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtCName.Location = new Point(88, 572);
+            txtCName.Margin = new Padding(3, 4, 3, 4);
+            txtCName.Name = "txtCName";
+            txtCName.PasswordChar = '\0';
+            txtCName.PlaceholderForeColor = Color.DimGray;
+            txtCName.PlaceholderText = "Nhập Tên Khách Hàng";
+            txtCName.ReadOnly = true;
+            txtCName.SelectedText = "";
+            txtCName.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtCName.Size = new Size(351, 44);
+            txtCName.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            txtCName.TabIndex = 17;
+            txtCName.TextChanged += txtCName_TextChanged;
             // 
             // label3
             // 
@@ -241,6 +246,7 @@
             guna2DataGridView1.ThemeStyle.RowsStyle.Height = 33;
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            guna2DataGridView1.CellContentClick += guna2DataGridView1_CellContentClick_1;
             // 
             // txtName
             // 
@@ -265,6 +271,7 @@
             txtName.Size = new Size(351, 44);
             txtName.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             txtName.TabIndex = 14;
+            txtName.TextChanged += txtName_TextChanged_1;
             // 
             // label2
             // 
@@ -302,7 +309,7 @@
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(txtRoom);
-            Controls.Add(guna2TextBox3);
+            Controls.Add(txtCName);
             Controls.Add(label3);
             Controls.Add(guna2DataGridView1);
             Controls.Add(txtName);
@@ -312,6 +319,7 @@
             Name = "UC_CheckOut";
             Size = new Size(1800, 850);
             Load += UC_CheckOut__Load;
+            Leave += UC_CheckOut_Leave_1;
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -325,7 +333,7 @@
         private Label label5;
         private Label label4;
         private Guna.UI2.WinForms.Guna2TextBox txtRoom;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox txtCName;
         private Label label3;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2TextBox txtName;

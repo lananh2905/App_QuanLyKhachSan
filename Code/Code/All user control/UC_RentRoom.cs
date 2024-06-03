@@ -152,16 +152,16 @@ namespace Code.All_user_control
                     cusType = "Khách nội địa";
                     totalPrice = price;
                 }
-                String RoomNo = txtRoomNo.Text;
-                String queryRoomNoItems = "SELECT MAPH FROM PHONG, LOAIPHONG WHERE PHONG.MALPH = LOAIPHONG.MALPH AND PHONG.TRANGTHAI = 'Trong' AND LOAIPHONG.GHICHU = '" + roomType + "'";
+                String RoomNo = "P" + txtRoomNo.Text;
+                String queryRoomNoItems = "SELECT MAPH FROM PHONG, LOAIPHONG WHERE PHONG.MALPH = LOAIPHONG.MALPH AND PHONG.TRANGTHAI = N'Trống' AND LOAIPHONG.GHICHU = N'" + roomType + "'";
                 bool result = CheckIfRoomExists(queryRoomNoItems, RoomNo);
                 if (result == true)
                 {
-                    query = "insert into KHACHHANG (MAKH, HOTEN, CMND, DIACHI, LOAIKH) values ('KH" + maKH + "','" + cusName + "','" + cmnd + "','" + addr + "','" + cusType + "')";
+                    query = "insert into KHACHHANG (MAKH, HOTEN, CMND, DIACHI, LOAIKH) values ('KH" + maKH + "',N'" + cusName + "','" + cmnd + "',N'" + addr + "',N'" + cusType + "')";
+                    fn.setData(query, "");  
+                    query = "insert into THUEPHONG (MATP, MAKH, MAPH, NGTHUE, NGTRAPHONG) values ('TP" + maTP + "','KH" + maKH + "','" + RoomNo + "','" + start + "','" + end + "')";
                     fn.setData(query, "");
                     maKH += 1;
-                    query = "insert into THUEPHONG (MATP, MAKH, MAPH, NGTHUE, NGTRAPHONG) values ('TP" + maTP + "','KH" + maKH + "','PH" + RoomNo + "','" + start + "','" + end + "')";
-                    fn.setData(query, "");
                     query = "insert into HOADON (MAHD, NGLAP, TONGTIEN, MATP) values ('HD" + maHD + "','" + start + "', '" + totalPrice + "', 'TP" + maTP + "')";
                     fn.setData(query, "");
                     maTP += 1;

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8Fs0f3nulnbjTWrxI3kiml896RqfrK55rE/Ww5AFLmzscWQdDULA2weAfYGvXZTSLAah7LHS60QCDMuLpP9ivg==",
+  "dgSpecHash": "0JSocnErTm09SvKWRuHyrFTU1ouT2RaPOURFiyFcDvaoSrobWqOAs5nFdcOJYJxJhr/pyLdLc8sv0LEqMXviaA==",
   "success": true,
-  "projectFilePath": "D:\\UIT_HK4\\SE104\\DoAn_QLKS\\SE104\\Code\\Code\\Code.csproj",
+  "projectFilePath": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\Code.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
