@@ -74,7 +74,6 @@
             label5.Size = new Size(143, 28);
             label5.TabIndex = 21;
             label5.Text = "Tháng báo cáo";
-            label5.Click += label5_Click;
             // 
             // txtMonthlyReportDate
             // 
@@ -144,6 +143,7 @@
             btnMonthlyReport.Size = new Size(225, 56);
             btnMonthlyReport.TabIndex = 25;
             btnMonthlyReport.Text = "Báo cáo";
+            btnMonthlyReport.Click += btnMonthlyReport_Click;
             // 
             // btnXuatExcel
             // 
@@ -167,6 +167,7 @@
             btnXuatExcel.Size = new Size(225, 56);
             btnXuatExcel.TabIndex = 26;
             btnXuatExcel.Text = "Xuất ra Excel";
+            btnXuatExcel.Click += btnXuatExcel_Click;
             // 
             // guna2DataGridView1
             // 
@@ -240,6 +241,7 @@
             Controls.Add(label1);
             Name = "UC_MonthlyReport";
             Size = new Size(1800, 850);
+            Load += UC_MonthlyReport_Load;
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

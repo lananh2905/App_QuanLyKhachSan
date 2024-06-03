@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\UIT_HK4\\SE104\\Do_an\\SE104\\Code\\Code\\Code.csproj": {}
+    "D:\\UIT_HK4\\SE104\\DoAn_QLKS\\SE104\\Code\\Code\\Code.csproj": {}
   },
   "projects": {
-    "d:\\UIT_HK4\\SE104\\Do_an\\SE104\\Code\\Code\\Code.csproj": {
+    "D:\\UIT_HK4\\SE104\\DoAn_QLKS\\SE104\\Code\\Code\\Code.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\UIT_HK4\\SE104\\Do_an\\SE104\\Code\\Code\\Code.csproj",
+        "projectUniqueName": "D:\\UIT_HK4\\SE104\\DoAn_QLKS\\SE104\\Code\\Code\\Code.csproj",
         "projectName": "Code",
-        "projectPath": "d:\\UIT_HK4\\SE104\\Do_an\\SE104\\Code\\Code\\Code.csproj",
+        "projectPath": "D:\\UIT_HK4\\SE104\\DoAn_QLKS\\SE104\\Code\\Code\\Code.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "d:\\UIT_HK4\\SE104\\Do_an\\SE104\\Code\\Code\\obj\\",
+        "outputPath": "D:\\UIT_HK4\\SE104\\DoAn_QLKS\\SE104\\Code\\Code\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,6 +53,10 @@
             "Guna.UI2.WinForms": {
               "target": "Package",
               "version": "[2.0.4.6, )"
+            },
+            "Microsoft.Office.Interop.Excel": {
+              "target": "Package",
+              "version": "[15.0.4795.1001, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
