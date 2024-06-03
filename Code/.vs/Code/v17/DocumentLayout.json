@@ -1,17 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive\\M\u00E1y t\u00EDnh\\MemNhomBon\\App_QuanLyKhachSan\\App_QuanLyKhachSan\\Code\\",
+  "WorkspaceRootPath": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|c:\\users\\lenovo\\onedrive\\m\u00E1y t\u00EDnh\\memnhombon\\app_quanlykhachsan\\app_quanlykhachsan\\code\\code\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|d:\\uit_hk4\\se104\\doan_qlks\\se104\\code\\code\\all user control\\uc_monthlyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_monthlyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|c:\\users\\lenovo\\onedrive\\m\u00E1y t\u00EDnh\\memnhombon\\app_quanlykhachsan\\app_quanlykhachsan\\code\\code\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|d:\\uit_hk4\\se104\\doan_qlks\\se104\\code\\code\\all user control\\uc_monthlyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_monthlyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|d:\\uit_hk4\\se104\\doan_qlks\\se104\\code\\code\\all user control\\uc_monthlyreport.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_monthlyreport.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|d:\\uit_hk4\\se104\\doan_qlks\\se104\\code\\code\\all user control\\uc_monthlyreport.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_monthlyreport.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\code\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|c:\\users\\lenovo\\onedrive\\m\u00E1y t\u00EDnh\\memnhombon\\app_quanlykhachsan\\app_quanlykhachsan\\code\\code\\all user control\\uc_checkout.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|d:\\uit_hk4\\se104\\doan_qlks\\se104\\code\\code\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\code\\all user control\\uc_checkout.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_checkout.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -27,10 +43,60 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UC_MonthlyReport.cs",
+              "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_MonthlyReport.cs",
+              "RelativeDocumentMoniker": "Code\\All user control\\UC_MonthlyReport.cs",
+              "ToolTip": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_MonthlyReport.cs",
+              "RelativeToolTip": "Code\\All user control\\UC_MonthlyReport.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAUwKIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T13:06:27.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UC_MonthlyReport.resx",
+              "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DoAn_QLKS\\SE104\\Code\\Code\\All user control\\UC_MonthlyReport.resx",
+              "RelativeDocumentMoniker": "Code\\All user control\\UC_MonthlyReport.resx",
+              "ToolTip": "D:\\UIT_HK4\\SE104\\DoAn_QLKS\\SE104\\Code\\Code\\All user control\\UC_MonthlyReport.resx",
+              "RelativeToolTip": "Code\\All user control\\UC_MonthlyReport.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-06-03T13:06:01.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UC_MonthlyReport.Designer.cs",
+              "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DoAn_QLKS\\SE104\\Code\\Code\\All user control\\UC_MonthlyReport.Designer.cs",
+              "RelativeDocumentMoniker": "Code\\All user control\\UC_MonthlyReport.Designer.cs",
+              "ToolTip": "D:\\UIT_HK4\\SE104\\DoAn_QLKS\\SE104\\Code\\Code\\All user control\\UC_MonthlyReport.Designer.cs",
+              "RelativeToolTip": "Code\\All user control\\UC_MonthlyReport.Designer.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAD4v0oAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T13:05:52.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UC_MonthlyReport.cs [Design]",
+              "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_MonthlyReport.cs",
+              "RelativeDocumentMoniker": "Code\\All user control\\UC_MonthlyReport.cs",
+              "ToolTip": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_MonthlyReport.cs [Design]",
+              "RelativeToolTip": "Code\\All user control\\UC_MonthlyReport.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T13:05:46.031Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "DashBoard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\M\u00E1y t\u00EDnh\\MemNhomBon\\App_QuanLyKhachSan\\App_QuanLyKhachSan\\Code\\Code\\DashBoard.cs",
+              "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\DashBoard.cs",
               "RelativeDocumentMoniker": "Code\\DashBoard.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\M\u00E1y t\u00EDnh\\MemNhomBon\\App_QuanLyKhachSan\\App_QuanLyKhachSan\\Code\\Code\\DashBoard.cs [Design]",
+              "ToolTip": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\DashBoard.cs [Design]",
               "RelativeToolTip": "Code\\DashBoard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-10T15:34:53.849Z",
@@ -38,11 +104,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "UC_CheckOut.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\M\u00E1y t\u00EDnh\\MemNhomBon\\App_QuanLyKhachSan\\App_QuanLyKhachSan\\Code\\Code\\All user control\\UC_CheckOut.cs",
+              "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_CheckOut.cs",
               "RelativeDocumentMoniker": "Code\\All user control\\UC_CheckOut.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\M\u00E1y t\u00EDnh\\MemNhomBon\\App_QuanLyKhachSan\\App_QuanLyKhachSan\\Code\\Code\\All user control\\UC_CheckOut.cs [Design]",
+              "ToolTip": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_CheckOut.cs [Design]",
               "RelativeToolTip": "Code\\All user control\\UC_CheckOut.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-10T15:34:49.593Z",
@@ -50,11 +116,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "UC_CheckOut.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\M\u00E1y t\u00EDnh\\MemNhomBon\\App_QuanLyKhachSan\\App_QuanLyKhachSan\\Code\\Code\\All user control\\UC_CheckOut.Designer.cs",
+              "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_CheckOut.Designer.cs",
               "RelativeDocumentMoniker": "Code\\All user control\\UC_CheckOut.Designer.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\M\u00E1y t\u00EDnh\\MemNhomBon\\App_QuanLyKhachSan\\App_QuanLyKhachSan\\Code\\Code\\All user control\\UC_CheckOut.Designer.cs",
+              "ToolTip": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_CheckOut.Designer.cs",
               "RelativeToolTip": "Code\\All user control\\UC_CheckOut.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
