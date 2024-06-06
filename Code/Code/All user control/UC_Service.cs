@@ -27,9 +27,9 @@ namespace Code.All_user_control
 
         private void btnAddRoom_Click(object sender, EventArgs e)
         {
-            if (txtRoomNo.Text != "" && txtStart.Text != "" && txtFinish.Text != "" && txtNumber.Text != "" && txtService.Text != "")
+            if (txtName.Text != "" && txtStart.Text != "" && txtFinish.Text != "" && txtNumber.Text != "" && txtService.Text != "")
             {
-                String roomno = "TP" + txtRoomNo.Text;
+                String name = txtName.Text;
                 String service = txtService.Text;
                 Int64 number = Int64.Parse(txtNumber.Text);
                 String start = txtStart.Text;
@@ -81,7 +81,9 @@ namespace Code.All_user_control
                     price = number * 50000;
                 }
 
-                query = "insert into DICHVU (MALDV, MATP, NGBATDAUDV, NGKETTHUCDV, SOLUONGDV, TONGTIENDV) values ('" + serviceno + "','" + roomno + "', '" + start + "', '" + end + "', " + number + ", " + price + ")";
+                string MATP = Find_MATP(name);
+
+                query = "insert into DICHVU (MALDV, MATP, NGBATDAUDV, NGKETTHUCDV, SOLUONGDV, TONGTIENDV) values ('" + serviceno + "','" + MATP + "', '" + start + "', '" + end + "', " + number + ", " + price + ")";
                 fn.setData(query, "Đã thuê dịch vụ thành công");
 
                 UC_Service_Load(this, null);
@@ -94,16 +96,39 @@ namespace Code.All_user_control
 
 
         }
+
+        public string Find_MATP(string name)
+        {
+            string MATP = "";
+            query = "select THUEPHONG.MATP " +
+                    "from THUEPHONG " +
+                    "inner join KHACHHANG " +
+                    "on THUEPHONG.MAKH = KHACHHANG.MAKH and KHACHHANG.HOTEN = 'a';";
+            DataSet ds = fn.getData(query);
+            foreach (DataTable table in ds.Tables)
+            {
+                foreach (DataRow row in table.Rows)
+                {
+                    foreach (var item in row.ItemArray)
+                    {
+                        MATP = item.ToString();
+                    }
+                }
+            }
+
+            return MATP;
+        }
+        
         public void clearAll()
         {
-            txtRoomNo.Clear();
+            txtName.Clear();
             txtService.SelectedIndex = -1;
             txtNumber.Clear();
         }
 
         private void UC_Service_Load(object sender, EventArgs e)
         {
-            query = "select MALDV as [Mã loại DV], MATP as [Mã thuê phòng], NGBATDAUDV as [Ngày bắt đầu], NGKETTHUCDV as [Ngày kết thúc], SOLUONGDV as [ Số lượng ], TONGTIENDV as [Tổng tiền] from dbo.DICHVU";
+            query = "select LOAIDICHVU.TENDV as [Tên loại DV],  KHACHHANG.HOTEN as [Họ tên KH], NGBATDAUDV as [Ngày bắt đầu], NGKETTHUCDV as [Ngày kết thúc], SOLUONGDV as [ Số lượng ], TONGTIENDV as [Tổng tiền] from DICHVU inner join LOAIDICHVU on DICHVU.MALDV = LOAIDICHVU.MALDV inner join THUEPHONG on THUEPHONG.MATP = DICHVU.MATP inner join KHACHHANG on KHACHHANG.MAKH = THUEPHONG.MAKH;";
             DataSet ds = fn.getData(query);
             dataGridView1.DataSource = ds.Tables[0];
 

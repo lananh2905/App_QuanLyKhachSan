@@ -48,7 +48,7 @@ namespace Code.All_user_control
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            txtRoomNo = new Guna.UI2.WinForms.Guna2TextBox();
+            txtName = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtService = new Guna.UI2.WinForms.Guna2ComboBox();
             txtPrice = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -66,11 +66,11 @@ namespace Code.All_user_control
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel1.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             guna2HtmlLabel1.ForeColor = Color.Black;
             guna2HtmlLabel1.Location = new Point(79, 59);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(183, 43);
+            guna2HtmlLabel1.Size = new Size(189, 43);
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "Thuê dịch vụ";
             guna2HtmlLabel1.Click += guna2HtmlLabel1_Click;
@@ -82,31 +82,31 @@ namespace Code.All_user_control
             guna2HtmlLabel2.ForeColor = Color.Black;
             guna2HtmlLabel2.Location = new Point(1110, 122);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(122, 27);
+            guna2HtmlLabel2.Size = new Size(153, 27);
             guna2HtmlLabel2.TabIndex = 2;
-            guna2HtmlLabel2.Text = "Số phòng thuê";
+            guna2HtmlLabel2.Text = "Họ tên khách hàng";
             // 
-            // txtRoomNo
+            // txtName
             // 
-            txtRoomNo.CustomizableEdges = customizableEdges1;
-            txtRoomNo.DefaultText = "";
-            txtRoomNo.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtRoomNo.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtRoomNo.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtRoomNo.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtRoomNo.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtRoomNo.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtRoomNo.ForeColor = Color.Black;
-            txtRoomNo.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtRoomNo.Location = new Point(1110, 153);
-            txtRoomNo.Margin = new Padding(4, 5, 4, 5);
-            txtRoomNo.Name = "txtRoomNo";
-            txtRoomNo.PasswordChar = '\0';
-            txtRoomNo.PlaceholderText = "";
-            txtRoomNo.SelectedText = "";
-            txtRoomNo.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtRoomNo.Size = new Size(664, 51);
-            txtRoomNo.TabIndex = 3;
+            txtName.CustomizableEdges = customizableEdges1;
+            txtName.DefaultText = "";
+            txtName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtName.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtName.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtName.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtName.ForeColor = Color.Black;
+            txtName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtName.Location = new Point(1110, 153);
+            txtName.Margin = new Padding(4, 5, 4, 5);
+            txtName.Name = "txtName";
+            txtName.PasswordChar = '\0';
+            txtName.PlaceholderText = "";
+            txtName.SelectedText = "";
+            txtName.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtName.Size = new Size(664, 51);
+            txtName.TabIndex = 3;
             // 
             // guna2HtmlLabel3
             // 
@@ -220,7 +220,7 @@ namespace Code.All_user_control
             dataGridView1.EditMode = DataGridViewEditMode.EditOnEnter;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.GridColor = SystemColors.InfoText;
-            dataGridView1.Location = new Point(79, 122);
+            dataGridView1.Location = new Point(79, 153);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -234,7 +234,7 @@ namespace Code.All_user_control
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.CellSelect;
-            dataGridView1.Size = new Size(830, 565);
+            dataGridView1.Size = new Size(949, 590);
             dataGridView1.TabIndex = 13;
             // 
             // txtNumber
@@ -320,7 +320,7 @@ namespace Code.All_user_control
             Controls.Add(txtPrice);
             Controls.Add(txtService);
             Controls.Add(guna2HtmlLabel3);
-            Controls.Add(txtRoomNo);
+            Controls.Add(txtName);
             Controls.Add(guna2HtmlLabel2);
             Controls.Add(guna2HtmlLabel1);
             Name = "UC_Service";
@@ -345,7 +345,7 @@ namespace Code.All_user_control
 
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2TextBox txtRoomNo;
+        private Guna.UI2.WinForms.Guna2TextBox txtName;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2ComboBox txtService;
         private Guna.UI2.WinForms.Guna2HtmlLabel txtPrice;
