@@ -80,10 +80,11 @@
             // txtMonthlyReportDate
             // 
             txtMonthlyReportDate.Checked = true;
+            txtMonthlyReportDate.CustomFormat = "dd/MM/yyyy HH:mm:ss";
             txtMonthlyReportDate.CustomizableEdges = customizableEdges1;
             txtMonthlyReportDate.FillColor = Color.Silver;
             txtMonthlyReportDate.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txtMonthlyReportDate.Format = DateTimePickerFormat.Short;
+            txtMonthlyReportDate.Format = DateTimePickerFormat.Custom;
             txtMonthlyReportDate.Location = new Point(88, 219);
             txtMonthlyReportDate.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             txtMonthlyReportDate.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
