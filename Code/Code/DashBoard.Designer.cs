@@ -248,7 +248,7 @@ namespace Code
             uC_SearchRoom1.Location = new Point(4, 4);
             uC_SearchRoom1.Margin = new Padding(2);
             uC_SearchRoom1.Name = "uC_SearchRoom1";
-            uC_SearchRoom1.Size = new Size(1800, 850);
+            uC_SearchRoom1.Size = new Size(1800, 800);
             uC_SearchRoom1.TabIndex = 6;
             uC_SearchRoom1.Load += uC_SearchRoom1_Load;
             // 

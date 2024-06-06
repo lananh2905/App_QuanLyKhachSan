@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
@@ -117,18 +118,31 @@ namespace Code.All_user_control
 
         private void btnRentRoom_Click(object sender, EventArgs e)
         {
-            if (txtCusName.Text != "" && txtCusType.Text != "" && txtCusCMND.Text != "" && txtCusAddr.Text != "" && txtRoomType.Text != "" && txtRoomNo.Text != "" && txtCheckIn.Text != "" && txtCheckOut.Text != "")
+            if (txtCusName.Text != "" && txtCusCMND.Text != "" && txtRoomType.Text != "" && txtRoomNo.Text != "" && txtCheckOut.Text != "" && txtCheckIn.Text != "")
             {
                 String cusName = txtCusName.Text;
                 bool cusTypeCheck = txtCusType.Checked;
                 Int64 cmnd = Int64.Parse(txtCusCMND.Text);
                 String addr = txtCusAddr.Text;
+                String phonenumber = txtPhoneNumber.Text;
+                String Sex = "Khác";
                 String cusType = "";
+                String Email = txtEmail.Text;
                 String roomType = txtRoomType.Text;
                 String start = txtCheckIn.Text;
                 String end = txtCheckOut.Text;
                 double price = 0;
                 double totalPrice = 0;
+
+
+                if ( txtMale.Checked == true )
+                {
+                    Sex = "Nam";
+                }
+                if( txtFemale.Checked == true )
+                {
+                    Sex = "Nữ";
+                }
 
                 if (roomType == "Phòng đơn")
                 {
@@ -157,17 +171,22 @@ namespace Code.All_user_control
                 bool result = CheckIfRoomExists(queryRoomNoItems, RoomNo);
                 if (result == true)
                 {
-                    query = "insert into KHACHHANG (MAKH, HOTEN, CMND, DIACHI, LOAIKH) values ('KH" + maKH + "',N'" + cusName + "','" + cmnd + "',N'" + addr + "',N'" + cusType + "')";
-                    fn.setData(query, "");  
-                    query = "insert into THUEPHONG (MATP, MAKH, MAPH, NGTHUE, NGTRAPHONG) values ('TP" + maTP + "','KH" + maKH + "','" + RoomNo + "','" + start + "','" + end + "')";
-                    fn.setData(query, "");
-                    maKH += 1;
-                    query = "insert into HOADON (MAHD, NGLAP, TONGTIEN, MATP) values ('HD" + maHD + "','" + start + "', '" + totalPrice + "', 'TP" + maTP + "')";
-                    fn.setData(query, "");
-                    maTP += 1;
-                    maHD += 1;
-                    MessageBox.Show("Đã lưu phiếu thuê phòng thành công");
+                    maKH = increaseMAKH();
+                    maTP = increaseMATP();
+                    maHD = increaseMAHD();
 
+                    query = "insert into KHACHHANG (MAKH, HOTEN, GIOITINH, CMND, SDT, DIACHI, LOAIKH, EMAIL) values ('KH" + maKH + "', N'" + cusName + "', N'" + Sex + "','" + cmnd + "','" + phonenumber + "',N'" + addr + "',N'" + cusType + "','" + Email + "')";
+                    fn.setData(query, null);
+
+                    query = "insert into THUEPHONG (MATP, MAKH, MAPH, NGTHUE, NGTRAPHONG) values ('TP" + maTP + "','KH" + maKH + "','" + RoomNo + "','" + start + "','" + end + "')";
+                    fn.setData(query, null);
+        
+                    query = "insert into HOADON (MAHD, NGLAP, TONGTIEN, MATP) values ('HD" + maHD + "','" + start + "', '" + totalPrice + "', 'TP" + maTP + "')";
+                    fn.setData(query, "Đã lưu phiếu thuê phòng thành công");
+
+                    query = "update PHONG set TRANGTHAI = N'Không trống' where MAPH = '" + RoomNo + "';";
+                    fn.setData(query, null);
+                         
                     clearAll();
                 }
                 else
@@ -182,6 +201,93 @@ namespace Code.All_user_control
 
         }
 
+        public int increaseMAKH()
+        {
+            int MAKH = 1;
+            query = "SELECT TOP 1 MAKH " +
+                    "FROM KHACHHANG " +
+                    "ORDER BY CAST(SUBSTRING(MAKH, 3, LEN(MAKH) - 2) AS INT) DESC";
+
+            DataSet ds = fn.getData(query);
+
+            foreach (DataTable table in ds.Tables)
+            {
+                foreach (DataRow row in table.Rows)
+                {
+                    foreach (var item in row.ItemArray)
+                    {
+                        if (item.ToString() != "")
+                        {
+                            string Str = item.ToString();
+                            string SubStr = Str.Substring(2);
+                            MAKH = int.Parse(SubStr) + 1;
+                        }
+                    }
+                }
+            }
+
+
+            return MAKH;
+        }
+
+        public int increaseMATP()
+        {
+            int MATP = 1;
+            query = "SELECT TOP 1 MATP " +
+                    "FROM THUEPHONG " +
+                    "ORDER BY CAST(SUBSTRING(MATP, 3, LEN(MATP) - 2) AS INT) DESC";
+
+            DataSet ds = fn.getData(query);
+
+            foreach (DataTable table in ds.Tables)
+            {
+                foreach (DataRow row in table.Rows)
+                {
+                    foreach (var item in row.ItemArray)
+                    {
+                        if (item.ToString() != "")
+                        {
+                            string Str = item.ToString();
+                            string SubStr = Str.Substring(2);
+                            MATP = int.Parse(SubStr) + 1;
+                        }
+                    }
+                }
+            }
+
+
+            return MATP;
+        }
+
+        public int increaseMAHD()
+        {
+            int MAHD = 1;
+            query = "SELECT TOP 1 MAHD " +
+                    "FROM HOADON " +
+                    "ORDER BY CAST(SUBSTRING(MAHD, 3, LEN(MAHD) - 2) AS INT) DESC";
+
+            DataSet ds = fn.getData(query);
+
+            foreach (DataTable table in ds.Tables)
+            {
+                foreach (DataRow row in table.Rows)
+                {
+                    foreach (var item in row.ItemArray)
+                    {
+                        if (item.ToString() != "")
+                        {
+                            string Str = item.ToString();
+                            string SubStr = Str.Substring(2);
+                            MAHD = int.Parse(SubStr) + 1;
+                        }
+                    }
+                }
+            }
+
+
+            return MAHD;
+        }
+
         public void clearAll()
         {
             txtCusName.Clear();
@@ -190,6 +296,11 @@ namespace Code.All_user_control
             txtCusAddr.Clear();
             txtRoomType.SelectedIndex = -1;
             txtRoomNo.Clear();
+            txtMale.Checked = false;
+            txtFemale.Checked = false;
+            txtOther.Checked = false;
+            txtPhoneNumber.Clear();
+            txtEmail.Clear();
         }
 
         public bool CheckIfRoomExists(string query, string roomText)
@@ -232,6 +343,11 @@ namespace Code.All_user_control
         }
 
         private void guna2HtmlLabel1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel7_Click(object sender, EventArgs e)
         {
 
         }

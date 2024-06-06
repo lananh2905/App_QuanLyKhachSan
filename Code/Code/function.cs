@@ -39,7 +39,11 @@ namespace Code
             cmd.ExecuteNonQuery();
             con.Close();
 
-            MessageBox.Show(message, "Sucees", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if(message != null)
+            {
+                MessageBox.Show(message, "Sucees", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
 
         public SqlDataReader getForCombo(string query)

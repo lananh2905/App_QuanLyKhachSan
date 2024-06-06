@@ -43,6 +43,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -64,6 +68,14 @@
             txtCusType = new Guna.UI2.WinForms.Guna2CheckBox();
             txtCheckOut = new Guna.UI2.WinForms.Guna2DateTimePicker();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            txtMale = new Guna.UI2.WinForms.Guna2CheckBox();
+            txtFemale = new Guna.UI2.WinForms.Guna2CheckBox();
+            txtOther = new Guna.UI2.WinForms.Guna2CheckBox();
+            guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            txtPhoneNumber = new Guna.UI2.WinForms.Guna2TextBox();
+            guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             SuspendLayout();
             // 
             // guna2HtmlLabel5
@@ -71,7 +83,7 @@
             guna2HtmlLabel5.BackColor = Color.Transparent;
             guna2HtmlLabel5.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             guna2HtmlLabel5.ForeColor = Color.Black;
-            guna2HtmlLabel5.Location = new Point(202, 411);
+            guna2HtmlLabel5.Location = new Point(202, 309);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             guna2HtmlLabel5.Size = new Size(56, 27);
             guna2HtmlLabel5.TabIndex = 16;
@@ -90,11 +102,11 @@
             txtCusAddr.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtCusAddr.ForeColor = Color.Black;
             txtCusAddr.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtCusAddr.Location = new Point(202, 584);
+            txtCusAddr.Location = new Point(202, 570);
             txtCusAddr.Margin = new Padding(4, 5, 4, 5);
             txtCusAddr.Name = "txtCusAddr";
             txtCusAddr.PasswordChar = '\0';
-            txtCusAddr.PlaceholderText = "Nhập vào địa chỉ";
+            txtCusAddr.PlaceholderText = "Nhập vào địa chỉ( Nếu có )";
             txtCusAddr.SelectedText = "";
             txtCusAddr.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtCusAddr.Size = new Size(660, 48);
@@ -106,7 +118,7 @@
             txtPrice.BackColor = Color.Transparent;
             txtPrice.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtPrice.ForeColor = Color.Black;
-            txtPrice.Location = new Point(202, 539);
+            txtPrice.Location = new Point(206, 535);
             txtPrice.Name = "txtPrice";
             txtPrice.Size = new Size(56, 27);
             txtPrice.TabIndex = 14;
@@ -118,7 +130,7 @@
             guna2HtmlLabel3.BackColor = Color.Transparent;
             guna2HtmlLabel3.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             guna2HtmlLabel3.ForeColor = Color.Black;
-            guna2HtmlLabel3.Location = new Point(202, 285);
+            guna2HtmlLabel3.Location = new Point(202, 224);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             guna2HtmlLabel3.Size = new Size(86, 27);
             guna2HtmlLabel3.TabIndex = 12;
@@ -137,7 +149,7 @@
             txtCusName.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtCusName.ForeColor = Color.Black;
             txtCusName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtCusName.Location = new Point(202, 180);
+            txtCusName.Location = new Point(202, 155);
             txtCusName.Margin = new Padding(4, 5, 4, 5);
             txtCusName.Name = "txtCusName";
             txtCusName.PasswordChar = '\0';
@@ -153,7 +165,7 @@
             guna2HtmlLabel2.BackColor = Color.Transparent;
             guna2HtmlLabel2.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             guna2HtmlLabel2.ForeColor = Color.Black;
-            guna2HtmlLabel2.Location = new Point(202, 145);
+            guna2HtmlLabel2.Location = new Point(202, 120);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             guna2HtmlLabel2.Size = new Size(127, 27);
             guna2HtmlLabel2.TabIndex = 10;
@@ -184,7 +196,7 @@
             txtRoomType.ForeColor = Color.Black;
             txtRoomType.ItemHeight = 30;
             txtRoomType.Items.AddRange(new object[] { "Phòng đơn", "Phòng đôi", "Phòng gia đình" });
-            txtRoomType.Location = new Point(989, 180);
+            txtRoomType.Location = new Point(986, 155);
             txtRoomType.Name = "txtRoomType";
             txtRoomType.ShadowDecoration.CustomizableEdges = customizableEdges6;
             txtRoomType.Size = new Size(664, 36);
@@ -196,7 +208,7 @@
             guna2HtmlLabel6.BackColor = Color.Transparent;
             guna2HtmlLabel6.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             guna2HtmlLabel6.ForeColor = Color.Black;
-            guna2HtmlLabel6.Location = new Point(993, 285);
+            guna2HtmlLabel6.Location = new Point(986, 250);
             guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             guna2HtmlLabel6.Size = new Size(82, 27);
             guna2HtmlLabel6.TabIndex = 20;
@@ -215,7 +227,7 @@
             txtRoomNo.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtRoomNo.ForeColor = Color.Black;
             txtRoomNo.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtRoomNo.Location = new Point(989, 324);
+            txtRoomNo.Location = new Point(986, 285);
             txtRoomNo.Margin = new Padding(4, 5, 4, 5);
             txtRoomNo.Name = "txtRoomNo";
             txtRoomNo.PasswordChar = '\0';
@@ -231,7 +243,7 @@
             gunna2textbox.BackColor = Color.Transparent;
             gunna2textbox.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             gunna2textbox.ForeColor = Color.Black;
-            gunna2textbox.Location = new Point(993, 149);
+            gunna2textbox.Location = new Point(985, 120);
             gunna2textbox.Name = "gunna2textbox";
             gunna2textbox.Size = new Size(93, 27);
             gunna2textbox.TabIndex = 18;
@@ -253,7 +265,7 @@
             btnRentRoom.FillColor = Color.White;
             btnRentRoom.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             btnRentRoom.ForeColor = Color.Black;
-            btnRentRoom.Location = new Point(1470, 691);
+            btnRentRoom.Location = new Point(1470, 650);
             btnRentRoom.Name = "btnRentRoom";
             btnRentRoom.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnRentRoom.Size = new Size(180, 69);
@@ -273,7 +285,7 @@
             txtCusCMND.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtCusCMND.ForeColor = Color.Black;
             txtCusCMND.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtCusCMND.Location = new Point(202, 451);
+            txtCusCMND.Location = new Point(202, 344);
             txtCusCMND.Margin = new Padding(4, 5, 4, 5);
             txtCusCMND.Name = "txtCusCMND";
             txtCusCMND.PasswordChar = '\0';
@@ -310,11 +322,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(191, 51);
+            label1.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label1.Location = new Point(79, 55);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(188, 37);
+            label1.Size = new Size(193, 41);
             label1.TabIndex = 29;
             label1.Text = "Thuê phòng";
             // 
@@ -326,7 +338,7 @@
             txtCusType.CheckedState.BorderThickness = 0;
             txtCusType.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
             txtCusType.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCusType.Location = new Point(202, 346);
+            txtCusType.Location = new Point(202, 258);
             txtCusType.Name = "txtCusType";
             txtCusType.Size = new Size(176, 29);
             txtCusType.TabIndex = 30;
@@ -343,7 +355,7 @@
             // txtCheckOut
             // 
             txtCheckOut.Checked = true;
-            txtCheckOut.CustomizableEdges = customizableEdges15;
+            txtCheckOut.CustomizableEdges = customizableEdges19;
             txtCheckOut.FillColor = Color.White;
             txtCheckOut.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtCheckOut.Format = DateTimePickerFormat.Short;
@@ -352,7 +364,7 @@
             txtCheckOut.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             txtCheckOut.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             txtCheckOut.Name = "txtCheckOut";
-            txtCheckOut.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            txtCheckOut.ShadowDecoration.CustomizableEdges = customizableEdges20;
             txtCheckOut.Size = new Size(240, 44);
             txtCheckOut.TabIndex = 32;
             txtCheckOut.Value = new DateTime(2024, 4, 10, 16, 39, 0, 193);
@@ -369,10 +381,159 @@
             guna2HtmlLabel1.Text = "Ngày trả phòng";
             guna2HtmlLabel1.Click += guna2HtmlLabel1_Click_1;
             // 
+            // guna2HtmlLabel7
+            // 
+            guna2HtmlLabel7.BackColor = Color.Transparent;
+            guna2HtmlLabel7.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel7.ForeColor = Color.Black;
+            guna2HtmlLabel7.Location = new Point(552, 224);
+            guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            guna2HtmlLabel7.Size = new Size(69, 27);
+            guna2HtmlLabel7.TabIndex = 34;
+            guna2HtmlLabel7.Text = "Giới tính";
+            guna2HtmlLabel7.Click += guna2HtmlLabel7_Click;
+            // 
+            // txtMale
+            // 
+            txtMale.AutoSize = true;
+            txtMale.CheckedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtMale.CheckedState.BorderRadius = 0;
+            txtMale.CheckedState.BorderThickness = 0;
+            txtMale.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
+            txtMale.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtMale.Location = new Point(552, 258);
+            txtMale.Name = "txtMale";
+            txtMale.Size = new Size(72, 29);
+            txtMale.TabIndex = 35;
+            txtMale.Text = "Nam";
+            txtMale.TextAlign = ContentAlignment.MiddleCenter;
+            txtMale.TextImageRelation = TextImageRelation.ImageBeforeText;
+            txtMale.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
+            txtMale.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
+            txtMale.UncheckedState.BorderRadius = 0;
+            txtMale.UncheckedState.BorderThickness = 0;
+            txtMale.UncheckedState.FillColor = Color.FromArgb(125, 137, 149);
+            // 
+            // txtFemale
+            // 
+            txtFemale.AutoSize = true;
+            txtFemale.CheckedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtFemale.CheckedState.BorderRadius = 0;
+            txtFemale.CheckedState.BorderThickness = 0;
+            txtFemale.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
+            txtFemale.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtFemale.Location = new Point(667, 258);
+            txtFemale.Name = "txtFemale";
+            txtFemale.Size = new Size(58, 29);
+            txtFemale.TabIndex = 36;
+            txtFemale.Text = "Nữ";
+            txtFemale.TextAlign = ContentAlignment.MiddleCenter;
+            txtFemale.TextImageRelation = TextImageRelation.ImageBeforeText;
+            txtFemale.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
+            txtFemale.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
+            txtFemale.UncheckedState.BorderRadius = 0;
+            txtFemale.UncheckedState.BorderThickness = 0;
+            txtFemale.UncheckedState.FillColor = Color.FromArgb(125, 137, 149);
+            // 
+            // txtOther
+            // 
+            txtOther.AutoSize = true;
+            txtOther.CheckedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtOther.CheckedState.BorderRadius = 0;
+            txtOther.CheckedState.BorderThickness = 0;
+            txtOther.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
+            txtOther.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtOther.Location = new Point(791, 258);
+            txtOther.Name = "txtOther";
+            txtOther.Size = new Size(71, 29);
+            txtOther.TabIndex = 37;
+            txtOther.Text = "Khác";
+            txtOther.TextAlign = ContentAlignment.MiddleCenter;
+            txtOther.TextImageRelation = TextImageRelation.ImageBeforeText;
+            txtOther.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
+            txtOther.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
+            txtOther.UncheckedState.BorderRadius = 0;
+            txtOther.UncheckedState.BorderThickness = 0;
+            txtOther.UncheckedState.FillColor = Color.FromArgb(125, 137, 149);
+            // 
+            // guna2HtmlLabel8
+            // 
+            guna2HtmlLabel8.BackColor = Color.Transparent;
+            guna2HtmlLabel8.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel8.ForeColor = Color.Black;
+            guna2HtmlLabel8.Location = new Point(206, 414);
+            guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            guna2HtmlLabel8.Size = new Size(108, 27);
+            guna2HtmlLabel8.TabIndex = 38;
+            guna2HtmlLabel8.Text = "Số điện thoại";
+            // 
+            // txtPhoneNumber
+            // 
+            txtPhoneNumber.CustomizableEdges = customizableEdges17;
+            txtPhoneNumber.DefaultText = "";
+            txtPhoneNumber.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtPhoneNumber.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtPhoneNumber.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtPhoneNumber.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtPhoneNumber.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtPhoneNumber.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPhoneNumber.ForeColor = Color.Black;
+            txtPhoneNumber.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtPhoneNumber.Location = new Point(202, 455);
+            txtPhoneNumber.Margin = new Padding(4, 5, 4, 5);
+            txtPhoneNumber.Name = "txtPhoneNumber";
+            txtPhoneNumber.PasswordChar = '\0';
+            txtPhoneNumber.PlaceholderText = "Nhập vào SĐT( Nếu có )";
+            txtPhoneNumber.SelectedText = "";
+            txtPhoneNumber.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            txtPhoneNumber.Size = new Size(660, 48);
+            txtPhoneNumber.TabIndex = 39;
+            // 
+            // guna2HtmlLabel9
+            // 
+            guna2HtmlLabel9.BackColor = Color.Transparent;
+            guna2HtmlLabel9.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel9.ForeColor = Color.Black;
+            guna2HtmlLabel9.Location = new Point(206, 636);
+            guna2HtmlLabel9.Name = "guna2HtmlLabel9";
+            guna2HtmlLabel9.Size = new Size(45, 27);
+            guna2HtmlLabel9.TabIndex = 40;
+            guna2HtmlLabel9.Text = "Email";
+            // 
+            // txtEmail
+            // 
+            txtEmail.CustomizableEdges = customizableEdges15;
+            txtEmail.DefaultText = "";
+            txtEmail.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtEmail.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtEmail.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtEmail.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtEmail.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtEmail.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEmail.ForeColor = Color.Black;
+            txtEmail.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtEmail.Location = new Point(202, 671);
+            txtEmail.Margin = new Padding(4, 5, 4, 5);
+            txtEmail.Name = "txtEmail";
+            txtEmail.PasswordChar = '\0';
+            txtEmail.PlaceholderText = "Nhập vào Email( Nếu có )";
+            txtEmail.SelectedText = "";
+            txtEmail.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            txtEmail.Size = new Size(660, 48);
+            txtEmail.TabIndex = 41;
+            // 
             // UC_RentRoom
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(txtEmail);
+            Controls.Add(guna2HtmlLabel9);
+            Controls.Add(txtPhoneNumber);
+            Controls.Add(guna2HtmlLabel8);
+            Controls.Add(txtOther);
+            Controls.Add(txtFemale);
+            Controls.Add(txtMale);
+            Controls.Add(guna2HtmlLabel7);
             Controls.Add(txtCheckOut);
             Controls.Add(guna2HtmlLabel1);
             Controls.Add(txtCusType);
@@ -418,5 +579,13 @@
         private Guna.UI2.WinForms.Guna2CheckBox txtCusType;
         private Guna.UI2.WinForms.Guna2DateTimePicker txtCheckOut;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2TextBox txtPhoneNumber;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
+        private Guna.UI2.WinForms.Guna2CheckBox txtOther;
+        private Guna.UI2.WinForms.Guna2CheckBox txtFemale;
+        private Guna.UI2.WinForms.Guna2CheckBox txtMale;
+        private Guna.UI2.WinForms.Guna2TextBox txtEmail;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
     }
 }
