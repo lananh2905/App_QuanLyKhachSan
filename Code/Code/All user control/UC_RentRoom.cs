@@ -123,16 +123,43 @@ namespace Code.All_user_control
                 String cusName = txtCusName.Text;
                 bool cusTypeCheck = txtCusType.Checked;
                 Int64 cmnd = Int64.Parse(txtCusCMND.Text);
-                String addr = txtCusAddr.Text;
-                String phonenumber = txtPhoneNumber.Text;
+                String addr ;
+                String phonenumber;
                 String Sex = "Khác";
                 String cusType = "";
-                String Email = txtEmail.Text;
+                String Email;
                 String roomType = txtRoomType.Text;
                 String start = txtCheckIn.Text;
                 String end = txtCheckOut.Text;
                 double price = 0;
                 double totalPrice = 0;
+
+                if(txtCusAddr.Text != "")
+                {
+                    addr = txtCusAddr.Text;
+                }
+                else
+                {
+                    addr = "null";
+                }
+
+                if(txtPhoneNumber.Text != "")
+                {
+                    phonenumber = txtPhoneNumber.Text;
+                }
+                else
+                {
+                    phonenumber= "null";
+                }
+
+                if(txtEmail.Text != "")
+                {
+                    Email = txtEmail.Text;
+                }
+                else
+                {
+                    Email = "null";
+                }
 
 
                 if ( txtMale.Checked == true )
@@ -156,15 +183,19 @@ namespace Code.All_user_control
                 {
                     price = 200000;
                 }
+
+                int daystart = int.Parse(start.Substring(0, 2));
+                int dayend = int.Parse(end.Substring(0, 2));
+                int numberday = dayend - daystart + 1;
                 if (cusTypeCheck == true)
                 {
                     cusType = "Khách nước ngoài";
-                    totalPrice = price * 2;
+                    totalPrice = price * 2 * numberday;
                 }
                 else
                 {
                     cusType = "Khách nội địa";
-                    totalPrice = price;
+                    totalPrice = price * numberday;
                 }
                 String RoomNo = "P" + txtRoomNo.Text;
                 String queryRoomNoItems = "SELECT MAPH FROM PHONG, LOAIPHONG WHERE PHONG.MALPH = LOAIPHONG.MALPH AND PHONG.TRANGTHAI = N'Trống' AND LOAIPHONG.GHICHU = N'" + roomType + "'";
@@ -178,10 +209,10 @@ namespace Code.All_user_control
                     query = "insert into KHACHHANG (MAKH, HOTEN, GIOITINH, CMND, SDT, DIACHI, LOAIKH, EMAIL) values ('KH" + maKH + "', N'" + cusName + "', N'" + Sex + "','" + cmnd + "','" + phonenumber + "',N'" + addr + "',N'" + cusType + "','" + Email + "')";
                     fn.setData(query, null);
 
-                    query = "insert into THUEPHONG (MATP, MAKH, MAPH, NGTHUE, NGTRAPHONG) values ('TP" + maTP + "','KH" + maKH + "','" + RoomNo + "','" + start + "','" + end + "')";
+                    query = "insert into THUEPHONG (MATP, MAKH, MAPH, NGTHUE, NGTRAPHONG, TRANGTHAI) values ('TP" + maTP + "','KH" + maKH + "','" + RoomNo + "','" + start + "','" + end + "', N'Chưa thanh toán')";
                     fn.setData(query, null);
         
-                    query = "insert into HOADON (MAHD, NGLAP, TONGTIEN, MATP) values ('HD" + maHD + "','" + start + "', '" + totalPrice + "', 'TP" + maTP + "')";
+                    query = "insert into HOADON (MAHD, TONGTIEN, MATP) values ('HD" + maHD + "', '" + totalPrice + "', 'TP" + maTP + "')";
                     fn.setData(query, "Đã lưu phiếu thuê phòng thành công");
 
                     query = "update PHONG set TRANGTHAI = N'Không trống' where MAPH = '" + RoomNo + "';";

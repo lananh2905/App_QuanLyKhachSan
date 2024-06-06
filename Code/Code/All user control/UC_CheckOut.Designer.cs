@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -57,6 +59,7 @@
             txtCName = new Guna.UI2.WinForms.Guna2TextBox();
             txtRoom = new Guna.UI2.WinForms.Guna2TextBox();
             btnCheckOut = new Guna.UI2.WinForms.Guna2Button();
+            btnExcel = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -69,7 +72,7 @@
             // 
             txtCheckOutDate.Checked = true;
             txtCheckOutDate.CustomFormat = "dd/MM/yyyy HH:mm:ss";
-            txtCheckOutDate.CustomizableEdges = customizableEdges9;
+            txtCheckOutDate.CustomizableEdges = customizableEdges11;
             txtCheckOutDate.FillColor = Color.Silver;
             txtCheckOutDate.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtCheckOutDate.Format = DateTimePickerFormat.Custom;
@@ -78,11 +81,10 @@
             txtCheckOutDate.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             txtCheckOutDate.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             txtCheckOutDate.Name = "txtCheckOutDate";
-            txtCheckOutDate.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtCheckOutDate.ShadowDecoration.CustomizableEdges = customizableEdges12;
             txtCheckOutDate.Size = new Size(240, 44);
             txtCheckOutDate.TabIndex = 21;
-            txtCheckOutDate.Value = new DateTime(2024, 4, 10, 16, 39, 0, 193);
-            txtCheckOutDate.ValueChanged += txtCheckOutDate_ValueChanged;
+            txtCheckOutDate.Value = new DateTime(2024, 6, 7, 0, 0, 0, 0);
             // 
             // label5
             // 
@@ -166,7 +168,7 @@
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.ActiveCaptionText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            guna2DataGridView1.ColumnHeadersHeight = 40;
+            guna2DataGridView1.ColumnHeadersHeight = 70;
             guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = SystemColors.GradientInactiveCaption;
@@ -213,7 +215,7 @@
             guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 40;
+            guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 70;
             guna2DataGridView1.ThemeStyle.ReadOnly = true;
             guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
@@ -222,10 +224,11 @@
             guna2DataGridView1.ThemeStyle.RowsStyle.Height = 29;
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            guna2DataGridView1.CellContentClick += guna2DataGridView1_CellContentClick;
             // 
             // txtName
             // 
-            txtName.CustomizableEdges = customizableEdges7;
+            txtName.CustomizableEdges = customizableEdges9;
             txtName.DefaultText = "";
             txtName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -242,13 +245,14 @@
             txtName.PlaceholderForeColor = Color.Gray;
             txtName.PlaceholderText = "Nhập tên khách hàng";
             txtName.SelectedText = "";
-            txtName.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtName.ShadowDecoration.CustomizableEdges = customizableEdges10;
             txtName.Size = new Size(399, 51);
             txtName.TabIndex = 29;
+            txtName.TextChanged += txtName_TextChanged;
             // 
             // txtCName
             // 
-            txtCName.CustomizableEdges = customizableEdges5;
+            txtCName.CustomizableEdges = customizableEdges7;
             txtCName.DefaultText = "";
             txtCName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtCName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -265,13 +269,13 @@
             txtCName.PlaceholderForeColor = Color.Gray;
             txtCName.PlaceholderText = "Nhập tên khách hàng";
             txtCName.SelectedText = "";
-            txtCName.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txtCName.ShadowDecoration.CustomizableEdges = customizableEdges8;
             txtCName.Size = new Size(399, 51);
             txtCName.TabIndex = 30;
             // 
             // txtRoom
             // 
-            txtRoom.CustomizableEdges = customizableEdges3;
+            txtRoom.CustomizableEdges = customizableEdges5;
             txtRoom.DefaultText = "";
             txtRoom.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtRoom.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -288,7 +292,7 @@
             txtRoom.PlaceholderForeColor = Color.Gray;
             txtRoom.PlaceholderText = "Nhập số phòng thuê";
             txtRoom.SelectedText = "";
-            txtRoom.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtRoom.ShadowDecoration.CustomizableEdges = customizableEdges6;
             txtRoom.Size = new Size(399, 51);
             txtRoom.TabIndex = 31;
             // 
@@ -299,7 +303,7 @@
             btnCheckOut.BorderThickness = 1;
             btnCheckOut.CheckedState.FillColor = Color.FromArgb(0, 118, 221);
             btnCheckOut.CheckedState.ForeColor = Color.White;
-            btnCheckOut.CustomizableEdges = customizableEdges1;
+            btnCheckOut.CustomizableEdges = customizableEdges3;
             btnCheckOut.DisabledState.BorderColor = Color.DarkGray;
             btnCheckOut.DisabledState.CustomBorderColor = Color.DarkGray;
             btnCheckOut.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -309,15 +313,40 @@
             btnCheckOut.ForeColor = Color.Black;
             btnCheckOut.Location = new Point(1410, 625);
             btnCheckOut.Name = "btnCheckOut";
-            btnCheckOut.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnCheckOut.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnCheckOut.Size = new Size(200, 69);
             btnCheckOut.TabIndex = 32;
             btnCheckOut.Text = "Thanh toán";
+            btnCheckOut.Click += btnCheckOut_Click;
+            // 
+            // btnExcel
+            // 
+            btnExcel.BorderRadius = 18;
+            btnExcel.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            btnExcel.BorderThickness = 1;
+            btnExcel.CheckedState.FillColor = Color.FromArgb(0, 118, 221);
+            btnExcel.CheckedState.ForeColor = Color.White;
+            btnExcel.CustomizableEdges = customizableEdges1;
+            btnExcel.DisabledState.BorderColor = Color.DarkGray;
+            btnExcel.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnExcel.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnExcel.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnExcel.FillColor = Color.White;
+            btnExcel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnExcel.ForeColor = Color.Black;
+            btnExcel.Location = new Point(1410, 734);
+            btnExcel.Name = "btnExcel";
+            btnExcel.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnExcel.Size = new Size(200, 69);
+            btnExcel.TabIndex = 33;
+            btnExcel.Text = "Xuất hoá đơn";
+            btnExcel.Click += btnExcel_Click;
             // 
             // UC_CheckOut
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(btnExcel);
             Controls.Add(btnCheckOut);
             Controls.Add(txtRoom);
             Controls.Add(txtCName);
@@ -333,7 +362,6 @@
             Name = "UC_CheckOut";
             Size = new Size(1800, 850);
             Load += UC_CheckOut__Load;
-            Leave += UC_CheckOut_Leave_1;
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -354,5 +382,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtCName;
         private Guna.UI2.WinForms.Guna2TextBox txtRoom;
         private Guna.UI2.WinForms.Guna2Button btnCheckOut;
+        private Guna.UI2.WinForms.Guna2Button btnExcel;
     }
 }

@@ -299,10 +299,11 @@
             // txtCheckIn
             // 
             txtCheckIn.Checked = true;
+            txtCheckIn.CustomFormat = "dd/MM/yyyy HH:mm:ss";
             txtCheckIn.CustomizableEdges = customizableEdges13;
             txtCheckIn.FillColor = Color.White;
             txtCheckIn.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCheckIn.Format = DateTimePickerFormat.Short;
+            txtCheckIn.Format = DateTimePickerFormat.Custom;
             txtCheckIn.Location = new Point(989, 455);
             txtCheckIn.Margin = new Padding(2);
             txtCheckIn.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -355,10 +356,11 @@
             // txtCheckOut
             // 
             txtCheckOut.Checked = true;
+            txtCheckOut.CustomFormat = "dd/MM/yyyy HH:mm:ss";
             txtCheckOut.CustomizableEdges = customizableEdges19;
             txtCheckOut.FillColor = Color.White;
             txtCheckOut.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCheckOut.Format = DateTimePickerFormat.Short;
+            txtCheckOut.Format = DateTimePickerFormat.Custom;
             txtCheckOut.Location = new Point(989, 584);
             txtCheckOut.Margin = new Padding(2);
             txtCheckOut.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);

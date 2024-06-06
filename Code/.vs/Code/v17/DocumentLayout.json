@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\code\\all user control\\uc_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|d:\\uit_hk4\\se104\\doan_qlks\\se104\\code\\code\\all user control\\uc_monthlyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_monthlyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -19,40 +23,24 @@
       "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_rentroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|d:\\uit_hk4\\se104\\doan_qlks\\se104\\code\\code\\all user control\\uc_searchroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_searchroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\code\\all user control\\uc_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\code\\all user control\\uc_rentroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_rentroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\code\\all user control\\uc_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\code\\all user control\\uc_rentroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_rentroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|d:\\uit_hk4\\se104\\doan_qlks\\se104\\code\\code\\all user control\\uc_monthlyreport.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_monthlyreport.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|d:\\uit_hk4\\se104\\doan_qlks\\se104\\code\\code\\all user control\\uc_monthlyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_monthlyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|d:\\uit_hk4\\se104\\doan_qlks\\se104\\code\\code\\all user control\\uc_searchroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_searchroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\code\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\code\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\code\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|d:\\uit_hk4\\se104\\doan_qlks\\se104\\code\\code\\all user control\\uc_checkout.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|solutionrelative:code\\all user control\\uc_checkout.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D712361-0ADC-4DA3-ACF6-F7FE1FA1031D}|Code\\Code.csproj|D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\code\\all user control\\uc_service.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,77 +70,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UC_MonthlyReport.Designer.cs",
-              "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_MonthlyReport.Designer.cs",
-              "RelativeDocumentMoniker": "Code\\All user control\\UC_MonthlyReport.Designer.cs",
-              "ToolTip": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_MonthlyReport.Designer.cs*",
-              "RelativeToolTip": "Code\\All user control\\UC_MonthlyReport.Designer.cs*",
-              "ViewState": "AQIAAOgAAAAAAAAAAAAawAEBAABkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T19:36:07.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UC_MonthlyReport.cs",
-              "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_MonthlyReport.cs",
-              "RelativeDocumentMoniker": "Code\\All user control\\UC_MonthlyReport.cs",
-              "ToolTip": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_MonthlyReport.cs*",
-              "RelativeToolTip": "Code\\All user control\\UC_MonthlyReport.cs*",
-              "ViewState": "AQIAAIoAAAAAAAAAAAASwKMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T19:35:25.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UC_MonthlyReport.cs [Design]",
               "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_MonthlyReport.cs",
               "RelativeDocumentMoniker": "Code\\All user control\\UC_MonthlyReport.cs",
               "ToolTip": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_MonthlyReport.cs [Design]*",
               "RelativeToolTip": "Code\\All user control\\UC_MonthlyReport.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T19:33:55.282Z",
+              "WhenOpened": "2024-06-06T23:33:56.082Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UC_SearchRoom.cs",
-              "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_SearchRoom.cs",
-              "RelativeDocumentMoniker": "Code\\All user control\\UC_SearchRoom.cs",
-              "ToolTip": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_SearchRoom.cs",
-              "RelativeToolTip": "Code\\All user control\\UC_SearchRoom.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAZAAAA",
+              "DocumentIndex": 9,
+              "Title": "UC_CheckOut.Designer.cs",
+              "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_CheckOut.Designer.cs",
+              "RelativeDocumentMoniker": "Code\\All user control\\UC_CheckOut.Designer.cs",
+              "ToolTip": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_CheckOut.Designer.cs",
+              "RelativeToolTip": "Code\\All user control\\UC_CheckOut.Designer.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAuwFMAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T18:18:37.512Z",
+              "WhenOpened": "2024-06-06T20:50:08.543Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UC_SearchRoom.cs [Design]",
-              "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_SearchRoom.cs",
-              "RelativeDocumentMoniker": "Code\\All user control\\UC_SearchRoom.cs",
-              "ToolTip": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_SearchRoom.cs [Design]",
-              "RelativeToolTip": "Code\\All user control\\UC_SearchRoom.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T18:09:15.928Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "DashBoard.cs [Design]",
               "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\DashBoard.cs",
               "RelativeDocumentMoniker": "Code\\DashBoard.cs",
               "ToolTip": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\DashBoard.cs [Design]",
               "RelativeToolTip": "Code\\DashBoard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T15:56:49.114Z"
+              "WhenOpened": "2024-06-06T15:56:49.114Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -162,7 +113,7 @@
               "RelativeDocumentMoniker": "Code\\All user control\\UC_CheckOut.cs",
               "ToolTip": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_CheckOut.cs",
               "RelativeToolTip": "Code\\All user control\\UC_CheckOut.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAhwGwAAAAxAAAA",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAawIIAAABjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T15:53:39.174Z",
               "EditorCaption": ""
@@ -181,19 +132,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "function.cs",
               "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\function.cs",
               "RelativeDocumentMoniker": "Code\\function.cs",
               "ToolTip": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\function.cs",
               "RelativeToolTip": "Code\\function.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAEwBwAAAAMAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAawCsAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T12:58:19.472Z"
+              "WhenOpened": "2024-06-06T12:58:19.472Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 10,
               "Title": "UC_Service.Designer.cs",
               "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_Service.Designer.cs",
               "RelativeDocumentMoniker": "Code\\All user control\\UC_Service.Designer.cs",
@@ -206,20 +158,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "UC_RentRoom.cs",
               "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_RentRoom.cs",
               "RelativeDocumentMoniker": "Code\\All user control\\UC_RentRoom.cs",
               "ToolTip": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_RentRoom.cs*",
               "RelativeToolTip": "Code\\All user control\\UC_RentRoom.cs*",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAAAIMAAAAvAAAA",
+              "ViewState": "AQIAADwBAAAAAAAAAAAowFABAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T12:14:46.866Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UC_RentRoom.cs [Design]",
               "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_RentRoom.cs",
               "RelativeDocumentMoniker": "Code\\All user control\\UC_RentRoom.cs",
@@ -237,14 +189,14 @@
               "RelativeDocumentMoniker": "Code\\All user control\\UC_Service.cs",
               "ToolTip": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_Service.cs",
               "RelativeToolTip": "Code\\All user control\\UC_Service.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAgwCEAAAA6AAAA",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAkwIYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T14:05:19.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "UC_Service.cs [Design]",
               "DocumentMoniker": "D:\\UIT_HK4\\SE104\\DOAN_QLKS\\SE104\\Code\\Code\\All user control\\UC_Service.cs",
               "RelativeDocumentMoniker": "Code\\All user control\\UC_Service.cs",
