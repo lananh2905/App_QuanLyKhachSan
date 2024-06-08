@@ -1,7 +1,12 @@
+using System.Data;
+
 namespace Code
 {
     public partial class Login : Form
     {
+
+        function fn = new function();
+        string query;
         public Login()
         {
             InitializeComponent();
@@ -29,12 +34,15 @@ namespace Code
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "abc" && txtPassword.Text == "123")
+
+            query = "select MANV, SDT from NHANVIEN where MANV = '" + txtUsername.Text + "' and SDT = '" + txtPassword.Text + "'";
+            DataSet ds = fn.getData(query);
+            if (ds.Tables[0].Rows.Count != 0)
             {
                 labelError.Visible = false;
-                DashBoard ds = new DashBoard();
+                DashBoard db = new DashBoard();
                 this.Hide();
-                ds.Show();
+                db.Show();
             }
             else
             {

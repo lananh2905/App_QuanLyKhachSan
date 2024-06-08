@@ -63,9 +63,9 @@ CREATE TABLE THUEPHONG (
 	MAPH char(4),				-- Mã phòng
 	MAKH char(4),				-- Mã khách hàng
 	MANV char(4),				-- Mã nhân viên
-	NGTHUE datetime,		-- Ngày thuê phòng
-	NGTRAPHONG datetime,	-- Ngày trả phòng
-	TRANGTHAI  nvarchar(50),  --Trạng thái phòng
+	NGTHUE datetime,		    -- Ngày thuê phòng
+	NGTRAPHONG datetime,	    -- Ngày trả phòng
+	TRANGTHAI  nvarchar(50),    --Trạng thái phòng
 	CONSTRAINT FK_MAPH FOREIGN KEY (MAPH) REFERENCES PHONG(MAPH),
 	CONSTRAINT FK_MAKH FOREIGN KEY (MAKH) REFERENCES KHACHHANG(MAKH),
 	CONSTRAINT FK_MANV1 FOREIGN KEY (MANV) REFERENCES NHANVIEN(MANV)
