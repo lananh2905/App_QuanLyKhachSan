@@ -11,11 +11,18 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.IO;
 using Excel = Microsoft.Office.Interop.Excel;
+using OfficeOpenXml;
+using OfficeOpenXml.Style;
+using System.Data.Common;
+using Microsoft.Office.Interop.Excel;
+using static Guna.UI2.Native.WinApi;
 
 namespace Code.All_user_control
 {
     public partial class UC_MonthlyReport : UserControl
     {
+     
+
         function fn = new function();
         string query;
         public UC_MonthlyReport()
@@ -41,14 +48,14 @@ namespace Code.All_user_control
             query = $@"
                 WITH RevenueData AS (
                     SELECT 
-                        LP.TENLPH AS LoaiPhong, 
+                        LP.GHICHU AS LoaiPhong, 
                         COUNT(TP.MAPH) AS SoLuotThue, 
                         SUM(LP.GIA) AS DoanhThu
                     FROM dbo.THUEPHONG TP
                     JOIN dbo.PHONG P ON TP.MAPH = P.MAPH
                     JOIN dbo.LOAIPHONG LP ON P.MALPH = LP.MALPH
                     WHERE YEAR(TP.NGTHUE) = {year} AND MONTH(TP.NGTHUE) = {month}
-                    GROUP BY LP.TENLPH
+                    GROUP BY LP.GHICHU
                 )
                 SELECT 
                     ROW_NUMBER() OVER (ORDER BY LoaiPhong) AS [STT],
@@ -62,6 +69,8 @@ namespace Code.All_user_control
             if (ds != null && ds.Tables.Count > 0)
             {
                 guna2DataGridView1.DataSource = ds.Tables[0];
+
+    
 
                 // Đặt tên tiêu đề cho các cột
                 guna2DataGridView1.Columns["LoaiPhong"].HeaderText = "Loại phòng";
@@ -131,32 +140,73 @@ namespace Code.All_user_control
 
         private void ExportToExcel(string filePath)
         {
-            Excel.Application excelApp = new Excel.Application();
-            Excel.Workbook workbook = excelApp.Workbooks.Add(Type.Missing);
-            Excel.Worksheet worksheet = (Excel.Worksheet)workbook.Sheets[1];
-            worksheet = (Excel.Worksheet)workbook.ActiveSheet;
-            worksheet.Name = "Báo cáo tháng";
-
-            // Xuất tiêu đề cột
-            for (int i = 1; i < guna2DataGridView1.Columns.Count + 1; i++)
+            using (ExcelPackage excelPackage = new ExcelPackage())
             {
-                worksheet.Cells[1, i] = guna2DataGridView1.Columns[i - 1].HeaderText;
-            }
+                // Tạo một worksheet mới
+                ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets.Add("Báo cáo tháng");
 
-            // Xuất dữ liệu
-            for (int i = 0; i < guna2DataGridView1.Rows.Count; i++)
-            {
-                for (int j = 0; j < guna2DataGridView1.Columns.Count; j++)
+                // Title
+                string date = txtMonthlyReportDate.Text;
+                worksheet.Cells["A1"].Value = "Báo cáo tháng " + date;
+                worksheet.Cells["A1"].Style.Font.Bold = true;
+                worksheet.Cells["A1"].Style.Font.Size = 13;
+                worksheet.Cells["A1"].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+                worksheet.Row(1).Height = 20; // Tăng chiều cao dòng để rõ hơn
+                worksheet.Cells["A1:D1"].Merge = true;
+
+                // Xuất tiêu đề cột
+                for (int i = 1; i < guna2DataGridView1.Columns.Count + 1; i++)
                 {
-                    worksheet.Cells[i + 2, j + 1] = guna2DataGridView1.Rows[i].Cells[j].Value?.ToString();
+                    worksheet.Cells[3, i].Value = guna2DataGridView1.Columns[i - 1].HeaderText;
                 }
-            }
 
-            workbook.SaveAs(filePath);
-            workbook.Close();
-            excelApp.Quit();
+                // Định dạng tiêu đề
+                worksheet.Cells["A3:D3"].Style.Font.Bold = true;
+                worksheet.Cells["A3:D3"].Style.Font.Size = 11;
+                worksheet.Cells["A3:D3"].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+                worksheet.Cells["A3:D3"].Style.Fill.PatternType = ExcelFillStyle.Solid;
+                worksheet.Cells["A3:D3"].Style.Fill.BackgroundColor.SetColor(Color.LightBlue);
 
-            MessageBox.Show("Xuất dữ liệu ra Excel thành công!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Xuất dữ liệu
+                for (int i = 0; i < guna2DataGridView1.Rows.Count; i++)
+                {
+                    for (int j = 0; j < guna2DataGridView1.Columns.Count; j++)
+                    {
+                        worksheet.Cells[i + 4, j + 1].Value = guna2DataGridView1.Rows[i].Cells[j].Value;
+                    }
+                }
+
+                //Tổng cộng doanh thu
+                worksheet.Cells["B8"].Value = "Tổng doanh thu : ";
+                worksheet.Cells["B8"].Style.Font.Size = 11;
+                worksheet.Cells["B8"].Style.Font.Bold = true;
+
+                worksheet.Cells["C8"].Formula = "SUM(C4:C6)";
+                worksheet.Cells["D8"].Value = 100;
+
+                //Dịnh dạng sheet
+                worksheet.Cells["A3:D50"].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+                worksheet.Column(1).Width = 5;
+                worksheet.Column(2).Width = 18;
+                worksheet.Column(3).Width = 20;
+                worksheet.Column(4).Width = 20;
+
+                var range = worksheet.Cells["A3:D6"];
+
+                // Thêm đường viền cho toàn bộ vùng dữ liệu
+                range.Style.Border.Top.Style = ExcelBorderStyle.Thin;
+                range.Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
+                range.Style.Border.Left.Style = ExcelBorderStyle.Thin;
+                range.Style.Border.Right.Style = ExcelBorderStyle.Thin;
+
+                FileInfo file = new FileInfo(filePath);
+                excelPackage.SaveAs(file);
+
+                MessageBox.Show("Xuất dữ liệu ra Excel thành công!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }    
+;
+           
         }
 
     }

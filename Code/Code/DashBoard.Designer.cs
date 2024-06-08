@@ -241,6 +241,7 @@ namespace Code
             uC_MonthlyReport1.Name = "uC_MonthlyReport1";
             uC_MonthlyReport1.Size = new Size(1800, 800);
             uC_MonthlyReport1.TabIndex = 5;
+            uC_MonthlyReport1.Load += uC_MonthlyReport1_Load;
             // 
             // uC_SearchRoom1
             // 
@@ -257,7 +258,7 @@ namespace Code
             uC_RentRoom1.BackColor = Color.White;
             uC_RentRoom1.Location = new Point(4, 4);
             uC_RentRoom1.Name = "uC_RentRoom1";
-            uC_RentRoom1.Size = new Size(1800, 800);
+            uC_RentRoom1.Size = new Size(1800, 850);
             uC_RentRoom1.TabIndex = 2;
             // 
             // uC_CheckOut1
