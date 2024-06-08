@@ -92,5 +92,9 @@ namespace Code
 
         }
 
+        private void uC_MonthlyReport1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

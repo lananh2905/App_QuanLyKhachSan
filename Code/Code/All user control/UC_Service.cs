@@ -103,7 +103,7 @@ namespace Code.All_user_control
             query = "select THUEPHONG.MATP " +
                     "from THUEPHONG " +
                     "inner join KHACHHANG " +
-                    "on THUEPHONG.MAKH = KHACHHANG.MAKH and KHACHHANG.HOTEN = 'a';";
+                    "on THUEPHONG.MAKH = KHACHHANG.MAKH and KHACHHANG.HOTEN = '"+ name +"';";
             DataSet ds = fn.getData(query);
             foreach (DataTable table in ds.Tables)
             {

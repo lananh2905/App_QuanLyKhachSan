@@ -186,7 +186,7 @@ namespace Code.All_user_control
 
                 int daystart = int.Parse(start.Substring(0, 2));
                 int dayend = int.Parse(end.Substring(0, 2));
-                int numberday = dayend - daystart + 1;
+                int numberday = dayend - daystart;
                 if (cusTypeCheck == true)
                 {
                     cusType = "Khách nước ngoài";
