@@ -21,7 +21,7 @@ namespace Code.All_user_control
 {
     public partial class UC_MonthlyReport : UserControl
     {
-     
+
 
         function fn = new function();
         string query;
@@ -70,7 +70,7 @@ namespace Code.All_user_control
             {
                 guna2DataGridView1.DataSource = ds.Tables[0];
 
-    
+
 
                 // Đặt tên tiêu đề cho các cột
                 guna2DataGridView1.Columns["LoaiPhong"].HeaderText = "Loại phòng";
@@ -140,6 +140,8 @@ namespace Code.All_user_control
 
         private void ExportToExcel(string filePath)
         {
+            ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
+
             using (ExcelPackage excelPackage = new ExcelPackage())
             {
                 // Tạo một worksheet mới
@@ -204,10 +206,14 @@ namespace Code.All_user_control
                 excelPackage.SaveAs(file);
 
                 MessageBox.Show("Xuất dữ liệu ra Excel thành công!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }    
+            }
 ;
-           
+
         }
 
+        private void txtRoomType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

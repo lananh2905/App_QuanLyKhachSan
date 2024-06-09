@@ -209,7 +209,7 @@ namespace Code.All_user_control
                     query = "insert into KHACHHANG (MAKH, HOTEN, GIOITINH, CMND, SDT, DIACHI, LOAIKH, EMAIL) values ('KH" + maKH + "', N'" + cusName + "', N'" + Sex + "','" + cmnd + "','" + phonenumber + "',N'" + addr + "',N'" + cusType + "','" + Email + "')";
                     fn.setData(query, null);
 
-                    query = "insert into THUEPHONG (MATP, MAKH, MAPH, NGTHUE, NGTRAPHONG, TRANGTHAI) values ('TP" + maTP + "','KH" + maKH + "','" + RoomNo + "','" + start + "','" + end + "', N'Chưa thanh toán')";
+                    query = "insert into THUEPHONG (MATP, MAKH, MAPH, NGTHUE, NGTRAPHONG, TRANGTHAI) values ('TP" + maTP + "','KH" + maKH + "','" + RoomNo + "', CONVERT(DATETIME, '" + start + "', 103), CONVERT(DATETIME, '" + end + "', 103), N'Chưa thanh toán')";
                     fn.setData(query, null);
         
                     query = "insert into HOADON (MAHD, TONGTIEN, MATP) values ('HD" + maHD + "', '" + totalPrice + "', 'TP" + maTP + "')";
