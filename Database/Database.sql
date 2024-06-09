@@ -41,7 +41,7 @@ CREATE TABLE NHANVIEN (
 CREATE TABLE KHACHHANG (
 	MAKH char(4) PRIMARY KEY,	-- Mã khách hàng
 	HOTEN nvarchar(40),			-- Họ tên khách hàng
-	GIOITINH nvarchar(3),		-- Giới tính
+	GIOITINH nvarchar(4),		-- Giới tính
 	CMND varchar(12),			-- CMND
 	SDT varchar(12),			-- Số điện thoại
 	EMAIL varchar(50),			-- Địa chỉ email
@@ -74,7 +74,7 @@ CREATE TABLE THUEPHONG (
 --Tao bang HOADON
 CREATE TABLE HOADON (
 	MAHD char(4) PRIMARY KEY,	-- Mã hóa đơn
-	NGLAP datetime,		-- Ngày lập hóa đơn
+	NGLAP datetime,		        -- Ngày lập hóa đơn
 	TONGTIEN money,				-- Tổng tiền
 	MANV char(4),				-- Mã nhân viên
 	MATP char(4),				-- Mã thuê phòng

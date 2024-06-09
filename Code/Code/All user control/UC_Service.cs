@@ -83,7 +83,7 @@ namespace Code.All_user_control
 
                 string MATP = Find_MATP(name);
 
-                query = "insert into DICHVU (MALDV, MATP, NGBATDAUDV, NGKETTHUCDV, SOLUONGDV, TONGTIENDV) values ('" + serviceno + "','" + MATP + "', '" + start + "', '" + end + "', " + number + ", " + price + ")";
+                query = "insert into DICHVU (MALDV, MATP, NGBATDAUDV, NGKETTHUCDV, SOLUONGDV, TONGTIENDV) values ('" + serviceno + "','" + MATP + "', CONVERT(DATETIME, '"+start+ "', 103), CONVERT(DATETIME, '" + end + "', 103), " + number + ", " + price + ")";
                 fn.setData(query, "Đã thuê dịch vụ thành công");
 
                 UC_Service_Load(this, null);
@@ -128,7 +128,7 @@ namespace Code.All_user_control
 
         private void UC_Service_Load(object sender, EventArgs e)
         {
-            query = "select LOAIDICHVU.TENDV as [Tên loại DV],  KHACHHANG.HOTEN as [Họ tên KH], NGBATDAUDV as [Ngày bắt đầu], NGKETTHUCDV as [Ngày kết thúc], SOLUONGDV as [ Số lượng ], TONGTIENDV as [Tổng tiền] from DICHVU inner join LOAIDICHVU on DICHVU.MALDV = LOAIDICHVU.MALDV inner join THUEPHONG on THUEPHONG.MATP = DICHVU.MATP inner join KHACHHANG on KHACHHANG.MAKH = THUEPHONG.MAKH;";
+            query = "select LOAIDICHVU.TENDV as [Tên loại DV],  KHACHHANG.HOTEN as [Họ tên KH], FORMAT(NGBATDAUDV, 'dd/MM/yyyy HH:mm:ss') as [Ngày bắt đầu], FORMAT(NGKETTHUCDV, 'dd/MM/yyyy HH:mm:ss') as [Ngày kết thúc], SOLUONGDV as [ Số lượng ], TONGTIENDV as [Tổng tiền] from DICHVU inner join LOAIDICHVU on DICHVU.MALDV = LOAIDICHVU.MALDV inner join THUEPHONG on THUEPHONG.MATP = DICHVU.MATP inner join KHACHHANG on KHACHHANG.MAKH = THUEPHONG.MAKH;";
             DataSet ds = fn.getData(query);
             dataGridView1.DataSource = ds.Tables[0];
 

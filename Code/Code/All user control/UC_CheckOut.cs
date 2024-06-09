@@ -36,7 +36,7 @@ namespace Code.All_user_control
 
         private void UC_CheckOut__Load(object sender, EventArgs e)
         {
-            query = "select TP.MATP as[Mã TP],KH.HOTEN as [Họ tên KH], TP.MAPH as [Phòngthuê], LP.GHICHU as [Loại phòng], TP.NGTHUE as [Ngày thuê], TP.NGTRAPHONG as [Ngày trả phòng], TP.TRANGTHAI as [Trạng thái], KH.GIOITINH as [Giới tính], KH.CMND as[CMND], KH.SDT as[SĐT], KH.DIACHI as [Địa chỉ], KH.EMAIL as[Email] " +
+            query = "select TP.MATP as [Mã TP],KH.HOTEN as [Họ tên KH], TP.MAPH as [Phòngthuê], LP.GHICHU as [Loại phòng], FORMAT(TP.NGTHUE, 'dd/MM/yyyy HH:mm:ss') as [Ngày thuê],  FORMAT(TP.NGTRAPHONG, 'dd/MM/yyyy HH:mm:ss') as [Ngày trả phòng], TP.TRANGTHAI as [Trạng thái], KH.GIOITINH as [Giới tính], KH.CMND as[CMND], KH.SDT as[SĐT], KH.DIACHI as [Địa chỉ], KH.EMAIL as[Email] " +
                 "from KHACHHANG KH " +
                 "inner join THUEPHONG TP on KH.MAKH = TP.MAKH " +
                 "inner join PHONG PH on PH.MAPH = TP.MAPH " +
@@ -87,7 +87,7 @@ namespace Code.All_user_control
         {
             String name = txtName.Text;
 
-            query = "select TP.MATP as [Mã TP],KH.HOTEN as [Họ tên KH], TP.MAPH as [Phòngthuê], LP.GHICHU as [Loại phòng], TP.NGTHUE as [Ngày thuê], TP.NGTRAPHONG as [Ngày trả phòng], TP.TRANGTHAI as [Trạng thái], KH.GIOITINH as [Giới tính], KH.CMND as [CMND], KH.SDT as [SĐT], KH.DIACHI as [Địa chỉ], KH.EMAIL as [Email] " +
+            query = "select TP.MATP as [Mã TP],KH.HOTEN as [Họ tên KH], TP.MAPH as [Phòngthuê], LP.GHICHU as [Loại phòng], FORMAT(TP.NGTHUE, 'dd/MM/yyyy HH:mm:ss') as [Ngày thuê],  FORMAT(TP.NGTRAPHONG, 'dd/MM/yyyy HH:mm:ss') as [Ngày trả phòng], TP.TRANGTHAI as [Trạng thái], KH.GIOITINH as [Giới tính], KH.CMND as [CMND], KH.SDT as [SĐT], KH.DIACHI as [Địa chỉ], KH.EMAIL as [Email] " +
                     "from KHACHHANG KH " +
                     "inner join THUEPHONG TP on KH.MAKH = TP.MAKH and KH.HOTEN = N'" + name + "'" +
                     "inner join PHONG PH on PH.MAPH = TP.MAPH " +
@@ -130,7 +130,7 @@ namespace Code.All_user_control
                         fn.setData(query, null);
 
                         // Update ngày lập hoá đơn
-                        query = "update HOADON set NGLAP = '" + checkoutdate + "' where MATP = '" + id + "'";
+                        query = "update HOADON set NGLAP = CONVERT(DATETIME, '" + checkoutdate + "', 103) where MATP = '" + id + "'";
                         fn.setData(query, null);
 
                         // Update tổng tiền
@@ -151,7 +151,6 @@ namespace Code.All_user_control
 
                         MessageBox.Show("Thanh toán thành công", "Sucess", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        clearAll();
                         UC_CheckOut__Load(this, null);
                     }
                 }
@@ -246,35 +245,46 @@ namespace Code.All_user_control
 
         private void btnExcel_Click(object sender, EventArgs e)
         {
-            // Tạo dữ liệu mẫu để xuất ra Excel
-            DataTable dataTable = CreateSampleData();
-
-            // Gọi phương thức để xuất file Excel
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "Excel Files|*.xlsx;*.xls";
-            saveFileDialog.Title = "Save an Excel File";
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            if(txtCName.Text != "" && txtRoom.Text != "")
             {
-                ExportToExcel(dataTable, saveFileDialog.FileName);
+                // Tạo dữ liệu mẫu để xuất ra Excel
+                DataTable dataTable = CreateSampleData();
+
+                // Gọi phương thức để xuất file Excel
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "Excel Files|*.xlsx;*.xls";
+                saveFileDialog.Title = "Save an Excel File";
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    ExportToExcel(dataTable, saveFileDialog.FileName);
+                }
+
+                clearAll();
+
             }
-            
+            else
+            {
+                MessageBox.Show("Hãy chọn khách hàng để lập hoá đơn", "Warning !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+
         }
 
-        
+
 
         private DataTable CreateSampleData()
         {
             // Tạo bảng dữ liệu mẫu
-            query = "select LOAIDICHVU.TENDV, DICHVU.NGBATDAUDV, DICHVU.NGKETTHUCDV, LOAIDICHVU.DONGIA, DICHVU.SOLUONGDV, DICHVU.TONGTIENDV from DICHVU inner join LOAIDICHVU on DICHVU.MALDV = LOAIDICHVU.MALDV and DICHVU.MATP = 'TP1';";
+            query = "select LOAIDICHVU.TENDV, FORMAT(DICHVU.NGBATDAUDV, 'dd/MM/yyyy HH:mm:ss') as [BATDAUDV], FORMAT(DICHVU.NGKETTHUCDV, 'dd/MM/yyyy HH:mm:ss') as [KETTHUC], LOAIDICHVU.DONGIA, DICHVU.SOLUONGDV, DICHVU.TONGTIENDV from DICHVU inner join LOAIDICHVU on DICHVU.MALDV = LOAIDICHVU.MALDV and DICHVU.MATP = '"+id+"';";
             DataSet ds = fn.getData(query);
             DataTable dt = ds.Tables[0];
 
             return dt;
         }
 
-        private void ExportToExcel(DataTable dataTable, string filePath)
+        private void ExportToExcel(DataTable dt, string filePath)
         {
-
+            ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
             // Sử dụng EPPlus để tạo file Excel
             using (ExcelPackage excelPackage = new ExcelPackage())
             {
@@ -333,9 +343,6 @@ namespace Code.All_user_control
                 worksheet.Cells["A8:G8"].Style.Fill.PatternType = ExcelFillStyle.Solid;
                 worksheet.Cells["A8:G8"].Style.Fill.BackgroundColor.SetColor(Color.LightBlue);
 
-                
-                //Định dạng ngày tháng
-                worksheet.Cells["C9:D50"].Style.Numberformat.Format = "dd/MM/yyyy HH:mm:ss";
 
 
                 //Dòng 9
@@ -353,21 +360,20 @@ namespace Code.All_user_control
                 worksheet.Cells["G9"].Value = price;
 
                 
-
                 //Dòng 10
                 //Các loại DICHVU
-                for (int i = 0; i < dataTable.Rows.Count; i++)
+                for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     worksheet.Cells[i + 10, 1].Value = i + 2;
-                    for (int j = 0; j < dataTable.Columns.Count; j++)
+                    for (int j = 0; j < dt.Columns.Count; j++)
                     {
-                        worksheet.Cells[i + 10, j + 2].Value = dataTable.Rows[i][j];
+                        worksheet.Cells[i + 10, j + 2].Value = dt.Rows[i][j];
                     }
                 }
                 
-
+                
                 //Tổng cộng
-                int size = dataTable.Rows.Count;
+                int size = dt.Rows.Count;
                 worksheet.Cells[11 + size, 6].Value = "Tổng cộng : ";
                 worksheet.Cells[11 + size, 6].Style.Font.Size = 11;
                 worksheet.Cells[11 + size, 6].Style.Font.Bold = true;
