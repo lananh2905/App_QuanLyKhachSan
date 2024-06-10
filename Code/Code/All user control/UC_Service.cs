@@ -27,8 +27,9 @@ namespace Code.All_user_control
 
         private void btnAddRoom_Click(object sender, EventArgs e)
         {
-            if (txtName.Text != "" && txtStart.Text != "" && txtFinish.Text != "" && txtNumber.Text != "" && txtService.Text != "")
+            if (txtName.Text != "" && txtStart.Text != "" && txtFinish.Text != "" && txtNumber.Text != "" && txtService.Text != "" )
             {
+
                 String name = txtName.Text;
                 String service = txtService.Text;
                 Int64 number = Int64.Parse(txtNumber.Text);
@@ -83,11 +84,20 @@ namespace Code.All_user_control
 
                 string MATP = Find_MATP(name);
 
-                query = "insert into DICHVU (MALDV, MATP, NGBATDAUDV, NGKETTHUCDV, SOLUONGDV, TONGTIENDV) values ('" + serviceno + "','" + MATP + "', CONVERT(DATETIME, '"+start+ "', 103), CONVERT(DATETIME, '" + end + "', 103), " + number + ", " + price + ")";
-                fn.setData(query, "Đã thuê dịch vụ thành công");
+                if(MATP == "none")
+                {
+                    MessageBox.Show("Tên khách hàng không tồn tại. Vui lòng nhập lại thông tin", "Warning !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    clearAll();
+                }
+                else
+                {
+                    query = "insert into DICHVU (MALDV, MATP, NGBATDAUDV, NGKETTHUCDV, SOLUONGDV, TONGTIENDV) values ('" + serviceno + "','" + MATP + "', CONVERT(DATETIME, '" + start + "', 103), CONVERT(DATETIME, '" + end + "', 103), " + number + ", " + price + ")";
+                    fn.setData(query, "Đã thuê dịch vụ thành công");
 
-                UC_Service_Load(this, null);
-                clearAll();
+                    UC_Service_Load(this, null);
+                    clearAll();
+                }
+
             }
             else
             {
@@ -99,24 +109,19 @@ namespace Code.All_user_control
 
         public string Find_MATP(string name)
         {
-            string MATP = "";
             query = "select THUEPHONG.MATP " +
                     "from THUEPHONG " +
                     "inner join KHACHHANG " +
-                    "on THUEPHONG.MAKH = KHACHHANG.MAKH and KHACHHANG.HOTEN = '"+ name +"';";
+                    "on THUEPHONG.MAKH = KHACHHANG.MAKH and KHACHHANG.HOTEN = N'"+ name +"';";
             DataSet ds = fn.getData(query);
-            foreach (DataTable table in ds.Tables)
+
+            DataTable dt = ds.Tables[0];
+            if(dt.Rows.Count > 0)
             {
-                foreach (DataRow row in table.Rows)
-                {
-                    foreach (var item in row.ItemArray)
-                    {
-                        MATP = item.ToString();
-                    }
-                }
+                return dt.Rows[0][0].ToString();
             }
 
-            return MATP;
+            return "none";
         }
         
         public void clearAll()
