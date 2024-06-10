@@ -50,10 +50,11 @@ namespace Code.All_user_control
                     SELECT 
                         LP.GHICHU AS LoaiPhong, 
                         COUNT(TP.MAPH) AS SoLuotThue, 
-                        SUM(LP.GIA) AS DoanhThu
+                        SUM(HD.TONGTIEN) AS DoanhThu
                     FROM dbo.THUEPHONG TP
                     JOIN dbo.PHONG P ON TP.MAPH = P.MAPH
                     JOIN dbo.LOAIPHONG LP ON P.MALPH = LP.MALPH
+                    INNER JOIN HOADON HD ON HD.MATP = TP.MATP
                     WHERE YEAR(TP.NGTHUE) = {year} AND MONTH(TP.NGTHUE) = {month}
                     GROUP BY LP.GHICHU
                 )
@@ -180,12 +181,16 @@ namespace Code.All_user_control
                 }
 
                 //Tổng cộng doanh thu
-                worksheet.Cells["B8"].Value = "Tổng doanh thu : ";
-                worksheet.Cells["B8"].Style.Font.Size = 11;
-                worksheet.Cells["B8"].Style.Font.Bold = true;
+                int number = 3 + guna2DataGridView1.Rows.Count;
+                int col = 5 + guna2DataGridView1.Rows.Count;
 
-                worksheet.Cells["C8"].Formula = "SUM(C4:C6)";
-                worksheet.Cells["D8"].Value = 100;
+                worksheet.Cells[col, 2].Value = "Tổng doanh thu : ";
+                worksheet.Cells[col, 2].Style.Font.Size = 11;
+                worksheet.Cells[col, 2].Style.Font.Bold = true;
+
+                string sum = "C4:C" + number.ToString();
+                worksheet.Cells[col, 3].Formula = "SUM("+ sum +")";
+                worksheet.Cells[col, 4].Value = 100;
 
                 //Dịnh dạng sheet
                 worksheet.Cells["A3:D50"].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
@@ -194,7 +199,10 @@ namespace Code.All_user_control
                 worksheet.Column(3).Width = 20;
                 worksheet.Column(4).Width = 20;
 
-                var range = worksheet.Cells["A3:D6"];
+                
+                string table = "A3:D" + number.ToString();
+
+                var range = worksheet.Cells[table];
 
                 // Thêm đường viền cho toàn bộ vùng dữ liệu
                 range.Style.Border.Top.Style = ExcelBorderStyle.Thin;
