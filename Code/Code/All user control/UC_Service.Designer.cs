@@ -247,7 +247,7 @@ namespace Code.All_user_control
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.ActiveCaptionText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridView1.ColumnHeadersHeight = 40;
+            dataGridView1.ColumnHeadersHeight = 50;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = SystemColors.GradientInactiveCaption;
@@ -294,7 +294,7 @@ namespace Code.All_user_control
             dataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             dataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             dataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridView1.ThemeStyle.HeaderStyle.Height = 40;
+            dataGridView1.ThemeStyle.HeaderStyle.Height = 50;
             dataGridView1.ThemeStyle.ReadOnly = true;
             dataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White;
             dataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
@@ -320,7 +320,7 @@ namespace Code.All_user_control
             txtStart.ShadowDecoration.CustomizableEdges = customizableEdges10;
             txtStart.Size = new Size(240, 44);
             txtStart.TabIndex = 34;
-            txtStart.Value = new DateTime(2024, 4, 10, 16, 39, 0, 193);
+            txtStart.Value = new DateTime(2024, 6, 11, 12, 0, 0, 0);
             // 
             // txtFinish
             // 
@@ -338,7 +338,7 @@ namespace Code.All_user_control
             txtFinish.ShadowDecoration.CustomizableEdges = customizableEdges8;
             txtFinish.Size = new Size(240, 44);
             txtFinish.TabIndex = 35;
-            txtFinish.Value = new DateTime(2024, 4, 10, 16, 39, 0, 193);
+            txtFinish.Value = new DateTime(2024, 6, 11, 12, 0, 0, 0);
             // 
             // UC_Service
             // 

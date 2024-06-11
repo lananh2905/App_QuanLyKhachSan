@@ -27,203 +27,175 @@ namespace Code.All_user_control
             InitializeComponent();
         }
 
-        private void txtCustomerName_TextChanged(object sender, EventArgs e)
+
+        public int CalNumberDate()
         {
+            int yearStart = txtCheckIn.Value.Year;
+            int monthStart = txtCheckIn.Value.Month;
+            int dayStart = txtCheckIn.Value.Day;
+            int yearEnd = txtCheckOut.Value.Year;
+            int monthEnd = txtCheckOut.Value.Month;
+            int dayEnd = txtCheckOut.Value.Day;
 
-        }
-
-        private void txtCheckOutDate_ValueChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void guna2HtmlLabel4_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void txtRoomType_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-        //void setComboBox(String query, ComboBox combo)
-        //{
-        //    SqlDataReader sdr = fn.getForCombo(query);
-        //    while (sdr.Read())
-        //    {
-        //        for (int i = 0; i < sdr.FieldCount; i++)
-        //        {
-        //            Debug.WriteLine("===TOT1 + " + sdr.GetString(i) + "");
-        //            combo.Items.Add(sdr.GetString(i));
-        //        }
-        //    }
-        //    sdr.Close();
-        //}
-
-        private void guna2HtmlLabel6_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void txtRoomNo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gunna2textbox_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void guna2HtmlLabel5_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void txtCustomerAddr_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void txtPrice_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void txtCustomerType_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void txtCustomerCMND_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2CheckBox1_CheckedChanged_1(object sender, EventArgs e)
-        {
+            if (yearStart == yearEnd)
+            {
+                if (monthStart == monthEnd)
+                {
+                    return dayEnd - dayStart;
+                }
+                else
+                {
+                    if (monthStart == 1 || monthStart == 3 || monthStart == 5 || monthStart == 7 || monthStart == 8 || monthStart == 10 || monthStart == 12)
+                    {
+                        return (31 - dayStart) + dayEnd;
+                    }
+                    else
+                    {
+                        return (30 - dayStart) + dayEnd;
+                    }
+                }
+            }
+            else
+            {
+                return (31 - dayStart) + dayEnd;
+            }
 
         }
 
         private void btnRentRoom_Click(object sender, EventArgs e)
         {
-            if (txtCusName.Text != "" && txtCusCMND.Text != "" && txtRoomType.Text != "" && txtRoomNo.Text != "" && txtCheckOut.Text != "" && txtCheckIn.Text != "")
+            if (txtCusName.Text != "" && txtCusCMND.Text != "" && txtRoomType.Text != "" && txtRoomNo.Text != "" && txtCheckOut.Text != "" && txtCheckIn.Text != "" && txtNumberCus.Text != "")
             {
-                String cusName = txtCusName.Text;
-                bool cusTypeCheck = txtCusType.Checked;
-                Int64 cmnd = Int64.Parse(txtCusCMND.Text);
-                String addr ;
-                String phonenumber;
-                String Sex = "Khác";
-                String cusType = "";
-                String Email;
-                String roomType = txtRoomType.Text;
-                String start = txtCheckIn.Text;
-                String end = txtCheckOut.Text;
-                double price = 0;
-                double totalPrice = 0;
-
-                if(txtCusAddr.Text != "")
+                if(int.Parse(txtNumberCus.Text) > 3 || int.Parse(txtNumberCus.Text) < 1)
                 {
-                    addr = txtCusAddr.Text;
+                    MessageBox.Show("Số lượng khách hàng không phù hợp. Vui lập nhập lại số lượng khách hàng", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    addr = "null";
-                }
+                    String cusName = txtCusName.Text;
+                    bool cusTypeCheck = txtCusType.Checked;
+                    Int64 cmnd = Int64.Parse(txtCusCMND.Text);
+                    String addr;
+                    String phonenumber;
+                    String Sex = "Khác";
+                    String cusType = "";
+                    String Email;
+                    String roomType = txtRoomType.Text;
+                    String start = txtCheckIn.Text;
+                    String end = txtCheckOut.Text;
+                    double price = 0;
+                    double totalPrice = 0;
+                    int numberCus = int.Parse(txtNumberCus.Text);
 
-                if(txtPhoneNumber.Text != "")
-                {
-                    phonenumber = txtPhoneNumber.Text;
-                }
-                else
-                {
-                    phonenumber= "null";
-                }
+                    if (txtCusAddr.Text != "")
+                    {
+                        addr = txtCusAddr.Text;
+                    }
+                    else
+                    {
+                        addr = "null";
+                    }
 
-                if(txtEmail.Text != "")
-                {
-                    Email = txtEmail.Text;
-                }
-                else
-                {
-                    Email = "null";
-                }
+                    if (txtPhoneNumber.Text != "")
+                    {
+                        phonenumber = txtPhoneNumber.Text;
+                    }
+                    else
+                    {
+                        phonenumber = "null";
+                    }
+
+                    if (txtEmail.Text != "")
+                    {
+                        Email = txtEmail.Text;
+                    }
+                    else
+                    {
+                        Email = "null";
+                    }
 
 
-                if ( txtMale.Checked == true )
-                {
-                    Sex = "Nam";
-                }
-                if( txtFemale.Checked == true )
-                {
-                    Sex = "Nữ";
-                }
+                    if (txtMale.Checked == true)
+                    {
+                        Sex = "Nam";
+                    }
+                    if (txtFemale.Checked == true)
+                    {
+                        Sex = "Nữ";
+                    }
 
-                if (roomType == "Phòng đơn")
-                {
-                    price = 150000;
-                }
-                else if (roomType == "Phòng đôi")
-                {
-                    price = 170000;
-                }
-                else
-                {
-                    price = 200000;
-                }
+                    if (roomType == "Phòng đơn")
+                    {
+                        price = 150000;
+                    }
+                    else if (roomType == "Phòng đôi")
+                    {
+                        price = 170000;
+                    }
+                    else
+                    {
+                        price = 200000;
+                    }
 
-                int daystart = int.Parse(start.Substring(0, 2));
-                int dayend = int.Parse(end.Substring(0, 2));
-                int numberday = dayend - daystart;
-                if (cusTypeCheck == true)
-                {
-                    cusType = "Khách nước ngoài";
-                    totalPrice = price * 2 * numberday;
-                }
-                else
-                {
-                    cusType = "Khách nội địa";
-                    totalPrice = price * numberday;
-                }
-                String RoomNo = "P" + txtRoomNo.Text;
-                String queryRoomNoItems = "SELECT MAPH FROM PHONG, LOAIPHONG WHERE PHONG.MALPH = LOAIPHONG.MALPH AND PHONG.TRANGTHAI = N'Trống' AND LOAIPHONG.GHICHU = N'" + roomType + "'";
-                bool result = CheckIfRoomExists(queryRoomNoItems, RoomNo);
-                if (result == true)
-                {
-                    maKH = increaseMAKH();
-                    maTP = increaseMATP();
-                    maHD = increaseMAHD();
+                    int numberday = CalNumberDate();
 
-                    query = "insert into KHACHHANG (MAKH, HOTEN, GIOITINH, CMND, SDT, DIACHI, LOAIKH, EMAIL) values ('KH" + maKH + "', N'" + cusName + "', N'" + Sex + "','" + cmnd + "','" + phonenumber + "',N'" + addr + "',N'" + cusType + "','" + Email + "')";
-                    fn.setData(query, null);
 
-                    query = "insert into THUEPHONG (MATP, MAKH, MAPH, NGTHUE, NGTRAPHONG, TRANGTHAI) values ('TP" + maTP + "','KH" + maKH + "','" + RoomNo + "', CONVERT(DATETIME, '" + start + "', 103), CONVERT(DATETIME, '" + end + "', 103), N'Chưa thanh toán')";
-                    fn.setData(query, null);
-        
-                    query = "insert into HOADON (MAHD, TONGTIEN, MATP) values ('HD" + maHD + "', '" + totalPrice + "', 'TP" + maTP + "')";
-                    fn.setData(query, "Đã lưu phiếu thuê phòng thành công");
+                    if (cusTypeCheck == true)
+                    {
+                        if (numberCus == 3)
+                        {
+                            cusType = "Khách nước ngoài";
+                            totalPrice = price * 1.5 * numberday * 1.25;
+                        }
+                        else
+                        {
+                            cusType = "Khách nước ngoài";
+                            totalPrice = price * 1.5 * numberday;
+                        }
 
-                    query = "update PHONG set TRANGTHAI = N'Không trống' where MAPH = '" + RoomNo + "';";
-                    fn.setData(query, null);
-                         
-                    clearAll();
-                }
-                else
-                {
-                    MessageBox.Show("Phòng không thể chọn!", "Warning !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                };
+                    }
+                    else
+                    {
+                        if (numberCus == 3)
+                        {
+                            cusType = "Khách nội địa";
+                            totalPrice = price * numberday * 1.25;
+                        }
+                        else
+                        {
+                            cusType = "Khách nội địa";
+                            totalPrice = price * numberday;
+                        }
+
+                    }
+                    String RoomNo = "P" + txtRoomNo.Text;
+                    String queryRoomNoItems = "SELECT MAPH FROM PHONG, LOAIPHONG WHERE PHONG.MALPH = LOAIPHONG.MALPH AND PHONG.TRANGTHAI = N'Trống' AND LOAIPHONG.GHICHU = N'" + roomType + "'";
+                    bool result = CheckIfRoomExists(queryRoomNoItems, RoomNo);
+                    if (result == true)
+                    {
+                        maKH = increaseMAKH();
+                        maTP = increaseMATP();
+                        maHD = increaseMAHD();
+
+                        query = "insert into KHACHHANG (MAKH, HOTEN, GIOITINH, CMND, SDT, DIACHI, LOAIKH, EMAIL) values ('KH" + maKH + "', N'" + cusName + "', N'" + Sex + "','" + cmnd + "','" + phonenumber + "',N'" + addr + "',N'" + cusType + "','" + Email + "')";
+                        fn.setData(query, null);
+
+                        query = "insert into THUEPHONG (MATP, MAKH, MAPH, NGTHUE, NGTRAPHONG, TRANGTHAI, SOLUONGKH) values ('TP" + maTP + "','KH" + maKH + "','" + RoomNo + "', CONVERT(DATETIME, '" + start + "', 103), CONVERT(DATETIME, '" + end + "', 103), N'Chưa thanh toán', " + numberCus + ")";
+                        fn.setData(query, null);
+
+                        query = "insert into HOADON (MAHD, TONGTIEN, MATP) values ('HD" + maHD + "', '" + totalPrice + "', 'TP" + maTP + "')";
+                        fn.setData(query, "Đã lưu phiếu thuê phòng thành công");
+
+                        query = "update PHONG set TRANGTHAI = N'Không trống' where MAPH = '" + RoomNo + "';";
+                        fn.setData(query, null);
+
+                        clearAll();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Phòng không thể chọn!", "Warning !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }      
             }
             else
             {
@@ -332,6 +304,7 @@ namespace Code.All_user_control
             txtOther.Checked = false;
             txtPhoneNumber.Clear();
             txtEmail.Clear();
+            txtNumberCus.Clear();
         }
 
         public bool CheckIfRoomExists(string query, string roomText)
