@@ -88,7 +88,7 @@ namespace Code.All_user_control
                 if (txtService.Text == "Cho thuê xe máy")
                 {
                     serviceno = "LDV2";
-                    int numberday = CalNumberDate();
+                    int numberday = CalNumberDate() + 1;
                     price = number * 150000 * numberday;
                 }
                 if (txtService.Text == "Thu đổi ngoại tệ")
