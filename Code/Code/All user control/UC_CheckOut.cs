@@ -178,9 +178,9 @@ namespace Code.All_user_control
 
         public bool Checked()
         {
-            query = "select MATP from THUEPHONG where TRANGTHAI = N'Đã thanh toán'";
+            query = "select MATP from THUEPHONG where TRANGTHAI = N'Đã thanh toán' and MATP = '"+ id +"'";
             DataSet ds = fn.getData(query);
-            if (ds.Tables[0].Rows.Count > 0)
+            if (ds.Tables[0].Rows.Count != 0)
             {
                 return true;
             }
