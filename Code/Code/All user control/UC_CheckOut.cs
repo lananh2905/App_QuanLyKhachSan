@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using OfficeOpenXml;
 using OfficeOpenXml.Style;
 using System.Data.Common;
+using Microsoft.Office.Interop.Excel;
 
 namespace Code.All_user_control
 {
@@ -29,6 +30,8 @@ namespace Code.All_user_control
         string ngayBD;
         string ngayKT;
         int priceRentroom;
+        string numberCus;
+        string typeCus;
         public UC_CheckOut()
         {
             InitializeComponent();
@@ -36,7 +39,7 @@ namespace Code.All_user_control
 
         private void UC_CheckOut__Load(object sender, EventArgs e)
         {
-            query = "select TP.MATP as [Mã TP],KH.HOTEN as [Họ tên KH], TP.MAPH as [Phòngthuê], LP.GHICHU as [Loại phòng], FORMAT(TP.NGTHUE, 'dd/MM/yyyy HH:mm:ss') as [Ngày thuê],  FORMAT(TP.NGTRAPHONG, 'dd/MM/yyyy HH:mm:ss') as [Ngày trả phòng], TP.TRANGTHAI as [Trạng thái], KH.GIOITINH as [Giới tính], KH.CMND as[CMND], KH.SDT as[SĐT], KH.DIACHI as [Địa chỉ], KH.EMAIL as[Email] " +
+            query = "select TP.MATP as [Mã TP],KH.HOTEN as [Họ tên KH], KH.CMND as [CMND], TP.MAPH as [Phòng thuê], LP.GHICHU as [Loại phòng], FORMAT(TP.NGTHUE, 'dd/MM/yyyy HH:mm:ss') as [Ngày thuê],  FORMAT(TP.NGTRAPHONG, 'dd/MM/yyyy HH:mm:ss') as [Ngày trả phòng],TP.SOLUONGKH as [Số lượng KH], KH.LOAIKH as[Loại KH], TP.TRANGTHAI as [Trạng thái] " +
                 "from KHACHHANG KH " +
                 "inner join THUEPHONG TP on KH.MAKH = TP.MAKH " +
                 "inner join PHONG PH on PH.MAPH = TP.MAPH " +
@@ -45,7 +48,7 @@ namespace Code.All_user_control
             guna2DataGridView1.DataSource = ds.Tables[0];
 
             // Tính tỷ lệ phần trăm chiều rộng cho mỗi cột
-            float[] columnWidths = { 7, 10, 8, 8, 12, 12, 10, 5, 10, 8, 8, 6 };
+            float[] columnWidths = { 7, 10, 8, 8, 12, 12, 10, 5, 10, 8 };
             float totalWidth = guna2DataGridView1.Width - guna2DataGridView1.RowHeadersWidth;
 
             for (int i = 0; i < guna2DataGridView1.Columns.Count; i++)
@@ -70,16 +73,21 @@ namespace Code.All_user_control
             {
                 id = guna2DataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
                 txtCName.Text = guna2DataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-                txtRoom.Text = guna2DataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txtRoom.Text = guna2DataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
                 Name = txtCName.Text;
-                Sex = guna2DataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
-                CMND = guna2DataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
-                sdt = guna2DataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
-                diachi = guna2DataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
-                email = guna2DataGridView1.Rows[e.RowIndex].Cells[11].Value.ToString();
-                ngayBD = guna2DataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-                ngayKT = guna2DataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+                ngayBD = guna2DataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+                ngayKT = guna2DataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+                CMND = guna2DataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                numberCus = guna2DataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+                typeCus = guna2DataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
 
+                query = "select GIOITINH, SDT, EMAIL, DIACHI  from KHACHHANG inner join THUEPHONG on KHACHHANG.MAKH = THUEPHONG.MAKH and THUEPHONG.MATP = '" + id + "';";
+                DataSet ds = fn.getData(query);
+
+                Sex = ds.Tables[0].Rows[0]["GIOITINH"].ToString();
+                sdt = ds.Tables[0].Rows[0]["SDT"].ToString();
+                email = ds.Tables[0].Rows[0]["EMAIL"].ToString();
+                diachi = ds.Tables[0].Rows[0]["DIACHI"].ToString();
             }
         }
 
@@ -87,7 +95,7 @@ namespace Code.All_user_control
         {
             String name = txtName.Text;
 
-            query = "select TP.MATP as [Mã TP],KH.HOTEN as [Họ tên KH], TP.MAPH as [Phòngthuê], LP.GHICHU as [Loại phòng], FORMAT(TP.NGTHUE, 'dd/MM/yyyy HH:mm:ss') as [Ngày thuê],  FORMAT(TP.NGTRAPHONG, 'dd/MM/yyyy HH:mm:ss') as [Ngày trả phòng], TP.TRANGTHAI as [Trạng thái], KH.GIOITINH as [Giới tính], KH.CMND as [CMND], KH.SDT as [SĐT], KH.DIACHI as [Địa chỉ], KH.EMAIL as [Email] " +
+            query = "select TP.MATP as [Mã TP],KH.HOTEN as [Họ tên KH], KH.CMND as [CMND], TP.MAPH as [Phòngthuê], LP.GHICHU as [Loại phòng], FORMAT(TP.NGTHUE, 'dd/MM/yyyy HH:mm:ss') as [Ngày thuê],  FORMAT(TP.NGTRAPHONG, 'dd/MM/yyyy HH:mm:ss') as [Ngày trả phòng],TP.SOLUONGKH as [Số lượng KH], KH.LOAIKH as[Loại KH], TP.TRANGTHAI as [Trạng thái] " +
                     "from KHACHHANG KH " +
                     "inner join THUEPHONG TP on KH.MAKH = TP.MAKH and KH.HOTEN = N'" + name + "'" +
                     "inner join PHONG PH on PH.MAPH = TP.MAPH " +
@@ -172,18 +180,9 @@ namespace Code.All_user_control
         {
             query = "select MATP from THUEPHONG where TRANGTHAI = N'Đã thanh toán'";
             DataSet ds = fn.getData(query);
-            foreach (DataTable table in ds.Tables)
+            if (ds.Tables[0].Rows.Count > 0)
             {
-                foreach (DataRow row in table.Rows)
-                {
-                    foreach (var item in row.ItemArray)
-                    {
-                        if (item.ToString() == id)
-                        {
-                            return true;
-                        }
-                    }
-                }
+                return true;
             }
             return false;
         }
@@ -212,10 +211,10 @@ namespace Code.All_user_control
         }
 
 
-        public int DonGia()
+        public double DonGia()
         {
             string loaiKH;
-            int heso = 1;
+            double heso = 1;
             string loaiPH;
             query = "select LOAIKH from KHACHHANG inner join THUEPHONG on KHACHHANG.MAKH = THUEPHONG.MAKH and THUEPHONG.MATP = '" + id + "'";
             DataSet ds = fn.getData(query);
@@ -224,21 +223,33 @@ namespace Code.All_user_control
 
             if (loaiKH == "Khách nước ngoài")
             {
-                heso = 2; 
+                heso = 1.5; 
             }
 
             query = "select MALPH from PHONG where MAPH in (select MAPH from THUEPHONG where MATP = '" + id + "')";
             ds = fn.getData(query);
-
             loaiPH = (ds.Tables[0].Rows[0]["MALPH"]).ToString();
+
+            int soluongKH;
+            query = "select SOLUONGKH from THUEPHONG where MATP = '" + id + "' ";
+            ds = fn.getData(query);
+            soluongKH = int.Parse(ds.Tables[0].Rows[0]["SOLUONGKH"].ToString());
+
+            
             if(loaiPH == "LP01")
             {
+                if (soluongKH == 3) return 150000 * heso * 1.25;
                 return 150000 * heso;
             }
 
             if(loaiPH == "LP02")
             {
+                if (soluongKH == 3) return 170000 * heso * 1.25;
                 return 170000 * heso;
+            }
+            if(loaiPH == "LP03")
+            {
+                if (soluongKH == 3) return 200000 * heso * 1.25;    
             }
             return 200000 * heso;
         }
@@ -248,7 +259,9 @@ namespace Code.All_user_control
             if(txtCName.Text != "" && txtRoom.Text != "")
             {
                 // Tạo dữ liệu mẫu để xuất ra Excel
-                DataTable dataTable = CreateSampleData();
+                query = "select LOAIDICHVU.TENDV, FORMAT(DICHVU.NGBATDAUDV, 'dd/MM/yyyy HH:mm:ss') as [BATDAUDV], FORMAT(DICHVU.NGKETTHUCDV, 'dd/MM/yyyy HH:mm:ss') as [KETTHUC], LOAIDICHVU.DONGIA, DICHVU.SOLUONGDV, DICHVU.TONGTIENDV from DICHVU inner join LOAIDICHVU on DICHVU.MALDV = LOAIDICHVU.MALDV and DICHVU.MATP = '" + id + "';";
+                DataSet ds = fn.getData(query);
+                System.Data.DataTable dt = ds.Tables[0];
 
                 // Gọi phương thức để xuất file Excel
                 SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -256,7 +269,7 @@ namespace Code.All_user_control
                 saveFileDialog.Title = "Save an Excel File";
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    ExportToExcel(dataTable, saveFileDialog.FileName);
+                    ExportToExcel(dt, saveFileDialog.FileName);
                 }
 
                 clearAll();
@@ -270,19 +283,44 @@ namespace Code.All_user_control
 
         }
 
-
-
-        private DataTable CreateSampleData()
+        public int CalNumberDate()
         {
-            // Tạo bảng dữ liệu mẫu
-            query = "select LOAIDICHVU.TENDV, FORMAT(DICHVU.NGBATDAUDV, 'dd/MM/yyyy HH:mm:ss') as [BATDAUDV], FORMAT(DICHVU.NGKETTHUCDV, 'dd/MM/yyyy HH:mm:ss') as [KETTHUC], LOAIDICHVU.DONGIA, DICHVU.SOLUONGDV, DICHVU.TONGTIENDV from DICHVU inner join LOAIDICHVU on DICHVU.MALDV = LOAIDICHVU.MALDV and DICHVU.MATP = '"+id+"';";
-            DataSet ds = fn.getData(query);
-            DataTable dt = ds.Tables[0];
+            string monthS = ngayBD.Substring(3, 4);
+            int yearStart = 2024;
+            int monthStart = int.Parse(monthS.Substring(0, 2));
+            int dayStart = int.Parse(ngayBD.Substring(0,2));
+            int yearEnd = 2024;
+            string monthE = ngayKT.Substring(3, 4);
+            int monthEnd = int.Parse(monthE.Substring(0, 2));
+            int dayEnd = int.Parse(ngayKT.Substring(0, 2));
 
-            return dt;
+            if (yearStart == yearEnd)
+            {
+                if (monthStart == monthEnd)
+                {
+                    return dayEnd - dayStart;
+                }
+                else
+                {
+                    if (monthStart == 1 || monthStart == 3 || monthStart == 5 || monthStart == 7 || monthStart == 8 || monthStart == 10 || monthStart == 12)
+                    {
+                        return (31 - dayStart) + dayEnd;
+                    }
+                    else
+                    {
+                        return (30 - dayStart) + dayEnd;
+                    }
+                }
+            }
+            else
+            {
+                return (31 - dayStart) + dayEnd;
+            }
+
         }
 
-        private void ExportToExcel(DataTable dt, string filePath)
+
+        private void ExportToExcel(System.Data.DataTable dt, string filePath)
         {
             ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
             // Sử dụng EPPlus để tạo file Excel
@@ -292,7 +330,7 @@ namespace Code.All_user_control
                 ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets.Add("Sheet1");
 
                 // Dòng 1: Tiêu đề
-                worksheet.Cells["A1"].Value = "BẢNG KÊ THANH TOÁN CHI TIẾT";
+                worksheet.Cells["A1"].Value = "HOÁ ĐƠN THANH TOÁN CHI TIẾT";
                 worksheet.Cells["A1"].Style.Font.Bold = true;
                 worksheet.Cells["A1"].Style.Font.Size = 13;
                 worksheet.Cells["A1"].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
@@ -314,6 +352,8 @@ namespace Code.All_user_control
                 worksheet.Cells["A5"].Value = "SĐT :" + sdt;
                 worksheet.Cells["D4"].Value = "Địa chỉ : " + diachi;
                 worksheet.Cells["D5"].Value = "Email : " + email;
+                worksheet.Cells["F3"].Value = "Sô lượng KH : " + numberCus;
+                worksheet.Cells["F4"].Value = "Loại KH : " + typeCus;
                 
 
                 worksheet.Cells["A4:A7"].Style.Font.Size = 11;
@@ -352,9 +392,9 @@ namespace Code.All_user_control
                 worksheet.Cells["B9"].Value = "Tiền phòng";
                 worksheet.Cells["C9"].Value = ngayBD;
                 worksheet.Cells["D9"].Value = ngayKT;
-                int numberdate = int.Parse(ngayKT.Substring(0, 2)) - int.Parse(ngayBD.Substring(0, 2));
-                int dongia = DonGia();
-                int price = dongia * numberdate;
+                int numberdate = CalNumberDate();
+                double dongia = DonGia();
+                double price = dongia * numberdate;
                 worksheet.Cells["E9"].Value = dongia;
                 worksheet.Cells["F9"].Value = numberdate;
                 worksheet.Cells["G9"].Value = price;
@@ -392,9 +432,10 @@ namespace Code.All_user_control
                 range.Style.Border.Left.Style = ExcelBorderStyle.Thin;
                 range.Style.Border.Right.Style = ExcelBorderStyle.Thin;
 
-
+                so = 11 + size;
+                bang = "A8:G" + so.ToString();
                 // Định dạng bảng
-                worksheet.Cells["A9:G50"].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+                worksheet.Cells[bang].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
                 worksheet.Column(1).Width = 5;
                 worksheet.Column(2).Width = 18;
                 worksheet.Column(3).Width = 20;
@@ -402,7 +443,24 @@ namespace Code.All_user_control
                 worksheet.Column(5).Width = 10;
                 worksheet.Column(6).Width = 10;
 
-                
+                // Mô tả
+                worksheet.Cells[12 + size, 1].Value = "* Mô tả : ";
+                worksheet.Cells[12 + size, 1].Style.Font.Size = 11;
+                worksheet.Cells[12 + size, 1].Style.Font.Bold = true;
+
+                //Dòng mô tả tiền phòng
+                worksheet.Cells[13 + size, 1].Value = "Tiền phòng:   Nếu số lượng KH là 3, *1.25. Nếu là 'Khách nước ngoài', *1.5.";
+                worksheet.Cells[13 + size, 1].Style.Font.Size = 11;
+
+                //Dòng mô tả DV
+                query = "select MOTA from LOAIDICHVU";
+                DataSet ds = fn.getData(query);
+                worksheet.Cells[14 + size, 1].Value = "Giặt ủi quần áo:   " + ds.Tables[0].Rows[0]["MOTA"];
+                worksheet.Cells[15 + size, 1].Value = "Cho thuê xe máy:   " + ds.Tables[0].Rows[1]["MOTA"];
+                worksheet.Cells[16 + size, 1].Value = "Thu đổi ngoại tệ:   " + ds.Tables[0].Rows[2]["MOTA"];
+                worksheet.Cells[17 + size, 1].Value = "Đón khách:   " + ds.Tables[0].Rows[3]["MOTA"];
+                worksheet.Cells[18 + size, 1].Value = "Buffet sáng:   " + ds.Tables[0].Rows[4]["MOTA"];
+
                 // Lưu file Excel
                 FileInfo file = new FileInfo(filePath);
                 excelPackage.SaveAs(file);

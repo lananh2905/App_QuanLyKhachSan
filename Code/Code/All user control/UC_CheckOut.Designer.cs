@@ -84,7 +84,7 @@
             txtCheckOutDate.ShadowDecoration.CustomizableEdges = customizableEdges12;
             txtCheckOutDate.Size = new Size(240, 44);
             txtCheckOutDate.TabIndex = 21;
-            txtCheckOutDate.Value = new DateTime(2024, 6, 7, 0, 0, 0, 0);
+            txtCheckOutDate.Value = new DateTime(2024, 6, 11, 12, 0, 0, 0);
             // 
             // label5
             // 

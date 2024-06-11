@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,40 @@ namespace Code.All_user_control
 
         private void guna2HtmlLabel3_Click(object sender, EventArgs e)
         {
+
+        }
+
+        public int CalNumberDate()
+        {
+            int yearStart = txtStart.Value.Year;
+            int monthStart = txtStart.Value.Month;
+            int dayStart = txtStart.Value.Day;
+            int yearEnd = txtStart.Value.Year;
+            int monthEnd = txtStart.Value.Month;
+            int dayEnd = txtStart.Value.Day;
+
+            if( yearStart == yearEnd )
+            {
+                if( monthStart == monthEnd )
+                {
+                    return dayEnd - dayStart;
+                }
+                else
+                {
+                    if( monthStart == 1 || monthStart == 3 || monthStart == 5 || monthStart == 7 || monthStart == 8 || monthStart == 10 || monthStart ==  12)
+                    {
+                        return (31 - dayStart) + dayEnd;
+                    }
+                    else
+                    {
+                        return (30 - dayStart) + dayEnd;
+                    }
+                }
+            }
+            else
+            {
+                return (31 - dayStart) + dayEnd;
+            }
 
         }
 
@@ -47,15 +82,13 @@ namespace Code.All_user_control
                     }
                     else
                     {
-                        price = 65000;
+                        price = 40000 + (number - 2) * 25000;
                     }
                 }
                 if (txtService.Text == "Cho thuê xe máy")
                 {
                     serviceno = "LDV2";
-                    int daystart = int.Parse(start.Substring(0,2));
-                    int dayend = int.Parse(end.Substring(0,2));
-                    int numberday = dayend - daystart + 1;
+                    int numberday = CalNumberDate();
                     price = number * 150000 * numberday;
                 }
                 if (txtService.Text == "Thu đổi ngoại tệ")
@@ -133,13 +166,15 @@ namespace Code.All_user_control
 
         private void UC_Service_Load(object sender, EventArgs e)
         {
-            query = "select LOAIDICHVU.TENDV as [Tên loại DV],  KHACHHANG.HOTEN as [Họ tên KH], FORMAT(NGBATDAUDV, 'dd/MM/yyyy HH:mm:ss') as [Ngày bắt đầu], FORMAT(NGKETTHUCDV, 'dd/MM/yyyy HH:mm:ss') as [Ngày kết thúc], SOLUONGDV as [ Số lượng ], TONGTIENDV as [Tổng tiền] from DICHVU inner join LOAIDICHVU on DICHVU.MALDV = LOAIDICHVU.MALDV inner join THUEPHONG on THUEPHONG.MATP = DICHVU.MATP inner join KHACHHANG on KHACHHANG.MAKH = THUEPHONG.MAKH;";
+            query = "select LOAIDICHVU.TENDV as [Tên loại DV],  KHACHHANG.HOTEN as [Họ tên KH], FORMAT(NGBATDAUDV, 'dd/MM/yyyy HH:mm:ss') as [Ngày bắt đầu], FORMAT(NGKETTHUCDV, 'dd/MM/yyyy HH:mm:ss') as [Ngày kết thúc], LOAIDICHVU.MOTA as [ Mô tả ], SOLUONGDV as [ Số lượng ], TONGTIENDV as [Tổng tiền] from DICHVU inner join LOAIDICHVU on DICHVU.MALDV = LOAIDICHVU.MALDV inner join THUEPHONG on THUEPHONG.MATP = DICHVU.MATP inner join KHACHHANG on KHACHHANG.MAKH = THUEPHONG.MAKH;";
             DataSet ds = fn.getData(query);
             dataGridView1.DataSource = ds.Tables[0];
 
             // Tính tỷ lệ phần trăm chiều rộng cho mỗi cột
-            float[] columnWidths = { 15, 15, 20, 20, 10, 20};
+            float[] columnWidths = { 15, 15, 20, 20, 20, 10, 10};
             float totalWidth = dataGridView1.Width - dataGridView1.RowHeadersWidth;
+
+            dataGridView1.RowTemplate.Height = 50;
 
             for (int i = 0; i < dataGridView1.Columns.Count; i++)
             {

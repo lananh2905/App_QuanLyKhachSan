@@ -88,7 +88,8 @@
             txtMonthlyReportDate.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtMonthlyReportDate.Size = new Size(341, 48);
             txtMonthlyReportDate.TabIndex = 22;
-            txtMonthlyReportDate.Value = new DateTime(2024, 4, 15, 12, 14, 0, 370);
+            txtMonthlyReportDate.Value = new DateTime(2024, 6, 11, 12, 0, 0, 0);
+            txtMonthlyReportDate.ValueChanged += txtMonthlyReportDate_ValueChanged;
             // 
             // btnMonthlyReport
             // 

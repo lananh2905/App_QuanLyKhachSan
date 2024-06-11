@@ -189,7 +189,7 @@ namespace Code.All_user_control
                 worksheet.Cells[col, 2].Style.Font.Bold = true;
 
                 string sum = "C4:C" + number.ToString();
-                worksheet.Cells[col, 3].Formula = "SUM("+ sum +")";
+                worksheet.Cells[col, 3].Formula = "SUM(" + sum + ")";
                 worksheet.Cells[col, 4].Value = 100;
 
                 //Dịnh dạng sheet
@@ -199,7 +199,7 @@ namespace Code.All_user_control
                 worksheet.Column(3).Width = 20;
                 worksheet.Column(4).Width = 20;
 
-                
+
                 string table = "A3:D" + number.ToString();
 
                 var range = worksheet.Cells[table];
@@ -220,6 +220,11 @@ namespace Code.All_user_control
         }
 
         private void txtRoomType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMonthlyReportDate_ValueChanged(object sender, EventArgs e)
         {
 
         }
