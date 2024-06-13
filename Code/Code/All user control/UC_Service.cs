@@ -145,7 +145,7 @@ namespace Code.All_user_control
             query = "select THUEPHONG.MATP " +
                     "from THUEPHONG " +
                     "inner join KHACHHANG " +
-                    "on THUEPHONG.MAKH = KHACHHANG.MAKH and KHACHHANG.HOTEN = N'"+ name +"';";
+                    "on THUEPHONG.MAKH = KHACHHANG.MAKH and KHACHHANG.HOTEN = N'"+ name +"' and THUEPHONG.TRANGTHAI = N'Chưa thanh toán';";
             DataSet ds = fn.getData(query);
 
             DataTable dt = ds.Tables[0];

@@ -14,7 +14,7 @@ namespace Code
         protected SqlConnection GetConnection()
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=DESKTOP-KMNS09Q\\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=True;Encrypt=False";
+            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Admin\\Documents\\QLKS1.mdf;Integrated Security=True";
             return con;
         }
 
